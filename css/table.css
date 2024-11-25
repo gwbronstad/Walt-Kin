@@ -1,0 +1,44 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/*  ...css/table.css  */
+
+table {
+  background-color: indigo;	
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: top;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgba(228, 240, 245, .4);
+}
+
+th,
+td {
+  border: 1px solid rgba(160, 160, 160, .2);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgba(237, 238, 242, 1);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold; 
+}

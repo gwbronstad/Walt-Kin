@@ -1,0 +1,48 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/*  ...css/txtbox.css  */
+
+p.ltext { padding:2% 1% 1% 1%; 
+
+}
+
+p.rtext { padding:1% 2% 1% 1%; 
+
+}
+
+p.botmtext { padding:1% 2% 2% 2%; 
+
+}
+
+.centercaption {
+  margin: auto;
+  width: 95%;
+  /* */border: 3px solid AliceBlue;
+    border-radius: 10px; /**/
+  padding: 5px;
+}
+.center {
+  margin: auto;
+  width: 75%;
+  /* */border: 3px solid AliceBlue;
+    border-radius: 10px; /**/
+  padding: 15px;
+}
+.center.front{
+  width: 90%;
+  border: none;
+}
+.center3rd {
+  margin: auto;
+  width: 33%;
+  /* border: 1px solid LightGray;
+    border-radius: 10px; */
+  padding: 15px;
+}
+
+.center4th {
+  margin: auto;
+  width: 20%;
+  /* border: 1px solid LightGray;
+    border-radius: 10px; */
+  padding: 12px;
+}
