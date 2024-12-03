@@ -2,7 +2,7 @@
 /*  ...css/table.css  */
 
 table {
-  background-color: indigo;	
+  background-color: rgb(204, 255, 255); /*indigo;	 */
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
   font-family: Arial, Helvetica, sans-serif;
