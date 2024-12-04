@@ -27,9 +27,12 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
 <!-- Start memoire NAVBAR||| {#######} {#######} {#######} -->
 <div class="navbar">  <!--[[  This NAVBAR IS RELATIVE TO (I E LOCATED IN) DIRECTORY STRUCTURE: GitWork/Walt-Kin/ [[-->
+<!-- Start tabectomy 
   <div class="dropdown home-link">
     <a href="../index.html"> Site Sub Select</a>
   </div>
+-- End tabectomy -->
+
   <div class="dropdown home-link">
     <a href="../PatsLifeGit/index.html"> Patricia Memorial</a>                 <!-- create an index page for each memoire  -->
   </div>
@@ -104,6 +107,7 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 
 </table>
+<!--
   </article>
       <figure>
   <img src="PatsLife/pic/Retirement/NZ/AP_Pat lunch in Milford Sound 1988-040.jpg" style="max-width: 100%"/>
@@ -111,26 +115,6 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
    <figcaption>none</figcaption>
     </figure>
 	<!*- Script is here to help with development and debugging
-<script>
-
-document.addEventListener("DOMContentLoaded", function() {
-  const gridItems = document.querySelectorAll(".grid-item");
-  let count = 1;
-
-  gridItems.forEach((item, index) => {
-    if ((index + 1) % 2 === 0) { // Check if the index is even
-      item.textContent = item.textContent + `--====--====--====-Track: ${count}`;
-      count++;
-    }
-  });
-});
-</script> 
-*->
-<script>
- var figcaptions = document.getElementsByTagName('figcaption');
-for (var i = 0; i < figcaptions.length; i++) {
-    figcaptions[i].innerHTML = "Fig " + (i+1) + ". " + figcaptions[i].innerHTML;
-}
- </script>
+-->
 </body>
 </html> 
