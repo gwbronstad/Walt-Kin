@@ -1,9 +1,16 @@
-_Children of Jeff Augustus and Clara  Bird.txt
-_HTML File List Wltn.txt
-_HTML File List_11-22.txt
-_HTML File List_11-23.txt
-_WEWaltonBirthFamily.odt
-_WTWaltonBirthFamily.odt
+0P-BetteBPics.html
+0P-BobHPics.html
+0P-ClydeBPics.html
+0P-GulbrandBPics.html
+0P-HomerBPics.html
+0P-LauraBPics.html
+0P-LouiseBPics.html
+0P-PatBPics.html
+0P-MaggieBPics.html
+0P-MarieRPics.html
+
+
+
 Bird_Patricia_M_Bronstad.html
 Bronstad_Bette_L.html
 Bronstad_Clyde_P.html
@@ -16,6 +23,7 @@ Bronstad_Marguerite_C.html
 Bronstad_Marie_P_Rohne.html
 Bronstad_Otis_ J.html
 Holbrook_Winnon_G(Bob).html
+Try-flex.html
 Walton_Annie_Joy_Walton.html
 Walton_Aubrey_Gilkes.html
 Walton_Ethel_(Embrey).html
@@ -24,3 +32,9 @@ Walton_Ina_Jo_Mapp.html
 Walton_Louise_M_Bronstad.html
 Walton_William_E.html
 Walton_William_T.html
+z_Children of Jeff Augustus and Clara  Bird.txt
+z_HTML_File_List_11-26.txt
+z_Read Next001.txt
+z_Read Next002.txt
+z_WEWaltonBirthFamily.odt
+z_WTWaltonBirthFamily.odt
