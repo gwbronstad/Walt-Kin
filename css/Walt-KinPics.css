@@ -160,3 +160,22 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+BLOCKQUOTE { 
+  margin-left: 2em;  
+  margin-right: 2em; 
+  background-color: #F2FFF2 !important;  /* green */
+  /*font-family:'Arial'       !important; */
+  width:98%;
+  border-left:15px solid #F2FFF2;
+  margin:12px;
+  padding:1px 6px 1px 38px;
+  font-style: italic; 
+}
+
+blockquote.gwb {
+  background:url('../pic/walt2008.png') top left no-repeat !important;
+  background-color: #E2F2FF !important;
+  border: 1px dotted green;
+  border-radius:10px;
+  font-family:'Arial' 
+}
