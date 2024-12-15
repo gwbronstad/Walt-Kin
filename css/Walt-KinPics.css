@@ -173,9 +173,16 @@ BLOCKQUOTE {
 }
 
 blockquote.gwb {
-  background:url('../pic/walt2008.png') top left no-repeat !important;
+  background:url('../pic/WaltIco.png') top left no-repeat !important;
   background-color: #E2F2FF !important;
-  border: 1px dotted green;
+  border: 2px dotted green;
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.blb {
+  background:url('../pic/BetteIco.png') top left no-repeat !important;
+  background-color: rgba(254, 226, 240, 1.0) !important; /*   #E2F2FF rgba(254, 226, 240, 1.0); /* Bg Color p red */   */
+  border: 2px dotted red;
   border-radius:10px;
   font-family:'Arial' 
 }
