@@ -186,7 +186,73 @@ blockquote.blb {
   border-radius:10px;
   font-family:'Arial' 
 }
-/*  ADDED FOR "READ MORE" BUTTON VARIANT 3A */
+/* added to alternate color     */
+.grid-item {
+        border: 3px solid #000;
+        padding: 10px;
+        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+	  <style>
+/* added to alternate color     */
+.grid-item {
+        border: 3px solid #000;
+        padding: 10px;
+        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+	.grid-item:nth-child(10n) { 
+        background-color: rgba(248, 224, 293, 0.8);	/* x 1.2 */	
+        border-left-style: dashed;
+		border-left-width: 4px;
+    }
+    .grid-item:nth-child(10n+1) {   /* pastel red */
+        background-color: rgba(254, 226, 240, 1.0); /* Bg Color p red */
+		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
+    }
+	.grid-item:nth-child(10n+2) { 
+        background-color: rgba(305, 271, 288, 1.0);	/* x 1.2 */
+        border-left-style: dashed;
+		border-left-width: 4px;
+    }
+    .grid-item:nth-child(10n+3) {   /* 6n+6 -> 6n+8 */
+        background-color: rgba(241, 244, 187, 0.8); /* rgb(250,255,199); /* Bg Color p yellow */
+		color: #0E0BA8;  /*rgb(014,011,168); 2024-10-13 */     /*rgb(90,100,100); */
+    }
+	.grid-item:nth-child(10n+4) {
+        background-color: rgba(289, 293, 224, 0.8);	/* x 1.2 */ 	
+        border-left-style: dashed;
+		border-left-width: 4px;
+    }
+	.grid-item:nth-child(10n+5) {   /* 6n+4  ->  6n+5 */
+        background-color: rgba(187, 244, 193, 0.8);  /*rgb(204,255,204);/*#c1e7e3;  Bg Color p green */
+		color: #2700A8;
+    }
+	.grid-item:nth-child(10n+6) {
+        background-color: rgba(224, 293, 232, 0.8);	/* x 1.2 */	
+        border-left-style: dashed;
+		border-left-width: 4px;
+    }
+    .grid-item:nth-child(10n+7) {
+        background-color: rgba(187, 242, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p blue */
+		color: rgb(085,025,025);
+    }
+	.grid-item:nth-child(10n+8) { 
+        background-color: rgba(224, 290, 293, 0.8);	 /* x 1.2 */	
+        border-left-style: dashed;
+		border-left-width: 4px;
+    }
+    .grid-item:nth-child(10n+9) {
+        background-color: rgba(207, 187, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p indigo */
+		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
+    }
+	
+/* added to alternate color     */
+/*  ADDED FOR "READ MORE" BUTTON VARIANT 3A *+/
 .mybox1 {
     display: none;
 }
