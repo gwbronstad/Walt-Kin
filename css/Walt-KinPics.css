@@ -186,12 +186,12 @@ blockquote.blb {
   border-radius:10px;
   font-family:'Arial' 
 }
-/* added to alternate color     */
+/* added to alternate color     *^/
 .grid-item {
         border: 3px solid #000;
         padding: 10px;
         border-radius: 5px;
-  /*background-color: #ffd8a8;  */
+  /*background-color: #ffd8a8;  *^/
   padding: 1em;
   color: rgb(048,048,048);
     }
@@ -215,7 +215,7 @@ blockquote.blb {
 		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
     }
 	.grid-item:nth-child(10n+2) { 
-        background-color: rgba(305, 271, 288, 1.0);	/* x 1.2 */
+        background-color: rgba(335, 271, 288, 1.0);	/* x 1.2 */ /*305r -> 335r   */
         border-left-style: dashed;
 		border-left-width: 4px;
     }
