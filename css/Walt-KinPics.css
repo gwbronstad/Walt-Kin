@@ -173,14 +173,14 @@ BLOCKQUOTE {
 }
 
 blockquote.blb {
-  background:url('../pic/BetteIco.png') top left no-repeat !important;
+  background:url('../pic/0Ico_BetteIco.png') top left no-repeat !important;
   background-color: rgba(254, 226, 240, 0.8) !important; /*   #E2F2FF rgba(254, 226, 240, 1.0); /* Bg Color p red */   
   border: 2px dotted red;
   border-radius:10px;
   font-family:'Arial' 
 }
 blockquote.gwb {
-  background:url('../pic/WaltIco.png') top left no-repeat !important;
+  background:url('../pic/0Ico_WaltIco.png') top left no-repeat !important;
   background-color: rgba(224, 290, 293, 0.8) !important;
   border: 2px dotted green;
   border-radius:10px;
@@ -193,7 +193,13 @@ blockquote.rh {
   border-radius:10px;
   font-family:'Arial' 
 }
-
+blockquote.wiki {
+  background-image: linear-gradient(Azure, Beige, Bisque);	 
+  /* background-color: white !important; */
+  border: 2px dotted black;
+  border-radius:10px;
+  font-family:'Arial' 
+}
 /* added to alternate color     *^/
 .grid-item {
         border: 3px solid #000;
