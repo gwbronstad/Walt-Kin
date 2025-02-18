@@ -187,19 +187,41 @@ blockquote.gwb {
   font-family:'Arial' 
 }
 blockquote.rjh {
-  background:url('../pic/RJH/0Ico_RexHolbrook.jpg') top left no-repeat !important;
+  background:url('../pic/WGH/0Ico_RexHolbrook.jpg') top left no-repeat !important;
   background-color: rgba(241, 244, 187, 0.8) !important;
   border: 2px dotted blue;
   border-radius:10px;
   font-family:'Arial' 
 }
+
+blockquote.mwh {
+  background:url('../pic/WGH/20240601MarkHolbrook.jpg') top left no-repeat !important;
+  background-color: rgba(204, 255, 255, 0.8) !important;
+  border: 2px dotted blue;
+  border-radius:10px;
+  font-family:'Arial' 
+}
+
+/*
+blockquote.mwh {
+     background-image: linear-gradient(#A0FE65, #FA016D);	 */
+  /* background-color: white !important;
+    background:url('../pic/WGH/20240601MarkHolbrook.jpg') top left no-repeat !important;
+	background-color: linear-gradient(#A0FE65, #FA016D) !important; 
+	border: 2px dotted black;
+  border-radius:10px;
+  font-family:'Arial' 
+} */
+
 blockquote.wiki {
-  background-image: linear-gradient(Azure, Beige, Bisque);	 
+  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque 
   /* background-color: white !important; */
   border: 2px dotted black;
   border-radius:10px;
   font-family:'Arial' 
 }
+
+
 /* added to alternate color     *^/
 .grid-item {
         border: 3px solid #000;

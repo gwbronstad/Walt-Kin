@@ -42,3 +42,5 @@ z_Read Next001.txt
 z_Read Next002.txt
 z_WEWaltonBirthFamily.odt
 z_WTWaltonBirthFamily.odt
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients
