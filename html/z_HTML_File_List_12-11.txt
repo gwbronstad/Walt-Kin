@@ -44,3 +44,4 @@ z_WEWaltonBirthFamily.odt
 z_WTWaltonBirthFamily.odt
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients
+file:///C:/Users/gwbro/iCloudDrive/iBosqueTX-NORS/1918%20notes.html

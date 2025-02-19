@@ -173,21 +173,21 @@ BLOCKQUOTE {
 }
 
 blockquote.blb {
-  background:url('../pic/BLB/0Ico_Bette.png') top left no-repeat !important;
+  background:url('../pic/Micro/0Ico_Bette.png') top left no-repeat !important;
   background-color: rgba(254, 226, 240, 0.8) !important; /*   #E2F2FF rgba(254, 226, 240, 1.0); /* Bg Color p red */   
   border: 2px dotted red;
   border-radius:10px;
   font-family:'Arial' 
 }
 blockquote.gwb {
-  background:url('../pic/GWB/0Ico_Walt.png') top left no-repeat !important;
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgba(224, 290, 293, 0.8) !important;
   border: 2px dotted green;
   border-radius:10px;
   font-family:'Arial' 
 }
 blockquote.rjh {
-  background:url('../pic/WGH/0Ico_RexHolbrook.jpg') top left no-repeat !important;
+  background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
   background-color: rgba(241, 244, 187, 0.8) !important;
   border: 2px dotted blue;
   border-radius:10px;
@@ -195,7 +195,7 @@ blockquote.rjh {
 }
 
 blockquote.mwh {
-  background:url('../pic/WGH/20240601MarkHolbrook.jpg') top left no-repeat !important;
+  background:url('../pic/Micro/0Ico_MarkHolbrook.jpg') top left no-repeat !important;
   background-color: rgba(204, 255, 255, 0.8) !important;
   border: 2px dotted blue;
   border-radius:10px;
