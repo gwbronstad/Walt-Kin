@@ -179,32 +179,41 @@ blockquote.blb {
   border-radius:10px;
   font-family:'Arial' 
 }
+
+
+
 blockquote.gwb {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
-  background-color: rgba(224, 290, 293, 0.8) !important;
-  border: 2px dotted green;
+  background-color: rgba(204, 255, 255, 0.8) !important;
+  border: 2px dotted rgb(0, 51, 204);
   border-radius:10px;
   font-family:'Arial' 
 }
+
+
+
 blockquote.pww {
-  background:url('../pic/Micro/0Ic0_ Embrey Walton.jpg') top left no-repeat !important;
-  background-color: rgba(241, 244, 187, 0.8) !important;
-  border: 2px dotted blue;
+  background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
+  background-color: rgb(255, 230, 204) !important;
+  border: 3px dotted rgb(0, 153, 0);
   border-radius:10px;
   font-family:'Arial' 
 }
+
+
+
 blockquote.rjh {
   background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
-  background-color: rgba(241, 244, 187, 0.8) !important;
-  border: 2px dotted blue;
+  background-color: rgb(255, 255, 153) !important;
+  border: 4px dotted rgb(0, 153, 51);
   border-radius:10px;
   font-family:'Arial' 
 }
 
 blockquote.mwh {
   background:url('../pic/Micro/0Ico_MarkHolbrook.jpg') top left no-repeat !important;
-  background-color: rgba(204, 255, 255, 0.8) !important;
-  border: 2px dotted blue;
+  background-color: rgb(204, 255, 255) !important;
+  border: 3px dotted rgb(204, 0, 0);
   border-radius:10px;
   font-family:'Arial' 
 }
