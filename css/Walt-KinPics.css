@@ -180,8 +180,6 @@ blockquote.blb {
   font-family:'Arial' 
 }
 
-
-
 blockquote.gwb {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgba(204, 255, 255, 0.8) !important;
@@ -190,8 +188,6 @@ blockquote.gwb {
   font-family:'Arial' 
 }
 
-
-
 blockquote.pww {
   background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
   background-color: rgb(255, 230, 204) !important;
@@ -199,9 +195,6 @@ blockquote.pww {
   border-radius:10px;
   font-family:'Arial' 
 }
-
-
-
 blockquote.rjh {
   background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
   background-color: rgb(255, 255, 153) !important;
@@ -217,16 +210,67 @@ blockquote.mwh {
   border-radius:10px;
   font-family:'Arial' 
 }
-
-/*
-blockquote.mwh {
-     background-image: linear-gradient(#A0FE65, #FA016D);	 */
-  /* background-color: white !important;
-    background:url('../pic/WGH/20240601MarkHolbrook.jpg') top left no-repeat !important;
-	background-color: linear-gradient(#A0FE65, #FA016D) !important; 
-	border: 2px dotted black;
+blockquote.gwb1 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(204, 204, 255) !important;
+  border: 2px dotted rgb(204, 153, 0);
   border-radius:10px;
   font-family:'Arial' 
+}
+
+blockquote.gwb1 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(204, 204, 255) !important;
+  border: 3px dotted rgb(204, 153, 0);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.gwb2 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(255, 204, 255) !important;
+  border: 3px dotted rgb(0, 153, 51);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.gwb3 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(255, 204, 204) !important;
+  border: 3px dotted rgb(0, 102, 153);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.gwb4 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(255, 255, 204) !important;
+  border: 3px dotted rgb(51, 51, 255);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.gwb5 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(204, 255, 204) !important;
+  border: 3px dotted rgb(204, 0, 204);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+blockquote.gwb6 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: rgb(204, 255, 255) !important;
+  border: 3px dotted rgb(204, 0, 0);
+  border-radius:10px;
+  font-family:'Arial' 
+}
+/*
+SEVEN COLOR SETS
+      BACKGROUND          INK COLOR
+       PASTEL            SEMI SAT COMP
+ 1  rgb(204, 204, 255)   rgb(204, 153, 0)
+ 2  rgb(255, 204, 255)   rgb(0, 153, 51)   V
+ 3  rgb(255, 204, 204)   rgb(0, 102, 153)  v
+ 4  rgb(255, 255, 204)   rgb(51, 51, 255)  v
+ 5  rgb(204, 255, 204)   rgb(204, 0, 204)  V
+ 6  rgb(204, 255, 255)   rgb(204, 0, 0)    V
+ 7  rgb(255, 255, 255)   rgb(0, 0, 0) 
 } */
 
 blockquote.wiki {

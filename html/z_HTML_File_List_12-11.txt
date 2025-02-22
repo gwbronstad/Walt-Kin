@@ -45,3 +45,17 @@ z_WTWaltonBirthFamily.odt
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients
 file:///C:/Users/gwbro/iCloudDrive/iBosqueTX-NORS/1918%20notes.html
+
+Color picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+SEVEN COLOR SETS
+      BACKGROUND          INK COLOR
+       PASTEL            SEMI SAT COMP
+ 1  rgb(204, 204, 255)   rgb(204, 153, 0)
+ 2  rgb(255, 204, 255)   rgb(0, 153, 51)
+ 3  rgb(255, 204, 204)   rgb(0, 102, 153)
+ 4  rgb(255, 255, 204)   rgb(51, 51, 255)
+ 5  rgb(204, 255, 204)   rgb(204, 0, 204)
+ 6  rgb(204, 255, 255)   rgb(204, 0, 0)
+ 7  rgb(255, 255, 255)   rgb(0, 0, 0)
