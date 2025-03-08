@@ -3,26 +3,61 @@
 
 .wkwrap {
   display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr;  /* 3fr 1fr;   2024-10-22*/
   grid-auto-rows: minmax(100px, auto);
-  grid-template-columns: 1fr;
+   grid-template-columns: 1fr;
+
   @media all and (min-width: 400px){
     grid-template-columns: 1fr 1fr;
-  }
 
-  
+  }
   @media all and (min-width: 1000px){
     grid-template-columns: 9fr 10fr 9fr 10fr;  /* 3fr 1fr;   2024-10-22*/
-
-    
   }
- 
   
-  /*  added 2024-07-27   */
 	gap: 1px;
-	background-color: rgb(243, 243, 243); /*rgb(224,215,255);  2024-08-04 */
-  /*  added 2024-07-27   */
+	background-color: rgb(243, 243, 243); /*r */
     padding: 10px;
 }
+/* 2025-03-05	*/
+.wkwrap-2 {
+	display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+ /*   gap: 20px 10px;
+	background-color: rgb(230, 230, 255);
+    padding: 10px;  */
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr;
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr;  
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243);
+    padding: 10px;
+} 
+ /*  added 2025-03-04  2025-03-05	*/
+
+.grid-pic-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid blue;  /*rgb(080,066,066+);  */
+  border-bottom-width: 2px;
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;   /* top-left  top-right  bottom-right  bottom-left */
+/*        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+
+ /*  added 2025-03-04  2025-03-05	*/
+
 .box1 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -70,13 +105,13 @@ figure {
     }
 /* added to alternate color     */
 .grid-pic {
-	 display: flex;
-        align-items: center;
-        justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 4px solid black;  /*rgb(080,066,066+);  */
   border-bottom-width: 0px;
-        padding: 10px;
- border-radius: 7px 7px 0px 0px;   /* top-left  top-right  bottom-right  bottom-left */
+  padding: 10px;
+  border-radius: 7px 7px 0px 0px;   /* top-left  top-right  bottom-right  bottom-left */
 /*        border-radius: 5px;
   /*background-color: #ffd8a8;  */
   padding: 1em;
