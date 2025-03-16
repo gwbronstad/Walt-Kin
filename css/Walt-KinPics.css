@@ -402,5 +402,28 @@ blockquote.wiki {
 		border-left-width: 4px;		
 		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
     }
-*/	
+
 /* added to alternate color     */
+/* Examin Charley Jermstad polarity*/
+.grn-yel-red {
+  background: linear-gradient(to right, hsl(120, 100%, 85%), hsl(60, 100%, 85%), hsl(0, 100%, 85%) );
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+
+.red-yel-grn {
+  background: linear-gradient(to right, hsl(0, 100%, 85%),  hsl(60, 100%, 85%), hsl(120, 100%, 85%) );
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+*/	
