@@ -8,10 +8,13 @@
 0P-HomerBPics.html
 0P-InaJMPics.html
 0P-LauraBPics.html
+0P-LorineHPics.html
 0P-LouiseBPics.html
 0P-MaggieBPics.html
 0P-MarieRPics.html
+0P-OtisBPics.html
 0P-PatBPics.html
+0P-WaltBPics.html
 0P-WilliamEWBPics.html
 0P-WilliamTWBPics.html
 Bird_Patricia_M_Bronstad.html
