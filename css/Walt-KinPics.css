@@ -223,105 +223,124 @@ caption {
   padding: 10px;
 }
 BLOCKQUOTE { 
-  margin-left: 2em;  
-  margin-right: 2em; 
+/*  margin-left: 1em;  
+  margin-right: 1em; */
   background-color: #F2FFF2 !important;  /* green */
   /*font-family:'Arial'       !important; */
   width:98%;
-  border-left:15px solid #F2FFF2;
-  margin:12px;
-  padding:1px 6px 1px 38px;
+  border-left:4px solid #F2FFF2;
+  margin:3px;
   font-style: italic; 
 }
-
+/* Bette Louise Bronstad  */
 blockquote.blb {
   background:url('../pic/Micro/0Ico_Bette.png') top left no-repeat !important;
   background-color: hsl(7, 100%, 95%) !important; /*   #E2F2FF rgba(254, 226, 240, 1.0); /* Bg Color p red */   
   border: 2px dotted hsl(7, 100%, 50%);
   border-radius:10px;
+   padding:1px 6px 1px 38px;
   font-family:'Arial' 
 }
-
+/* Chris Ludvig Rohne  */
+blockquote.clr {
+  background:url('../pic/Micro/0Ico_clr.jpg') top left no-repeat !important;
+  background-color: rgb(204, 255, 255) !important;
+  border: 3px dotted rgb(204, 0, 0);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+  font-family:'Arial' 
+}
+/* Gilbert Walton Bronstad  */
 blockquote.gwb {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: hsl(208, 100%, 95%) !important;
   border: 3px dotted hsl(208, 100%, 50%);
   border-radius:10px;
+    padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-
+/* Paul Woody Walton  */
 blockquote.pww {
   background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
   background-color: rgb(255, 230, 204) !important;
   border: 3px dotted rgb(0, 153, 0);
   border-radius:10px;
+    padding:1px 6px 1px 38px;
   font-family:'Arial' 
 }
+/* Rex James Holbrook */
 blockquote.rjh {
   background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
   background-color: rgb(255, 255, 153) !important;
   border: 4px dotted rgb(0, 153, 51);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-
+/*Mark William Holbrook */
 blockquote.mwh {
   background:url('../pic/Micro/0Ico_MarkHolbrook.jpg') top left no-repeat !important;
   background-color: rgb(204, 255, 255) !important;
   border: 3px dotted rgb(204, 0, 0);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-blockquote.gwb1 {
-  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
-  background-color: rgb(204, 204, 255) !important;
-  border: 2px dotted rgb(204, 153, 0);
+/*W. T. Tergerson */
+blockquote.wtt{
+  background:url('../pic/Micro/0Ico_WTT.jpg') top left no-repeat !important;
+  background-color: hsl(120, 100%, 97%) !important;
+  border: 3px dotted hsl(60, 100%,  50%);
   border-radius:10px;
+    padding:1px 6px 1px 28px;
   font-family:'Arial' 
 }
-
+/*  unassigned */
 blockquote.gwb1 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgb(204, 204, 255) !important;
   border: 3px dotted rgb(204, 153, 0);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/*  unassigned */
 blockquote.gwb2 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgb(255, 204, 255) !important;
   border: 3px dotted rgb(0, 153, 51);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/*  unassigned */
 blockquote.gwb3 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgb(255, 204, 204) !important;
   border: 3px dotted rgb(0, 102, 153);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/*  unassigned */
 blockquote.gwb4 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgb(255, 255, 204) !important;
   border: 3px dotted rgb(51, 51, 255);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/*  unassigned */
 blockquote.gwb5 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: rgb(204, 255, 204) !important;
   border: 3px dotted rgb(204, 0, 204);
   border-radius:10px;
+      padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-blockquote.gwb6 {
-  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
-  background-color: rgb(204, 255, 255) !important;
-  border: 3px dotted rgb(204, 0, 0);
-  border-radius:10px;
-  font-family:'Arial' 
-}
+
 /*
 SEVEN COLOR SETS
       BACKGROUND          INK COLOR
@@ -425,5 +444,27 @@ blockquote.wiki {
   text-align: left;
   border: 2px solid black; /*rgb(085,125,125);  */
   border-radius: 5px;
+}
+
+/* Red border */
+hr.red1 {
+  border-top: 1px solid red;
+}
+
+/* Dashed red border */
+hr.red1dash {
+  border-top: 1px dashed red;
+}
+
+/* Large rounded green border */
+hr.green3r {
+  border: 6px solid green;
+  border-radius: 3px;
+}
+
+/* Large rounded red border */
+hr.red3r {
+  border: 6px solid red;
+  border-radius: 3px;
 }
 */	

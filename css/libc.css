@@ -22,9 +22,9 @@ LI { display: list-item; }
 
 H1, H2, H3, H4 { margin-top: 1em; margin-bottom: 1em; }
 H5, H6 { margin-top: 1em; }
-H1 { text-align: center; }
+H1, H3 { text-align: center; }
 H1, H2, H4, H6 { font-weight: bold; }
-H3, H5 { font-style: italic; }
+ H5 { font-style: italic; }
 
 H1 { font-size: 18pt; }
 H2 { font-size: 16pt; }
