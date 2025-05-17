@@ -196,7 +196,7 @@ table {
 
 td, th {
   border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 th {
@@ -250,7 +250,7 @@ blockquote.clr {
       padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-/* Gilbert Walton Bronstad  */
+/* Gilbert Walton Bronstad  (side space */
 blockquote.gwb {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
   background-color: hsl(208, 100%, 95%) !important;
@@ -259,6 +259,16 @@ blockquote.gwb {
     padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/* Gilbert Walton Bronstad - top space */
+blockquote.gwbt {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: hsl(208, 100%, 95%) !important;
+  border: 3px dotted hsl(208, 100%, 50%);
+  border-radius:10px;
+    padding:40px 6px 1px 2px;
+  font-family:'Arial' 
+}
+
 /* Paul Woody Walton  */
 blockquote.pww {
   background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
@@ -365,7 +375,7 @@ blockquote.wiki {
 
 .grid-item {
         border: 3px solid #000;
-        padding: 10px;
+        padding: 6px;
         border-radius: 5px;
   /*background-color: #ffd8a8;  */
   padding: 1em;
