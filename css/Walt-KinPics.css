@@ -462,8 +462,8 @@ hr.red1 {
 }
 
 /* Dashed red border */
-hr.red1dash {
-  border-top: 1px dashed red;
+hr.red2dash {
+  border-top: 2px dashed red;
 }
 
 /* Large rounded green border */
@@ -478,3 +478,14 @@ hr.red3r {
   border-radius: 3px;
 }
 */	
+.scaling-svg-container {
+ position: relative; 
+ height: 0; 
+ width: 100%;   /* 100% too big  */
+ padding: 0;
+ padding-bottom: 100%; 
+ transform: scale(0.5) translate(-100%, -100%);
+ /* override this inline for aspect ratio other than square */
+}
+
+
