@@ -250,6 +250,15 @@ blockquote.clr {
       padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
+/*  Florence Ann Walton */
+blockquote.faw {
+  background:url('../pic/Micro/0Ico_FLorenceAnn.jpg') top left no-repeat !important;
+  background-color: rgb(255, 255, 204) !important;
+  border: 5px dotted rgb(51, 51, 255);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+  font-family:'Arial' 
+}
 /* Gilbert Walton Bronstad  (side space */
 blockquote.gwb {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
@@ -332,15 +341,7 @@ blockquote.gwb3 {
       padding:1px 6px 1px 34px;
   font-family:'Arial' 
 }
-/*  unassigned */
-blockquote.gwb4 {
-  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
-  background-color: rgb(255, 255, 204) !important;
-  border: 3px dotted rgb(51, 51, 255);
-  border-radius:10px;
-      padding:1px 6px 1px 34px;
-  font-family:'Arial' 
-}
+
 /*  unassigned */
 blockquote.gwb5 {
   background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
@@ -476,6 +477,13 @@ hr.green3r {
 hr.red3r {
   border: 6px solid red;
   border-radius: 3px;
+}
+
+sup.footnote {
+ /*   vertical-align: super;
+    font-size: larger; */
+	color: hsla(251, 79%, 50%, 0.6);
+	background-color: hsla(290, 64%, 80%, 0.4);
 }
 */	
 .scaling-svg-container {
