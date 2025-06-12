@@ -42,3 +42,6 @@ tfoot th {
 tfoot td {
   font-weight: bold; 
 }
+.lf {
+  text-align: left;
+}
