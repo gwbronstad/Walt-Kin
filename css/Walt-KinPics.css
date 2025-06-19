@@ -364,11 +364,11 @@ blockquote.gwb3 {
   font-family:'Arial' 
 }
 
-/*  unassigned */
-blockquote.gwb5 {
-  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+/*  unassigned  "../pic/Pinky/Louise-pinky.jpg"*/
+blockquote.lmb {
+  background:url('../pic/Pinky/Louise-pinky.jpg') top left no-repeat !important;
   background-color: rgb(204, 255, 204) !important;
-  border: 3px dotted rgb(204, 0, 204);
+  border: 4px dotted rgb(204, 0, 204);
   border-radius:10px;
       padding:1px 6px 1px 34px;
   font-family:'Arial' 
@@ -517,5 +517,3 @@ sup.footnote {
  transform: scale(0.5) translate(-100%, -100%);
  /* override this inline for aspect ratio other than square */
 }
-
-
