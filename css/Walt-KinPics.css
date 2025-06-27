@@ -500,6 +500,20 @@ hr.red3r {
   border: 6px solid red;
   border-radius: 3px;
 }
+/* Dotted border */
+hr.wide70 {
+  border-top: 1px solid #bbb;
+  width: 70%;
+}
+hr.yr {
+border: 1px solid #888;
+width: 60%;	
+-moz-transform: rotate(0.7deg);
+-webkit-transform: rotate(0.7deg);
+-o-transform: rotate(0.7deg);
+-ms-transform: rotate(0.7deg);
+transform: rotate(0.7deg);
+} 
 
 sup.footnote {
  /*   vertical-align: super;
