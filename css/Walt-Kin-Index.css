@@ -1,0 +1,210 @@
+@charset "utf-8";  /*"US-ASCII";*//* added to alternate color     */
+/* Walt-Kin-Index.css  */
+/* <div class="wkwrap-8-3">  */
+/* <div class="grid-item">  */
+.caption {
+  background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+.wkwrap {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr;  /* 3fr 1fr;   2024-10-22*/
+  grid-auto-rows: minmax(100px, auto);
+   grid-template-columns: 1fr;
+
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr 1fr;
+
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 9fr 10fr 9fr 10fr;  /* 3fr 1fr;   2024-10-22*/
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243); /*r */
+    padding: 10px;
+}
+/* 2025-03-05	*/
+.wkwrap-8-3 {
+	display: grid;
+    grid-template-columns: 8fr 3fr;  
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+ /*   gap: 20px 10px;
+	background-color: rgb(230, 230, 255);
+    padding: 10px;  */
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr;
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr;  
+  }
+	gap: 1px;
+	background-color: rgb(243, 243, 243);
+    padding: 10px;
+} 
+
+
+.grid-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;  /*rgb(080,066,066+);  */
+  border-bottom-width: 0px;
+  padding: 3px;
+  border-radius: 7px 7px 0px 0px;   /* top-left  top-right  bottom-right  bottom-left */
+/*        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+    .grid-pic:nth-child(5n+1) {   /* pastel red */
+        background-color: rgba(254, 226, 240, 1.0); /* Bg Color p red */
+		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
+    }
+    .grid-pic:nth-child(5n+2) {   /* 6n+6 -> 6n+8 */
+        background-color: rgba(241, 244, 187, 0.8); /* rgb(250,255,199); /* Bg Color p yellow */
+		color: #0E0BA8;  /*rgb(014,011,168); 2024-10-13 */     /*rgb(90,100,100); */
+    }
+	.grid-pic:nth-child(5n+3) {   /* 6n+4  ->  6n+5 */
+        background-color: rgba(187, 244, 193, 0.8);  /*rgb(204,255,204);/*#c1e7e3;  Bg Color p green */
+		color: #2700A8;
+    }
+    .grid-pic:nth-child(5n+4) {
+        background-color: rgba(187, 242, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p blue */
+		color: rgb(085,025,025);
+    }
+    .grid-pic:nth-child(5n+5) {
+        background-color: rgba(207, 187, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p indigo */
+		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
+    }
+	
+	.grid-item {
+        border: 1px solid #000;
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  /*padding: 1em; */
+  color: rgb(048,048,048);
+    }
+	/* background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%); */
+	/* {  background: linear-gradient(90deg in hsl shorter hue, red, blue);  */
+	/*Rotate among 10 colors (360 /10 = 36 degrees apart   */
+	.grid-item:nth-child(10n+3) {     /* pastel red */
+        background-image: linear-gradient(to right, hsl(18, 100%,  88%), hsl(54, 100%,  88%)) ; 
+    }
+    .grid-item:nth-child(10n+4) { 
+        background-image: linear-gradient(to right, hsl(54, 100%,  88%),  hsl(90, 100%,  88%));
+    }
+	.grid-item:nth-child(10n+5) {  
+        background-image: linear-gradient(to right, hsl(90, 100%,  88%),  hsl(126, 100%,  88%));
+    }
+    .grid-item:nth-child(10n+6) { 
+        background-image: linear-gradient(to right, hsl(126, 100%,  88%), hsl(162, 100%,  88%));
+    }
+	.grid-item:nth-child(10n+7) { 
+        background-image: linear-gradient(to right, hsl(162, 100%,  88%), hsl(198, 100%,  88%)); 		
+    }
+	.grid-item:nth-child(10n+8) {
+        background-image: linear-gradient(to right, hsl(198, 100%,  88%), hsl(234, 100%,  88%));
+    }
+	.grid-item:nth-child(10n+9) { 
+        background-image: linear-gradient(to right, hsl(234, 100%,  88%), hsl(270, 100%,  88%));
+    }
+    .grid-item:nth-child(10n+0) {    
+        background-image: linear-gradient(to right, hsl(270, 100%,  88%), hsl(306, 100%,  88%));
+    }
+	.grid-item:nth-child(10n+1) {    
+        background-image: linear-gradient(to right, hsl(306, 100%,  88%), hsl(342, 100%,  88%));
+	}
+    .grid-item:nth-child(10n+2) {     
+        background-image: linear-gradient(to right, hsl(342, 100%,  88%), hsl(18, 100%,  88%)); 
+	}
+		
+
+/* added to alternate color     */
+hr.red1 {
+  border-top: 1px solid red;
+}
+
+/* Dashed red border */
+hr.red2dash {
+  border-top: 2px dashed red;
+}
+
+/* Large rounded green border */
+hr.green3r {
+  border: 6px solid green;
+  border-radius: 3px;
+}
+
+/* Large rounded red border */
+hr.red3r {
+  border: 6px solid red;
+  border-radius: 3px;
+}
+/* Dotted border */
+hr.wide70 {
+  border-top: 1px solid #bbb;
+  width: 70%;
+}
+hr.yr {
+border: 1px solid #888;
+width: 60%;	
+-moz-transform: rotate(0.7deg);
+-webkit-transform: rotate(0.7deg);
+-o-transform: rotate(0.7deg);
+-ms-transform: rotate(0.7deg);
+transform: rotate(0.7deg);
+} 
+
+sup.footnote {
+ /*   vertical-align: super;
+    font-size: larger; */
+	color: hsla(251, 79%, 50%, 0.6);
+	background-color: hsla(290, 64%, 80%, 0.4);
+}
+img.sp {
+   padding-inline: 12px; /* adds 12 pixels of space around the image. */
+}
+img.ndx {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+  margin-left: 1px;
+  border-style: solid;
+  border-width: 1px;
+   padding-inline: 1px; /* adds 1 pixels of space around the image. */
+}
+/*
+div {
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(
+    hsl(360 100% 50%),
+    hsl(315 100% 50%),
+    hsl(270 100% 50%),
+    hsl(225 100% 50%),
+    hsl(180 100% 50%),
+    hsl(135 100% 50%),
+    hsl(90 100% 50%),
+    hsl(45 100% 50%),
+    hsl(0 100% 50%)
+  );
+  clip-path: circle(closest-side);
+}  */
+/*  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);  */
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient*/
+
+

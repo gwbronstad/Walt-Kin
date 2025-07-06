@@ -60,7 +60,26 @@
 	background-color: rgb(243, 243, 243);
     padding: 10px;
 } 
+.wkwrap6 {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-auto-rows: minmax(80px, auto);
+   grid-template-columns: 1fr;
 
+  @media all and (min-width: 400px){
+    grid-template-columns: 1 fr 1fr 1fr;
+
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  /* 3fr 1fr;   2024-10-22*/
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243); /*r */
+    padding: 5px;
+}
+/* 2025-03-05	*/
  /*  added 2025-03-04  2025-03-05	*/
 
 .grid-pic-2 {
@@ -131,7 +150,7 @@ figure {
   justify-content: center;
   border: 4px solid black;  /*rgb(080,066,066+);  */
   border-bottom-width: 0px;
-  padding: 10px;
+  padding: 3px;
   border-radius: 7px 7px 0px 0px;   /* top-left  top-right  bottom-right  bottom-left */
 /*        border-radius: 5px;
   /*background-color: #ffd8a8;  */
@@ -530,4 +549,7 @@ sup.footnote {
  padding-bottom: 100%; 
  transform: scale(0.5) translate(-100%, -100%);
  /* override this inline for aspect ratio other than square */
+}
+img.sp {
+   padding-inline: 12px; /* adds 12 pixels of space around the image. */
 }
