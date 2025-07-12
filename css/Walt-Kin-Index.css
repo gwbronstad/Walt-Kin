@@ -98,6 +98,9 @@
   color: rgb(048,048,048);
     }
 		.grid-domino {
+/*  display: flex;	
+  align-items: center;
+  justify-content: center;	 */		
         border: 1px solid #000;
         padding-top: 2px;
         padding-right: 2px;
