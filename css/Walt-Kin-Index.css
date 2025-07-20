@@ -148,23 +148,23 @@
 	} */
 	
 	.grid-domino:nth-child(5n+1) {     /* pastel red */
-        background-image: linear-gradient(65deg, hsl(18, 100%,  88%), hsl(90, 100%,  88%)) ; 
+        background-image: linear-gradient(20deg, hsl(18, 100%,  88%), hsl(110, 100%,  88%)); 
     }
 
 	.grid-domino:nth-child(5n+2) {  
-        background-image: linear-gradient(65deg, hsl(90, 100%,  88%),  hsl(162, 100%,  88%));
+        background-image: linear-gradient(20deg, hsl(90, 100%,  88%), hsl(182, 100%,  88%));
     }
 
 	.grid-domino:nth-child(5n+3) { 
-        background-image: linear-gradient(65deg, hsl(162, 100%,  88%), hsl(234, 100%,  88%)); 		
+        background-image: linear-gradient(20deg, hsl(162, 100%,  88%), hsl(254, 100%,  88%)); 		
     }
 
 	.grid-domino:nth-child(5n+4) { 
-        background-image: linear-gradient(65deg, hsl(234, 100%,  88%), hsl(306, 100%,  88%));
+        background-image: linear-gradient(20deg, hsl(234, 100%,  88%), hsl(326, 100%,  88%));
     }
 
 	.grid-domino:nth-child(5n+5) {    
-        background-image: linear-gradient(65deg, hsl(306, 100%,  88%), hsl(378, 100%,  88%));
+        background-image: linear-gradient(20deg, hsl(306, 100%,  88%), hsl(018, 100%,  88%));
 	}
 	
 /* added to alternate color     */
