@@ -209,8 +209,11 @@ sup.footnote {
 	color: hsla(251, 79%, 50%, 0.6);
 	background-color: hsla(290, 64%, 80%, 0.4);
 }
+  ;
 img.sp {
    padding-inline: 12px; /* adds 12 pixels of space around the image. */
+   border: 1px solid #000;
+   Border-radius: 4px
 }
 img.ndx {
   margin-top: 1px;
@@ -218,9 +221,14 @@ img.ndx {
   margin-right: 1px;
   margin-left: 1px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
    padding-inline: 1px; /* adds 1 pixels of space around the image. */
+    border: 0px solid #000;
+    Border-radius: 4px
 }
+.trans {
+  background-color: transparent;}
+
 /*
 div {
   width: 100px;

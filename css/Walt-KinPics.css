@@ -117,7 +117,7 @@
 figure {
   align-items: center;
   justify-content: center;
-  background-color: black;  /*whitesmoke; */ /*#dFdFdF; */
+  background-color: transparent;  /*whitesmoke; */ /*#dFdFdF; */
   border: 2px #00aaaa solid;
   padding: 2px;
   margin: auto;  /*4px;  */
@@ -267,13 +267,19 @@ caption {
 BLOCKQUOTE { 
 /*  margin-left: 1em;  
   margin-right: 1em; */
-  background-color: #F2FFF2 !important;  /* green */
-  font-family: Sans-serif ;      !important; */
+  background-color: #F2FFF2;  
+  font-family: Sans-serif ;      
   width:98%;
-  border-left:4px solid #F2FFF2;
+  border:1px solid hsl(0, 100%, 0%);
   margin:3px;
   font-style: italic; 
   text-align: left;
+  border-radius:10px;
+/*  padding:2px 6px 2px 6px; */
+  padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /* 1. Bette Louise Bronstad  */
 blockquote.blb {
@@ -339,6 +345,7 @@ blockquote.jhj {
   border-radius:10px;
   padding:2px 6px 2px 34px;
   font-family: Cursive ;
+  font-size: 1.1em;
 }
 /*  8. Louise Myrtle Bronstad  "../pic/Pinky/Louise-pinky.jpg"*/
 blockquote.lmb {
@@ -395,42 +402,130 @@ blockquote.wtt{
     
 }
 
-/* don't think one can have both background url and background gradient
-blockquote.lmb {
-  background:url('../pic/Pinky/Louise-pinky.jpg') top left no-repeat !important;	
-   background-image: linear-gradient(65deg, hsl(18, 100%,  88%), hsl(198, 100%,  88%)) ;  
-  /* background-color: white !important; * /
-  border: 2px dotted black;
+/* 1. Complements Red-1  */
+blockquote.Cy1 {
+  background-color: hsl(342, 100%, 96%);  
+  border: 2px dotted hsl(180, 100%, 50%);
   border-radius:10px;
+/*  padding:1px 6px 1px 4px; */
+  padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/* 2. Complements Red-2  */
+blockquote.Cy2 {
+    background-color: hsl(18, 100%, 96%);  
+  border: 2px dotted hsl(180, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/*  3. Complements Yellow-1 */
+blockquote.Cg1 {
+  background-color: hsl(54, 100%, 96%);  
+  border: 2px dotted hsl(252, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/* 4. Complements Yellow-2 */
+blockquote.Cg2 {
+  background-color: hsl(90, 100%, 96%);  
+  border: 2px dotted hsl(252, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/*  5. Complements Green-1 */
+blockquote.Cr1 {
+  background-color: hsl(126, 100%, 96%);  
+  border: 2px dotted hsl(324, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
     
-} */
-/*
-SEVEN COLOR SETS
-      BACKGROUND          INK COLOR
-       PASTEL            SEMI SAT COMP
- 1  rgb(204, 204, 255)   rgb(204, 153, 0)
- 2  rgb(255, 204, 255)   rgb(0, 153, 51)   V
- 3  rgb(255, 204, 204)   rgb(0, 102, 153)  v
- 4  rgb(255, 255, 204)   rgb(51, 51, 255)  v
- 5  rgb(204, 255, 204)   rgb(204, 0, 204)  V
- 6  rgb(204, 255, 255)   rgb(204, 0, 0)    V
- 7  rgb(255, 255, 255)   rgb(0, 0, 0) 
-} */
+}
+/* 6.  Complements Green-2*/
+blockquote.Cr2 {
+  background-color: hsl(162, 100%, 96%);  
+  border: 2px dotted hsl(324, 100%, 50%);
+  border-radius:10px;
+/*   padding:2px 6px 2px 6px;  */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
 
-
-
+/* 7. Complements Blue-1 */
+blockquote.Cm1 {
+  background-color: hsl(198, 100%, 96%);  
+  border: 2px dotted hsl(36, 100%, 50%);
+  border-radius:10px;
+/*   padding:2px 6px 2px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/*  8. Complements Blue-2*/
+blockquote.Cm2 {
+  background-color: hsl(234, 100%, 96%);  
+  border: 3px dotted hsl(36, 100%, 50%);
+  border-radius:10px;
+/*   padding:2px 6px 2px 4px;  */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/*  9. Complements Mauve-1 */
+blockquote.Cb1 {
+  background-color: hsl(270, 100%, 96%);  
+  border: 3px dotted hsl(108, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
+/* 10. Complements Mauve-2  */
+blockquote.Cb2 {
+  background-color: hsl(306, 100%, 96%);  
+  border: 3px dotted hsl(108, 100%, 50%);
+  border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+}
 
 blockquote.wiki {
   background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque 
   /* background-color: white !important; */
   border: 2px dotted black;
   border-radius:10px;
-    
 }
 
 
 .grid-item {
         border: 3px solid #000;
+		padding-inline-start: 50px;
         padding: 6px;
         border-radius: 5px;
   /*background-color: #ffd8a8;  */
@@ -438,50 +533,50 @@ blockquote.wiki {
   color: rgb(048,048,048);
     }
 	.grid-item:nth-child(10n+1) {     /* pastel red */
-        background-color: hsl(0, 100%, 93%);
+        background-color: hsl(0, 100%, 95%);
     }
     .grid-item:nth-child(10n+2) {   /* wash red */
-        background-color: hsl(0, 100%, 95%);
+        background-color: hsl(0, 100%, 97%);
 	        border-left-style: dashed;
 		border-left-width: 4px;	
 		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
     }
 	.grid-item:nth-child(10n+3) {     /* pastel yellow */ 
-        background-color: hsl(72, 100%,  93%);
+        background-color: hsl(72, 100%,  95%);
 
     }
     .grid-item:nth-child(10n+4) {   /* wash yellow */
-        background-color: hsl(72, 100%, 95%);
+        background-color: hsl(72, 100%, 97%);
         border-left-style: dashed;
 		border-left-width: 4px;		
 		color: #0E0BA8;  /*rgb(014,011,168); 2024-10-13 */     /*rgb(90,100,100); */
     }
 	.grid-item:nth-child(10n+5) {     /* pastel green */
-        background-color: hsl(144, 100%,  93%); 		
+        background-color: hsl(144, 100%,  95%); 		
 
     }
 	.grid-item:nth-child(10n+6) {     /* wash green */ 
-        background-color: hsl(144, 100%, 95%);
+        background-color: hsl(144, 100%, 97%);
         border-left-style: dashed;
 		border-left-width: 4px;
 		color: #2700A8;
     }
 	.grid-item:nth-child(10n+7) {     /* pastel blue */
-        background-color: hsl(216, 100%,  93%);
+        background-color: hsl(216, 100%,  95%);
 
     }
     .grid-item:nth-child(10n+8) {     /* wash blue */
-        background-color: hsl(216, 100%, 95%);
+        background-color: hsl(216, 100%, 97%);
         border-left-style: dashed;
 		border-left-width: 4px;
 		color: rgb(085,025,025);
     }
 	.grid-item:nth-child(10n+9) {     /* pastel fuscia */ 
-        background-color: hsl(288, 100%,  93%);
+        background-color: hsl(288, 100%,  96%);
 
     }
     .grid-item:nth-child(10n+0) {     /* wash fuscia */ 
-        background-color: hsl(288, 100%, 95%);
+        background-color: hsl(288, 100%, 98%);
         border-left-style: dashed;
 		border-left-width: 4px;		
 		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
@@ -563,22 +658,30 @@ sup.footnote {
  transform: scale(0.5) translate(-100%, -100%);
  /* override this inline for aspect ratio other than square */
 }
-img.sp {
-   padding-inline: 12px; /* adds 12 pixels of space around the image. */
+/* img {
+   border: 1px solid #000;
+   Border-radius: 4px;
+} */
+img.mlr {
+    margin-left: 12px;
+    margin-right: 12px;
+}	
+img.nborder {
+    border--style: hidden;
 }
-
 .cursive {
-	font-family: "Lucida Handwriting", "Brush Script MT", Cursive ;
+	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive;
 }
 .monospace {
     font-family: "Courier New", "Lucida Console",  Monospace ;	
 }
 
 .sansserif {
-    font-family: Arial, Verdana, Sans-serif ;	
+    font-family: Arial, Verdana, "Sans-serif" ;	
 }
 
 .serif {
     font-family: Georgia, Garamond, Serif ;	
 }
-
+.trans {
+  background-color: transparent;}

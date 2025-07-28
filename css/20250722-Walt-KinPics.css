@@ -1,0 +1,585 @@
+@charset "utf-8";  /*"US-ASCII";*/
+
+
+.wkwrap {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr;  /* 3fr 1fr;   2024-10-22*/
+  grid-auto-rows: minmax(100px, auto);
+   grid-template-columns: 1fr;
+
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr 1fr;
+
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 9fr 10fr 9fr 10fr;  /* 3fr 1fr;   2024-10-22*/
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243); /*r */
+    padding: 10px;
+}
+/* 2025-03-05	*/
+.wkwrap-2 {
+	display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+ /*   gap: 20px 10px;
+	background-color: rgb(230, 230, 255);
+    padding: 10px;  */
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr;
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr;  
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243);
+    padding: 10px;
+} 
+
+/* 2025-06-08	*/
+.wkwrap-8-3 {
+	display: grid;
+    grid-template-columns: 8fr 3fr;  
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+ /*   gap: 20px 10px;
+	background-color: rgb(230, 230, 255);
+    padding: 10px;  */
+  @media all and (min-width: 400px){
+    grid-template-columns: 1fr;
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr;  
+  }
+	gap: 1px;
+	background-color: rgb(243, 243, 243);
+    padding: 10px;
+} 
+.wkwrap6 {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-auto-rows: minmax(80px, auto);
+   grid-template-columns: 1fr;
+
+  @media all and (min-width: 400px){
+    grid-template-columns: 1 fr 1fr 1fr;
+
+  }
+  @media all and (min-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  /* 3fr 1fr;   2024-10-22*/
+  }
+  
+	gap: 1px;
+	background-color: rgb(243, 243, 243); /*r */
+    padding: 5px;
+}
+/* 2025-03-05	*/
+ /*  added 2025-03-04  2025-03-05	*/
+
+.grid-pic-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid blue;  /*rgb(080,066,066+);  */
+  border-bottom-width: 2px;
+  padding: 10px;
+  border-radius: 7px 7px 7px 7px;   /* top-left  top-right  bottom-right  bottom-left */
+/*        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+
+ /*  added 2025-03-04  2025-03-05	*/
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/*   ****************************************************    */
+
+* {
+  box-sizing: border-box;
+}
+.box {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: whitesmoke;  /*#ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);  /*#d9480f;*/
+}
+figure {
+  align-items: center;
+  justify-content: center;
+  background-color: black;  /*whitesmoke; */ /*#dFdFdF; */
+  border: 2px #00aaaa solid;
+  padding: 2px;
+  margin: auto;  /*4px;  */
+}
+.caption {
+  background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+.grid-wktext {
+  border: 4px solid black;  /*rgb(080,066,066+);  */
+  border-top-width: 0px;
+  border-top-style: none;
+  padding: 10px;
+   border-radius: 0px 0px 7px 7px;   /* top-left  top-right  bottom-right  bottom-left */
+/* border-radius: 6px; */
+  background-color: rgb(240,210,210); /*ackground-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(0,5,5);
+    }
+/* added to alternate color     */
+.grid-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;  /*rgb(080,066,066+);  */
+  border-bottom-width: 0px;
+  padding: 3px;
+  border-radius: 7px 7px 0px 0px;   /* top-left  top-right  bottom-right  bottom-left */
+/*        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+    .grid-pic:nth-child(5n+1) {   /* pastel red */
+        background-color: rgba(254, 226, 240, 1.0); /* Bg Color p red */
+		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
+    }
+    .grid-pic:nth-child(5n+2) {   /* 6n+6 -> 6n+8 */
+        background-color: rgba(241, 244, 187, 0.8); /* rgb(250,255,199); /* Bg Color p yellow */
+		color: #0E0BA8;  /*rgb(014,011,168); 2024-10-13 */     /*rgb(90,100,100); */
+    }
+	.grid-pic:nth-child(5n+3) {   /* 6n+4  ->  6n+5 */
+        background-color: rgba(187, 244, 193, 0.8);  /*rgb(204,255,204);/*#c1e7e3;  Bg Color p green */
+		color: #2700A8;
+    }
+    .grid-pic:nth-child(5n+4) {
+        background-color: rgba(187, 242, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p blue */
+		color: rgb(085,025,025);
+    }
+    .grid-pic:nth-child(5n+5) {
+        background-color: rgba(207, 187, 244, 0.8);  /*rgb(204,204,255); /*  Bg Color p indigo */
+		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
+    }
+	
+/* Table  alternate color     
+                wash            pastel        darker        saturate        muddy 
+/* ALT Colors    95%            85%           75%            50%            20%
+
+hsl red      (0, 100%, 95%) (0, 100%, 85%) (0, 100%, 75%) hsl(0, 100%, 50%) (0, 100%, 20%)
+hsl Orange                                                hsl(32, 100%, 50%)              .
+hsl Yellow                                                hsl(60, 100%, 50%)              .
+hsl Apple Green                                           hsl(120, 100%, 77%)             .
+hsl Green                                                 hsl(120, 100%, 50%)             .
+hsl Acqua                                                 hsl(180, 100%, 50%)             .
+hsl Light Blue                                            hsl(208, 100%, 50%)             .
+hsl Blue                                                  hsl(240, 100%, 50%)             .
+hsl Fuchsia                                               hsl(300, 100%, 50%)             .
+
+https://www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* added to orient text vertical     */
+.vert {
+writing-mode: vertical-rl;
+text-orientation: sideways;   /* mixed | upright | | |   | */
+}
+/* added to orient text vertical     */
+.right {
+	text-align: right;
+}
+
+p {
+  margin: 0;
+  text-indent: 3ch;
+}
+
+/* Style the header */
+header {
+  background-color: hsl(0, 100%, 93%);
+  	/*background-color: rgb(240,210,210);  Bg Color p yellow */   /*rgb(224,215,255);   */
+  padding: 15px;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(30,30,0);          /* #FFDAB9 */
+}
+
+/* Style the footer */
+footer {
+  background-color: hsl(0, 100%, 93%);
+  /*background-color: rgb(250,200,199);  Bg Color p yellow */   /* rgb(224,215,255);   */
+  padding: 10px;
+  text-align: center;
+  color:rgb(30,30,0);          /* #FFDAB9 */
+}
+/* Table added 2024-09-06  */ 
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 8px 16px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+.rounded {
+	border: 3px solid rgb(190,190,190);
+	border-style: double;
+	border-radius: 20px;
+}
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+BLOCKQUOTE { 
+/*  margin-left: 1em;  
+  margin-right: 1em; */
+  background-color: #F2FFF2 !important;  /* green */
+  font-family: Sans-serif ;      !important; */
+  width:98%;
+  border-left:4px solid #F2FFF2;
+  margin:3px;
+  font-style: italic; 
+  text-align: left;
+}
+/* 1. Bette Louise Bronstad  */
+blockquote.blb {
+  background:url('../pic/Micro/0Ico_Bette.png') top left no-repeat !important;
+  background-color: hsl(28, 100%, 93%) !important;  
+  border: 2px dotted hsl(208, 100%, 50%);
+  border-radius:10px;
+   padding:1px 6px 1px 38px;
+
+}
+/* 2. Chris Ludvig Rohne  */
+blockquote.clr {
+  background:url('../pic/Micro/0Ico_clr.jpg') top left no-repeat !important;
+  background-color: hsl(56, 100%, 93%) !important;  
+  border: 2px dotted hsl(236, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+
+}
+/*  3. Florence Ann Walton */
+blockquote.faw {
+  background:url('../pic/Micro/0Ico_FLorenceAnn.jpg') top left no-repeat !important;
+  background-color: hsl(83, 100%, 93%) !important;  
+  border: 2px dotted hsl(263, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 4. Gilbert Walton Bronstad  (side space */
+blockquote.gwb {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: hsl(110, 100%, 93%) !important;  
+  border: 2px dotted hsl(290, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 34px;
+    
+}
+
+/*  5. unassigned */
+blockquote.gwb1 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: hsl(138, 100%, 93%) !important;  
+  border: 2px dotted hsl(318, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 6.  Ina Jo Mapp*/
+blockquote.ijm {
+  background:url('../pic/Pinky/InaJo-Pinky.jpg') top left no-repeat !important;
+  background-color: hsl(198, 100%, 93%) !important;  
+  border: 2px dotted hsl(12, 100%, 50%);
+  border-radius:10px;
+      padding:2px 6px 2px 44px;
+    
+}
+
+/* 7. Jennie (Hansen) Jermstad - top space */
+blockquote.jhj {
+  background:url('../pic/Pinky/JennieJ-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(166, 100%, 93%) !important;  
+  border: 2px dotted hsl(346, 100%, 50%);
+  border-radius:10px;
+  padding:2px 6px 2px 34px;
+  font-family: Cursive ;
+  font-size: 1.1em;
+}
+/*  8. Louise Myrtle Bronstad  "../pic/Pinky/Louise-pinky.jpg"*/
+blockquote.lmb {
+  background:url('../pic/Pinky/Louise-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(221, 100%, 93%) !important;  
+  border: 3px dotted hsl(41, 100%, 50%);
+  border-radius:10px;
+      padding:2px 6px 2px 44px;
+    
+}
+/*  9. Mark William Holbrook */
+blockquote.mwh {
+  background:url('../pic/Micro/0Ico_MarkHolbrook.jpg') top left no-repeat !important;
+  background-color: hsl(249, 100%, 93%) !important;  
+  border: 3px dotted hsl(69, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 10. Paul Woody Walton  */
+blockquote.pww {
+  background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
+  background-color: hsl(276, 100%, 93%) !important;  
+  border: 3px dotted hsl(96, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 38px;
+  
+}
+/* 11. Rex James Holbrook */
+blockquote.rjh {
+  background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
+  background-color: hsl(304, 100%, 93%) !important;  
+  border: 3px dotted hsl(124, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+  
+}
+/*  12. William Embrey Walton */
+blockquote.wew {
+  background:url('../pic/Pinky/Embrey-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(332, 100%, 93%) !important;  
+  border: 2px dotted hsl(152, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/*  13. W. T. Tergerson */
+blockquote.wtt{
+  background:url('../pic/Micro/0Ico_WTT.jpg') top left no-repeat !important;
+  background-color: hsl(360, 100%, 93%) !important;  
+  border: 3px dotted hsl(180, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 28px;
+    
+}
+
+/* don't think one can have both background url and background gradient
+blockquote.lmb {
+  background:url('../pic/Pinky/Louise-pinky.jpg') top left no-repeat !important;	
+   background-image: linear-gradient(65deg, hsl(18, 100%,  88%), hsl(198, 100%,  88%)) ;  
+  /* background-color: white !important; * /
+  border: 2px dotted black;
+  border-radius:10px;
+    
+} */
+/*
+SEVEN COLOR SETS
+      BACKGROUND          INK COLOR
+       PASTEL            SEMI SAT COMP
+ 1  rgb(204, 204, 255)   rgb(204, 153, 0)
+ 2  rgb(255, 204, 255)   rgb(0, 153, 51)   V
+ 3  rgb(255, 204, 204)   rgb(0, 102, 153)  v
+ 4  rgb(255, 255, 204)   rgb(51, 51, 255)  v
+ 5  rgb(204, 255, 204)   rgb(204, 0, 204)  V
+ 6  rgb(204, 255, 255)   rgb(204, 0, 0)    V
+ 7  rgb(255, 255, 255)   rgb(0, 0, 0) 
+} */
+
+
+
+
+blockquote.wiki {
+  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque 
+  /* background-color: white !important; */
+  border: 2px dotted black;
+  border-radius:10px;
+    
+}
+
+
+.grid-item {
+        border: 3px solid #000;
+        padding: 6px;
+        border-radius: 5px;
+  /*background-color: #ffd8a8;  */
+  padding: 1em;
+  color: rgb(048,048,048);
+    }
+	.grid-item:nth-child(10n+1) {     /* pastel red */
+        background-color: hsl(0, 100%, 95%);
+    }
+    .grid-item:nth-child(10n+2) {   /* wash red */
+        background-color: hsl(0, 100%, 97%);
+	        border-left-style: dashed;
+		border-left-width: 4px;	
+		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
+    }
+	.grid-item:nth-child(10n+3) {     /* pastel yellow */ 
+        background-color: hsl(72, 100%,  95%);
+
+    }
+    .grid-item:nth-child(10n+4) {   /* wash yellow */
+        background-color: hsl(72, 100%, 97%);
+        border-left-style: dashed;
+		border-left-width: 4px;		
+		color: #0E0BA8;  /*rgb(014,011,168); 2024-10-13 */     /*rgb(90,100,100); */
+    }
+	.grid-item:nth-child(10n+5) {     /* pastel green */
+        background-color: hsl(144, 100%,  95%); 		
+
+    }
+	.grid-item:nth-child(10n+6) {     /* wash green */ 
+        background-color: hsl(144, 100%, 97%);
+        border-left-style: dashed;
+		border-left-width: 4px;
+		color: #2700A8;
+    }
+	.grid-item:nth-child(10n+7) {     /* pastel blue */
+        background-color: hsl(216, 100%,  95%);
+
+    }
+    .grid-item:nth-child(10n+8) {     /* wash blue */
+        background-color: hsl(216, 100%, 97%);
+        border-left-style: dashed;
+		border-left-width: 4px;
+		color: rgb(085,025,025);
+    }
+	.grid-item:nth-child(10n+9) {     /* pastel fuscia */ 
+        background-color: hsl(288, 100%,  96%);
+
+    }
+    .grid-item:nth-child(10n+0) {     /* wash fuscia */ 
+        background-color: hsl(288, 100%, 98%);
+        border-left-style: dashed;
+		border-left-width: 4px;		
+		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
+    }
+
+/* added to alternate color     */
+/* Examin Charley Jermstad polarity*/
+.grn-yel-red {
+  background: linear-gradient(to right, hsl(110, 100%, 91%) 10%, hsl(60, 100%, 91%) 10% 90%, hsl(9, 100%, 91%) 90% );
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+
+.red-yel-grn {
+  background: linear-gradient(to right, hsl(9, 100%, 91%) 10%,  hsl(60, 100%, 91%) 10% 90%, hsl(111, 100%, 91%) 90% );
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  border: 2px solid black; /*rgb(085,125,125);  */
+  border-radius: 5px;
+}
+
+/* Red border */
+hr.red1 {
+  border-top: 1px solid red;
+}
+
+/* Dashed red border */
+hr.red2dash {
+  border-top: 2px dashed red;
+}
+
+/* Large rounded green border */
+hr.green3r {
+  border: 4px solid green;
+  border-radius: 3px;
+}
+
+/* Large rounded red border */
+hr.red3r {
+  border: 4px solid red;
+  border-radius: 3px;
+}
+/* Dotted border */
+hr.wide70 {
+  border-top: 1px solid #bbb;
+  width: 70%;
+}
+hr.yr {
+border: 1px solid #888;
+width: 60%;	
+-moz-transform: rotate(0.7deg);
+-webkit-transform: rotate(0.7deg);
+-o-transform: rotate(0.7deg);
+-ms-transform: rotate(0.7deg);
+transform: rotate(0.7deg);
+} 
+
+sup.footnote {
+ /*   vertical-align: super;
+    font-size: larger; */
+	color: hsla(251, 79%, 50%, 0.6);
+	background-color: hsla(290, 64%, 80%, 0.4);
+}
+*/	
+.scaling-svg-container {
+ position: relative; 
+ height: 0; 
+ width: 100%;   /* 100% too big  */
+ padding: 0;
+ padding-bottom: 100%; 
+ transform: scale(0.5) translate(-100%, -100%);
+ /* override this inline for aspect ratio other than square */
+}
+img.sp {
+   padding-inline: 12px; /* adds 12 pixels of space around the image. */
+}
+
+.cursive {
+	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive ;
+}
+.monospace {
+    font-family: "Courier New", "Lucida Console",  Monospace ;	
+}
+
+.sansserif {
+    font-family: Arial, Verdana, "Sans-serif" ;	
+}
+
+.serif {
+    font-family: Georgia, Garamond, Serif ;	
+}
+
