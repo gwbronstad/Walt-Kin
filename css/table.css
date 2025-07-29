@@ -45,3 +45,34 @@ tfoot td {
 .lf {
   text-align: left;
 }
+@media all and (max-width: 500px){
+  table.fronttable th{
+    display: none;
+  }
+  table.fronttable tr{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  table.fronttable td{
+    border: none;
+  }
+  table.fronttable tbody tr td:first-of-type::before{
+    content: 'relation: ';
+  }
+  table.fronttable > td:nth-of-type(2)::before{
+    content: 'name: ';
+  }
+  table.fronttable > td:nth-of-type(4)::before{
+    content: 'born: ';
+  }
+  table.fronttable td:nth-of-type(5)::before{
+    content: 'birth location: ';
+  }
+ table.fronttable td:nth-of-type(6)::before{
+    content: 'died: ';
+  }
+  table.fronttable td:nth-of-type(7)::before{
+    content: 'location: ';
+  }
+} 
