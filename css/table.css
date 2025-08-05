@@ -76,7 +76,9 @@ tfoot td {
     content: "DIED: ";
   }
 
-
+  table.genidtable th{
+    display: none;
+  }
   table.genidtable tr{
     display: flex;
     flex-direction: column;
@@ -104,6 +106,9 @@ tfoot td {
     content: "LOCATION: ";
   }
 
+  table.census8table th{
+    display: none;
+  }
   table.census8table tr{
     display: flex;
     flex-direction: column;
@@ -136,6 +141,10 @@ tfoot td {
   }
   table.census8table tr > td:nth-child(8n+0)::before {
     content: "RELATION: ";
+  }
+  
+    table.census7 th{
+    display: none;
   }
    table.census7 tr{
     display: flex;
