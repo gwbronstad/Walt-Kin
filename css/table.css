@@ -57,22 +57,115 @@ tfoot td {
   table.fronttable td{
     border: none;
   }
-  table.fronttable tbody tr td:first-of-type::before{
-    content: 'relation: ';
+  table.fronttable tbody tr > td:nth-child(6n+1)::before {
+    content: "RELATION: ";
   }
-  table.fronttable > td:nth-of-type(2)::before{
-    content: 'name: ';
+  table.fronttable tr > td:nth-child(6n+2)::before {
+    content: "NAME: ";
   }
-  table.fronttable > td:nth-of-type(4)::before{
-    content: 'born: ';
+  table.fronttable tr > td:nth-child(6n+3)::before {
+    content: "PICS: ";
   }
-  table.fronttable td:nth-of-type(5)::before{
-    content: 'birth location: ';
+  table.fronttable tr > td:nth-child(6n+4)::before {
+    content: "BORN: ";
   }
- table.fronttable td:nth-of-type(6)::before{
-    content: 'died: ';
+  table.fronttable tr > td:nth-child(6n+5)::before {
+    content: "PLACE: ";
   }
-  table.fronttable td:nth-of-type(7)::before{
-    content: 'location: ';
+  table.fronttable tr > td:nth-child(6n+0)::before {
+    content: "DIED: ";
   }
+
+
+  table.genidtable tr{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  table.genidtable td{
+    border: none;
+  }
+  table.genidtable tbody tr > td:nth-child(6n+1)::before {
+    content: "RELATION: ";
+  }
+  table.genidtable tr > td:nth-child(6n+2)::before {
+    content: "NAME: ";
+  }
+  table.genidtable tr > td:nth-child(6n+3)::before {
+    content: " ";
+  }
+  table.genidtable tr > td:nth-child(6n+4)::before {
+    content: "LOCATION: ";
+  }
+  table.genidtable tr > td:nth-child(6n+5)::before {
+    content: "DOD: ";
+  }
+  table.genidtable tr > td:nth-child(6n+0)::before {
+    content: "LOCATION: ";
+  }
+
+  table.census8table tr{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  table.census8table td{
+    border: none;
+  }
+  
+  table.census8table tbody tr > td:nth-child(8n+1)::before {
+    content: "NAME: ";
+  }
+  table.census8table tr > td:nth-child(8n+2)::before {
+    content: "SEX: ";
+  }
+  table.census8table tr > td:nth-child(8n+3)::before {
+    content: "AGE ";
+  }
+  table.census8table tr > td:nth-child(8n+4)::before {
+    content: "BIRTH YR: ";
+  }
+  table.census8table tr > td:nth-child(8n+5)::before {
+    content: "BIRTHPLACE: ";
+  }
+  table.census8table tr > td:nth-child(8n+6)::before {
+    content: "WED STATUS: ";
+  }
+  table.census8table tr > td:nth-child(8n+7)::before {
+    content: "RACE: ";
+  }
+  table.census8table tr > td:nth-child(8n+0)::before {
+    content: "RELATION: ";
+  }
+   table.census7 tr{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  table.census7 td{
+    border: none;
+  }
+  table.census7 tbody tr > td:nth-child(7n+1)::before {
+    content: "NAME: ";
+  }
+  table.census7 tr > td:nth-child(7n+2)::before {
+    content: "SEX: ";
+  }
+  table.census7 tr > td:nth-child(7n+3)::before {
+    content: "AGE ";
+  }
+  table.census7 tr > td:nth-child(7n+4)::before {
+    content: "BIRTH YR: ";
+  }
+  table.census7 tr > td:nth-child(7n+5)::before {
+    content: "BIRTHPLACE: ";
+  }
+  table.census7 tr > td:nth-child(7n+6)::before {
+    content: "RESIDE DATE: ";
+  }
+  table.census7 tr > td:nth-child(7n+0)::before {
+    content: "RELATION: ";
+  }
+  
+  
 } 

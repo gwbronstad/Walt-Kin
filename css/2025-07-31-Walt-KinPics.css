@@ -1,29 +1,5 @@
 @charset "utf-8";  /*"US-ASCII";*/
-body {
-  font-size: 100%;
-}
 
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-  mark {
-    padding: 0.2em;
-    border-radius: 0.2em;
-    font-weight: bold;
-	outline-style: dotted;
-	outline-width: thin;
-	background-color: hsl(0, 100%,  100%);
-    color:  hsl(0, 0%, 0%);
-}
-
-p {
-  font-size: 0.875em;
-}
 
 .wkwrap {
   display: grid;
@@ -202,6 +178,22 @@ figure {
 		color: #2E1200;   /*rgb(085,025,025); 2024-10-12 From (39, 75, 3) to ( 160, 64, 0 ) */
     }
 	
+/* Table  alternate color     
+                wash            pastel        darker        saturate        muddy 
+/* ALT Colors    95%            85%           75%            50%            20%
+
+hsl red      (0, 100%, 95%) (0, 100%, 85%) (0, 100%, 75%) hsl(0, 100%, 50%) (0, 100%, 20%)
+hsl Orange                                                hsl(32, 100%, 50%)              .
+hsl Yellow                                                hsl(60, 100%, 50%)              .
+hsl Apple Green                                           hsl(120, 100%, 77%)             .
+hsl Green                                                 hsl(120, 100%, 50%)             .
+hsl Acqua                                                 hsl(180, 100%, 50%)             .
+hsl Light Blue                                            hsl(208, 100%, 50%)             .
+hsl Blue                                                  hsl(240, 100%, 50%)             .
+hsl Fuchsia                                               hsl(300, 100%, 50%)             .
+
+https://www.w3schools.com/colors/colors_picker.asp
+*/
 
 /* added to orient text vertical     */
 .vert {
@@ -241,7 +233,7 @@ table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 td, th {
@@ -289,43 +281,193 @@ BLOCKQUOTE {
   padding-left:1em; 
   padding-right:1em;
 }
+/* 1. Bette Louise Bronstad  */
+blockquote.blb {
+  background:url('../pic/Micro/0Ico_Bette.png') top left no-repeat !important;
+  background-color: hsl(28, 100%, 93%) !important;  
+  border: 2px dotted hsl(208, 100%, 50%);
+  border-radius:10px;
+   padding:1px 6px 1px 38px;
 
+}
+/* 2. Chris Ludvig Rohne  */
+blockquote.clr {
+  background:url('../pic/Micro/0Ico_clr.jpg') top left no-repeat !important;
+  background-color: hsl(56, 100%, 93%) !important;  
+  border: 2px dotted hsl(236, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+
+}
+/*  3. Florence Ann Walton */
+blockquote.faw {
+  background:url('../pic/Micro/0Ico_FLorenceAnn.jpg') top left no-repeat !important;
+  background-color: hsl(83, 100%, 93%) !important;  
+  border: 2px dotted hsl(263, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 4. Gilbert Walton Bronstad  (side space */
+blockquote.gwb {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: hsl(110, 100%, 93%) !important;  
+  border: 2px dotted hsl(290, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 34px;
+    
+}
+
+/*  5. unassigned */
+blockquote.gwb1 {
+  background:url('../pic/Micro/0Ico_Walt.png') top left no-repeat !important;
+  background-color: hsl(138, 100%, 93%) !important;  
+  border: 2px dotted hsl(318, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 6.  Ina Jo Mapp*/
+blockquote.ijm {
+  background:url('../pic/Pinky/InaJo-Pinky.jpg') top left no-repeat !important;
+  background-color: hsl(198, 100%, 93%) !important;  
+  border: 2px dotted hsl(12, 100%, 50%);
+  border-radius:10px;
+      padding:2px 6px 2px 44px;
+    
+}
+
+/* 7. Jennie (Hansen) Jermstad - top space */
+blockquote.jhj {
+  background:url('../pic/Pinky/JennieJ-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(166, 100%, 93%) !important;  
+  border: 2px dotted hsl(346, 100%, 50%);
+  border-radius:10px;
+  padding:2px 6px 2px 34px;
+  font-family: Cursive ;
+  font-size: 1.1em;
+}
+/*  8. Louise Myrtle Bronstad  "../pic/Pinky/Louise-pinky.jpg"*/
+blockquote.lmb {
+  background:url('../pic/Pinky/Louise-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(221, 100%, 93%) !important;  
+  border: 3px dotted hsl(41, 100%, 50%);
+  border-radius:10px;
+      padding:2px 6px 2px 44px;
+    
+}
+/*  9. Mark William Holbrook */
+blockquote.mwh {
+  background:url('../pic/Micro/0Ico_MarkHolbrook.jpg') top left no-repeat !important;
+  background-color: hsl(249, 100%, 93%) !important;  
+  border: 3px dotted hsl(69, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/* 10. Paul Woody Walton  */
+blockquote.pww {
+  background:url('../pic/Micro/0Ico_Paul Walton.jpg') top left no-repeat !important;
+  background-color: hsl(276, 100%, 93%) !important;  
+  border: 3px dotted hsl(96, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 38px;
+  
+}
+/* 11. Rex James Holbrook */
+blockquote.rjh {
+  background:url('../pic/Micro/0Ico_RexHolbrook.jpg') top left no-repeat !important;
+  background-color: hsl(304, 100%, 93%) !important;  
+  border: 3px dotted hsl(124, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+  
+}
+/*  12. William Embrey Walton */
+blockquote.wew {
+  background:url('../pic/Pinky/Embrey-pinky.jpg') top left no-repeat !important;
+  background-color: hsl(332, 100%, 93%) !important;  
+  border: 2px dotted hsl(152, 100%, 50%);
+  border-radius:10px;
+      padding:1px 6px 1px 34px;
+    
+}
+/*  13. W. T. Tergerson */
+blockquote.wtt{
+  background:url('../pic/Micro/0Ico_WTT.jpg') top left no-repeat !important;
+  background-color: hsl(360, 100%, 93%) !important;  
+  border: 3px dotted hsl(180, 100%, 50%);
+  border-radius:10px;
+    padding:1px 6px 1px 28px;
+    
+}
 
 /* 1. Complements Red-1  */
 blockquote.Cy1 {
   background-color: hsl(342, 100%, 96%);  
   border: 2px dotted hsl(180, 100%, 50%);
   border-radius:10px;
+/*  padding:1px 6px 1px 4px; */
+  padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /* 2. Complements Red-2  */
 blockquote.Cy2 {
     background-color: hsl(18, 100%, 96%);  
   border: 2px dotted hsl(180, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /*  3. Complements Yellow-1 */
 blockquote.Cg1 {
   background-color: hsl(54, 100%, 96%);  
   border: 2px dotted hsl(252, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /* 4. Complements Yellow-2 */
 blockquote.Cg2 {
   background-color: hsl(90, 100%, 96%);  
   border: 2px dotted hsl(252, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /*  5. Complements Green-1 */
 blockquote.Cr1 {
   background-color: hsl(126, 100%, 96%);  
   border: 2px dotted hsl(324, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
+    
 }
 /* 6.  Complements Green-2*/
 blockquote.Cr2 {
   background-color: hsl(162, 100%, 96%);  
   border: 2px dotted hsl(324, 100%, 50%);
   border-radius:10px;
+/*   padding:2px 6px 2px 6px;  */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 
 /* 7. Complements Blue-1 */
@@ -333,24 +475,44 @@ blockquote.Cm1 {
   background-color: hsl(198, 100%, 96%);  
   border: 2px dotted hsl(36, 100%, 50%);
   border-radius:10px;
+/*   padding:2px 6px 2px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /*  8. Complements Blue-2*/
 blockquote.Cm2 {
   background-color: hsl(234, 100%, 96%);  
   border: 3px dotted hsl(36, 100%, 50%);
   border-radius:10px;
+/*   padding:2px 6px 2px 4px;  */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /*  9. Complements Mauve-1 */
 blockquote.Cb1 {
   background-color: hsl(270, 100%, 96%);  
   border: 3px dotted hsl(108, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 /* 10. Complements Mauve-2  */
 blockquote.Cb2 {
   background-color: hsl(306, 100%, 96%);  
   border: 3px dotted hsl(108, 100%, 50%);
   border-radius:10px;
+/*   padding:1px 6px 1px 4px; */
+    padding-top:1em; 
+  padding-bottom:1em; 
+  padding-left:1em; 
+  padding-right:1em;
 }
 
 blockquote.wiki {
@@ -470,7 +632,6 @@ hr.wide70 {
   border-top: 1px solid #bbb;
   width: 70%;
 }
-
 hr.yr {
 border: 1px solid #888;
 width: 60%;	

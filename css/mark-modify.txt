@@ -1,0 +1,137 @@
+There are many HTML parents, each with its own background-color. I want to highlight .HTML text within each parent with <mark>; I want to use .css and .js to modify <mark> such that it reads the background-color of it's parent, converts it to hsl(H, S, L) where 
+H is hue of the parent background-color, 
+S is the saturation of the parent background-color and 
+L is the lightness of the parent background-color.
+
+Then make the background-color for <mark> be 
+h = H + 10 modulus 360
+s = S + 10 modulus 100
+l = L - 5  modulus 100
+
+Make the color for <mark> be 
+h = H + 190 modulus 360
+s = S + 60 modulus 100
+l = L - 55 modulus 100
+
+COPILOT = #1 ==============================================
+
+<style>
+  mark {
+    padding: 0.2em;
+    border-radius: 0.2em;
+  }
+</style>
+
+<div style="background-color: #ff6347">
+  <p>This is <mark>highlighted</mark> text.</p>
+</div>
+
+<script>
+  function adjustColor(mark) {
+    const parentBg = getComputedStyle(mark.parentElement).backgroundColor;
+
+    // Convert RGB to HSL
+    function rgbToHsl(r, g, b) {
+      r /= 255; g /= 255; b /= 255;
+      const max = Math.max(r, g, b), min = Math.min(r, g, b);
+      let h, s, l = (max + min) / 2;
+
+      if (max === min) {
+        h = s = 0; // achromatic
+      } else {
+        const d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch(max){
+          case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+          case g: h = (b - r) / d + 2; break;
+          case b: h = (r - g) / d + 4; break;
+        }
+        h *= 60;
+      }
+
+      return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
+    }
+
+    const rgbMatch = parentBg.match(/\d+/g);
+    if (!rgbMatch || rgbMatch.length < 3) return;
+
+    const [r, g, b] = rgbMatch.map(Number);
+    let [H, S, L] = rgbToHsl(r, g, b);
+
+    // Compute new values with modulo
+    const bgH = (H + 10) % 360;
+    const bgS = (S + 10) % 100;
+    const bgL = (L - 5 + 100) % 100;
+
+    const colorH = (H + 190) % 360;
+    const colorS = (S + 60) % 100;
+    const colorL = (L - 55 + 100) % 100;
+
+    mark.style.backgroundColor = `hsl(${bgH}, ${bgS}%, ${bgL}%)`;
+    mark.style.color = `hsl(${colorH}, ${colorS}%, ${colorL}%)`;
+  }
+
+  document.querySelectorAll('mark').forEach(adjustColor);
+</script>
+
+COPILOT = #2 ==============================================
+
+<style>
+  mark {
+    padding: 0.2em;
+    border-radius: 0.2em;
+    font-weight: bold;
+  }
+</style>
+
+<div style="background-color: #3498db">
+  <p>This is <mark>highlighted</mark> text in a blue parent.</p>
+</div>
+
+<div style="background-color: #e74c3c">
+  <p>This is <mark>highlighted</mark> text in a red parent.</p>
+</div>
+
+<script>
+  function rgbToHsl(r, g, b) {
+    r /= 255; g /= 255; b /= 255;
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    let h, s, l = (max + min) / 2;
+
+    if (max === min) {
+      h = s = 0;
+    } else {
+      const d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      switch (max) {
+        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+        case g: h = (b - r) / d + 2; break;
+        case b: h = (r - g) / d + 4; break;
+      }
+      h *= 60;
+    }
+
+    return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
+  }
+
+  document.querySelectorAll('mark').forEach(mark => {
+    const parent = mark.parentElement;
+    const bg = getComputedStyle(parent).backgroundColor;
+    const rgbMatch = bg.match(/\d+/g);
+    if (!rgbMatch || rgbMatch.length < 3) return;
+
+    const [r, g, b] = rgbMatch.map(Number);
+    const [H, S, L] = rgbToHsl(r, g, b);
+
+    const bgH = (H + 10) % 360;
+    const bgS = (S + 10) % 100;
+    const bgL = (L - 5 + 100) % 100;
+
+    const fgH = (H + 190) % 360;
+    const fgS = (S + 60) % 100;
+    const fgL = (L - 55 + 100) % 100;
+
+    mark.style.backgroundColor = `hsl(${bgH}, ${bgS}%, ${bgL}%)`;
+    mark.style.color = `hsl(${fgH}, ${fgS}%, ${fgL}%)`;
+  });
+</script>

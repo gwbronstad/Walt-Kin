@@ -117,39 +117,7 @@
   /*padding: 1em; */
   color: rgb(048,048,048);
     }
-	/* background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%); */
-	/* {  background: linear-gradient(90deg in hsl shorter hue, red, blue);  */
-	/*Rotate among 10 colors (360 /10 = 36 degrees apart   */
-/*	.grid-item:nth-child(10n+3) {     /* pastel red *\/
-        background-image: linear-gradient(to right, hsl(18, 100%,  88%), hsl(54, 100%,  88%)) ; 
-    }
-    .grid-item:nth-child(10n+4) { 
-        background-image: linear-gradient(to right, hsl(54, 100%,  88%),  hsl(90, 100%,  88%));
-    }
-	.grid-item:nth-child(10n+5) {  
-        background-image: linear-gradient(to right, hsl(90, 100%,  88%),  hsl(126, 100%,  88%));
-    }
-    .grid-item:nth-child(10n+6) { 
-        background-image: linear-gradient(to right, hsl(126, 100%,  88%), hsl(162, 100%,  88%));
-    }
-	.grid-item:nth-child(10n+7) { 
-        background-image: linear-gradient(to right, hsl(162, 100%,  88%), hsl(198, 100%,  88%)); 		
-    }
-	.grid-item:nth-child(10n+8) {
-        background-image: linear-gradient(to right, hsl(198, 100%,  88%), hsl(234, 100%,  88%));
-    }
-	.grid-item:nth-child(10n+9) { 
-        background-image: linear-gradient(to right, hsl(234, 100%,  88%), hsl(270, 100%,  88%));
-    }
-    .grid-item:nth-child(10n+0) {    
-        background-image: linear-gradient(to right, hsl(270, 100%,  88%), hsl(306, 100%,  88%));
-    }
-	.grid-item:nth-child(10n+1) {    
-        background-image: linear-gradient(to right, hsl(306, 100%,  88%), hsl(342, 100%,  88%));
-	}
-    .grid-item:nth-child(10n+2) {     
-        background-image: linear-gradient(to right, hsl(342, 100%,  88%), hsl(18, 100%,  88%)); 
-	} */
+	 
 	
 	.grid-domino:nth-child(5n+1) {     /* pastel red */
         background-image: linear-gradient(20deg, hsl(18, 100%,  88%), hsl(110, 100%,  88%)); 
@@ -233,25 +201,6 @@ img.ndx {
 .trans {
   background-color: transparent;}
 
-/*
-div {
-  width: 100px;
-  height: 100px;
-  background: conic-gradient(
-    hsl(360 100% 50%),
-    hsl(315 100% 50%),
-    hsl(270 100% 50%),
-    hsl(225 100% 50%),
-    hsl(180 100% 50%),
-    hsl(135 100% 50%),
-    hsl(90 100% 50%),
-    hsl(45 100% 50%),
-    hsl(0 100% 50%)
-  );
-  clip-path: circle(closest-side);
-}  */
-/*  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);  */
-
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient*/
+/
 
 
