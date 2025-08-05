@@ -470,7 +470,10 @@ hr.wide70 {
   border-top: 1px solid #bbb;
   width: 70%;
 }
-
+hr.wide40 {
+  border-top: 1px solid #bbb;
+  width: 40%;
+}
 hr.yr {
 border: 1px solid #888;
 width: 60%;	
