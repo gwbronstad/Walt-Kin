@@ -13,7 +13,7 @@ H1, H2, H3, H4, H5, H6, P, UL, OL, DIR, MENU, DIV,
 DT, DD, ADDRESS, BLOCKQUOTE, PRE, BR, HR, FORM, DL { 
   display: block; }
 
-p { text-indent: 40px; }
+p { text-indent: 4em; }
 
 B, STRONG, I, EM, CITE, VAR, TT, CODE, KBD, SAMP, 
 IMG, SPAN { display: inline; }
