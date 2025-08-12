@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gwbro\\GitWork\\Walt-Kin\\html\\0P-BobHPics.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:html\\0P-BobHPics.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gwbro\\GitWork\\Walt-Kin\\css\\txtbox.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\txtbox.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "0P-BobHPics.html",
+              "DocumentMoniker": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\html\\0P-BobHPics.html",
+              "RelativeDocumentMoniker": "html\\0P-BobHPics.html",
+              "ToolTip": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\html\\0P-BobHPics.html",
+              "RelativeToolTip": "html\\0P-BobHPics.html",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAIwNAAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-11T17:46:20.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -34,34 +51,31 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAGIAAAAAAAAAAAAAAGIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-01T01:11:08.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T01:11:08.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "delme-index.html",
               "DocumentMoniker": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\delme-index.html",
               "RelativeDocumentMoniker": "delme-index.html",
-              "ToolTip": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\delme-index.html*",
-              "RelativeToolTip": "delme-index.html*",
+              "ToolTip": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\delme-index.html",
+              "RelativeToolTip": "delme-index.html",
               "ViewState": "AgIAAEQAAAAAAAAAAAAQwF4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-01T01:07:51.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T01:07:51.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "txtbox.css",
               "DocumentMoniker": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\css\\txtbox.css",
               "RelativeDocumentMoniker": "css\\txtbox.css",
               "ToolTip": "C:\\Users\\gwbro\\GitWork\\Walt-Kin\\css\\txtbox.css",
               "RelativeToolTip": "css\\txtbox.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-01T01:05:50.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T01:05:50.227Z"
             }
           ]
         }
