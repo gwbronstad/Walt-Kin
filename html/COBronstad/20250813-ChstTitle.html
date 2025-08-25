@@ -11,22 +11,29 @@
 <link rel =stylesheet type="text/css" href="COHistory.css">
 <style>
 
+.item1 { grid-area: header; }
 .item2 { grid-area: caption; }
 .item3 { grid-area: picture; }
 .item4 { grid-area: context; }
-
+.item5 { grid-area: poem; }
+.item6 { grid-area: footer; }
 .grid-container {
   display: grid;
   grid-template-areas:
+  'header header header'
   'caption picture context'
-;
+  'poem poem poem'
+  'footer footer footer';
   grid-gap: 10px;
   background-color:  hsl(230, 100%,  90%);
   padding: 10px;
 }
- @media all and (min-width: 1200px){
-    grid-template-columns: 1fr;  
-  }
+   @media (width <= 50em){
+   (div.item2, div.item3, div.item4)
+    display: flex;  
+
+}
+
 .grid-container > div {
   background-color:  hsla(240, 100%, 98% 0.8);
   text-align: center;
@@ -37,21 +44,18 @@
   }
 </style>
 </head>
-
 <body class="serif">
 <!--https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-columns  -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
-<header style="background-color:  hsl(230, 100%,  90%)";>
-<h2><b>  <u>In Memoriam</u></b>  </h2>
-<h3>With Love and Gratitude, we remember</h3>
-<h3>Dad, the Captain in Charge, and Mother, the Queen of the Home</h3>
-</header>
-
 <div class="grid-container">
-
+  <div class="item1">
+  <h3>In Memoriam</H3>
+<h6 >With Love and Gratitude, we remember</H6>
+<H6 >Dad, the Captain in Charge, and Mother, the Queen of the Home</H6>
+  </div>
   <div class="item2" style="padding-top: 40%">
   <p>Mother and Dad.</p>
    <p>Martha (Colwick) Bronstad and Christian Olson Bronstad.</p>
@@ -66,10 +70,9 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
   <div class="item4" style="padding-top: 40%">Martha Christine and Christian O. Bronstad
 About 1924 at time of retirement.</p>
   </div>
-</div>  
-
-<article class="cursive" style="background-color:  hsl(230, 100%,  90%)"; > 
-<ul  style= "list-style-type:none; text-align: center;">
+  <div class="item5">
+<article class="cursive">  
+<ul class="center" style= "list-style-type:none">
 <li>  FROM NORWAY </li>
 <li>  TO AMERICA </li>
 <li>  TO TEXAS </li>
@@ -77,12 +80,10 @@ About 1924 at time of retirement.</p>
 <li>  AND NOW </li>
 <li>  TO THE UTTERMOST PARTS OF THE WORLD.</li>
 </ul>
-
-
-
-
-<footer style="background-color:  hsl(230, 100%,  90%)";>
-<hr>
+</article>
+  </div>
+  <div class="item6">
+  <h4><a id="bottom"></a>
 <p class="serif"> &nbsp;<b><u>Christian Olson Bronstad Family History</u></b> &nbsp;&nbsp;.&nbsp;&nbsp;.
 You are on the <mark>Title Page</mark>, you can jump within C O Bronstad pages <br>to 
 <!--<a href="ChstTitle.html">Title&nbsp;     <i style="font-size:1.5em">&#9194;</i></a>,&nbsp; or --> 
@@ -93,7 +94,9 @@ You are on the <mark>Title Page</mark>, you can jump within C O Bronstad pages <
 <a href="ChstP4.html">Part IV&nbsp;     <i style="font-size:1.5em">&#9193;</i></a>,&nbsp; or
 <a href="ChstP5.html">Part V&nbsp;       <i style="font-size:1.5em">&#9193;</i></a>,&nbsp; or back to 
 <a href="../../index.html">Walt's pages&nbsp;   <u style="font-size:1.5em">&#10133;</u></a>
-</p>
-</footer>
+</p></h4>
+  </div>
+</div>
+
 </body>
 </html>
