@@ -527,3 +527,14 @@ img.nborder {
 }
 .trans {
   background-color: transparent;}
+  
+li::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: hsl(230, 40%,  40%);
+}
+p::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: hsl(230, 40%,  40%);
+}
