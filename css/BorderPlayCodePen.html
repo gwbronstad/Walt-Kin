@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<style>
+:root {
+    --border-repeat: stretch;
+    --border-style: ridge;
+    --border-image-slice: 70 75 fill;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-color: #DCAE96;
+}
+section{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 2rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-image-source: url(brick-house.png);	
+/*  border-image-source: url('gradient-glassmorphism-background_23-2149447863.jpg');  */
+    border-image-slice: var(--border-image-slice);
+    border-image-repeat: var(--border-repeat);    
+    border-width: 44px 20px 5px 20px /*2.5rem; */
+    width: 15rem;
+    border-color: grey;
+    border-style: var(--border-style);
+    transition: all 0.3s ease;
+}
+/* code section */
+.code-section{
+  width: 30rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  background: #1e1e1e;
+  color: white;
+}
+.code-section span{
+    color: rgba(188,212,42,1);
+}
+span.bracket{
+    color:white;
+}
+span.code-value, label.code-value{
+    color: rgba(255,106,56,1); 
+}
+.code-section code .code-inputs{
+  padding-left: 1rem;
+}
+.code-section code .fill-section{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.fill-section label{
+  margin: 0;
+  width: 0;
+}
+.fill-section input{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 1rem;
+}
+.code-inputs input[type="number"]{
+  width: 3rem;
+  text-align: center;
+}
+
+</style>
+
+<p class="w3-cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
+
+ </head>
+
+<body>
+
+<section class="code-section">
+  <code>
+    <span>.container</span>
+    <span class="bracket">{</span>
+    <br />
+    <div class="code-inputs">
+      <span>border-image-slice</span>:
+      <input type='number' value="0" min=0 max="100" />
+      <input type='number' value="70" min=0 max="100" />
+      <input type='number' value="75" min=0 max="100" />
+      <input type='number' value="0" min=0 max="100" />
+      <select>
+        <option value="no suffix">no suffix</option>
+        <option value="%">%</option>
+      </select>
+      ;
+      <div class="fill-section">
+        <input id='fill-checkbox' type='checkbox' checked='true' />
+        <label for='fill-checkbox' class="code-value">fill</label>
+      </div>
+      <br />
+      <span>border-image-repeat</span>: <span class="code-value">stretch</span>;
+      <br />
+    </div>
+    <span class='bracket'>}</span>
+  </code>
+</section>
+
+<section class='container'>
+<h3>1893-08-16&nbsp;&nbsp;<img class="ndx" src="../pic/Pinky/Birds/0-JeffABird-pinky.png"> Jeff Augustus "Gus" BIRD 	Was born in Birdville, Fort Worth, Tarrant County, Texas. </h3>
+
+</section>
+
+</body>
+<script>
+
+
+const allNumInputs = document.querySelectorAll("input[type='number']");
+const rootElement = document.querySelector(':root');
+// select dropdown for '%' and 'no suffix'
+const selectDropdown = document.querySelector('select');
+let borderImageSliceValue = '';
+
+// Adds a change event listener to all number inputs
+for (let i = 0; i < allNumInputs.length; i++) {
+    element = allNumInputs[i];
+    element.addEventListener('change', () => {
+        if(selectDropdown.value == '%'){
+            addBorderImageSliceValue('%');
+        }
+        else{
+            addBorderImageSliceValue('');
+        }
+    })
+}
+
+// Fill checkbox toggle
+const fillCheckBox = document.querySelector('#fill-checkbox');
+fillCheckBox.addEventListener('change', () => {
+    let rootStyle = getComputedStyle(rootElement);
+    if (fillCheckBox.checked == true) {
+        rootElement.style.cssText =
+            `--border-image-slice: ${rootStyle.getPropertyValue('--border-image-slice') + ' fill'}`;
+    } else {
+        let borderImageSliceVal = rootStyle.getPropertyValue('--border-image-slice');    
+        borderImageSliceVal = borderImageSliceVal.replace(' fill', '');
+        rootElement.style.cssText =
+            `--border-image-slice: ${borderImageSliceVal}`;
+    }
+})
+
+// 'px' or 'no suffix' dropdown
+selectDropdown.addEventListener('change', () => {
+    if (selectDropdown.value == '%') {
+        addBorderImageSliceValue('%');
+    }
+    else{
+        addBorderImageSliceValue('');
+    }
+})
+
+/*
+* Function that accepts a suffix string for the number input value.
+* Whether it's '%' or 'no suffix' 
+*/
+function addBorderImageSliceValue(suffix) {
+    borderImageSliceValue = '';
+    let fillPresent = checkIfFillIsChecked();
+    for (let i = 0; i < allNumInputs.length; i++) {
+        numInput = allNumInputs[i];
+        if (numInput.value == 0) {
+            continue;
+        }
+        
+        borderImageSliceValue += " " + numInput.value + suffix;
+    }
+
+    if(fillPresent){
+        rootElement.style.cssText =
+    `--border-image-slice: ${borderImageSliceValue + ' fill'}`;       
+    }
+    else{
+        rootElement.style.cssText =
+    `--border-image-slice: ${borderImageSliceValue}`;
+    }
+    
+}
+
+// Function to check if fill keyword is present
+function checkIfFillIsChecked(){
+    let rootStyle = getComputedStyle(rootElement);
+    let borderImageSliceVal = rootStyle.getPropertyValue('--border-image-slice');
+    return borderImageSliceVal.includes('fill');   
+}
+
+
+</script>

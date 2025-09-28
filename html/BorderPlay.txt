@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<style>
+.wrapper {
+  width: 400px;
+  height: 300px;
+}
+
+div > div {
+  width: 300px;
+  height: 200px;
+  border-width: 30px;
+  border-style: solid;
+  border-image: url("/shared-assets/images/examples/border-diamonds.png");
+  border-image-slice: 30;
+  border-image-repeat: round;
+}
+
+li {
+  display: flex;
+  place-content: center;
+}
+</style>
+ </head>
+
+<body>
+<p class="w3-cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
+<script>
+document.getElementById("LastModDate").innerHTML = document.lastModified;
+const widthSlider = document.getElementById("width");
+const sliceSlider = document.getElementById("slice");
+const widthOutput = document.getElementById("width-output");
+const sliceOutput = document.getElementById("slice-output");
+const divElem = document.querySelector("div > div");
+
+widthSlider.addEventListener("input", () => {
+  const newValue = `${widthSlider.value}px`;
+  divElem.style.borderWidth = newValue;
+  widthOutput.textContent = newValue;
+});
+
+sliceSlider.addEventListener("input", () => {
+  const newValue = sliceSlider.value;
+  divElem.style.borderImageSlice = newValue;
+  sliceOutput.textContent = newValue;
+});
+
+</script>
+
+
+<!-------------------------->
+<div class="wrapper">
+  <div></div>
+</div>
+
+<ul>
+  <li>
+    <label for="width">slide to adjust <code>border-width</code></label>
+    <input type="range" min="10" max="45" id="width" />
+    <output id="width-output">30px</output>
+  </li>
+  <li>
+    <label for="slice">slide to adjust <code>border-image-slice</code></label>
+    <input type="range" min="10" max="45" id="slice" />
+    <output id="slice-output">30</output>
+  </li>
+</ul>
+
+</body>
