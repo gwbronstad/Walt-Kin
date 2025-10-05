@@ -42,7 +42,7 @@ p {
   
 	gap: 1px;
 	background-color: rgb(243, 243, 243); /*r */
-    padding: 10px;
+    padding: 5px;
 }
 /* 2025-03-05	*/
 .wkwrap-2 {
@@ -62,7 +62,7 @@ p {
   
 	gap: 1px;
 	background-color: rgb(243, 243, 243);
-    padding: 10px;
+    padding: 5px;
 } 
 
 /* 2025-06-08	*/
@@ -272,9 +272,19 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+/*
+.mmrg  {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.mpad  {
+  padding-left:3px; 
+  padding-right:1px;
+}  */
+
 BLOCKQUOTE { 
-/*  margin-left: 1em;  
-  margin-right: 1em; */
+  margin-left: 1px;  
+  margin-right: 1px;
   background-color: #F2FFF2;  
   font-family: Sans-serif ;      
   width:98%;
@@ -286,8 +296,8 @@ BLOCKQUOTE {
 /*  padding:2px 6px 2px 6px; */
   padding-top:1em; 
   padding-bottom:1em; 
-  padding-left:1em; 
-  padding-right:1em;
+  padding-left:3px; 
+  padding-right:1px;
 }
 
 
@@ -362,9 +372,15 @@ blockquote.wiki {
 
 
 .grid-item {
-        border: 3px solid #000;
-		padding-inline-start: 50px;
-        padding: 6px;
+    /*  border: 3px solid #000;  */
+		border-width: 3px;
+		border-color: solid #000;
+	  border-top-style: solid;
+      border-right-style: none;
+      border-bottom-style: solid;
+      border-left-style: solid;	
+		padding-inline-start: 2px;
+        padding: 2px;
         border-radius: 5px;
   /*background-color: #ffd8a8;  */
   padding: 1em;
@@ -375,7 +391,7 @@ blockquote.wiki {
     }
     .grid-item:nth-child(10n+2) {   /* wash red */
         background-color: hsl(0, 100%, 97%);
-	        border-left-style: dashed;
+	    border-left-style: dashed;
 		border-left-width: 4px;	
 		color: #0D3B21; /*  https://coolors.co/contrast-checker rgb(20, 90, 50);     /*(005,024,225);  (001,097,020) to (20, 90, 50) */
     }
