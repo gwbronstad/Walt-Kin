@@ -1,0 +1,64 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/*  ...css/table.css  */
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+mark {
+    padding: 0.2em;
+    border-radius: 0.2em;
+    font-weight: bold;
+	outline-style: dotted;
+	outline-width: thin;
+	background-color: hsl(0, 100%,  100%);
+    color:  hsl(0, 0%, 0%);
+}
+.caption {
+  background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
+  color: Black;                     /* #FFFFF0 */
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black; 
+  border-radius: 5px;
+  Margin-left: 2em;
+  margin-right: 2em;  
+}
+.cursive {
+  font-family:cursive;
+  font-size: 0.8em;
+}
+p {
+  font-size: 1.5em;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 0px solid green;
+  margin:auto;
+}
+#padcenter {
+ padding-right: 10%;
+  padding-left: 10%; 
+}
+#gradmorning2 {
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 60%), hsl(61, 100%, 70%));
+  
+} 

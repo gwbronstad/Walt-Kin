@@ -530,6 +530,10 @@ img.nborder {
 .cursive {
 	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive;
 }
+.cursivelarger {
+	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive;
+	font-size: 1.3em;
+}
 .monospace {
     font-family: "Courier New", "Lucida Console",  Monospace ;	
 }
