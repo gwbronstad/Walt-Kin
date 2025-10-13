@@ -52,9 +52,79 @@ img {
   border: 0px solid green;
   margin:auto;
 }
+.contain1 {
+  display: grid;
+  gap: 90px 100px;
+  grid-template-columns: auto;
+  background-color: transparent;
+  padding: 10px;
+    color: white;
+}
+
+.contain1 > div {
+  background-color: transparent;
+  border: 0px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.contain2 {
+  display: grid;
+  gap: 90px 100px;
+  grid-template-columns: auto auto;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+.contain2 > div {
+  background-color: transparent;
+  border: 0px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.contain3 {
+  display: grid;
+  gap: 90px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+    color: white;
+}
+
+.contain3 > div {
+  background-color: transparent;
+  border: 0px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.contain4 {
+  display: grid;
+  gap: 90px 100px;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+    color: white;
+}
+.contain4 > div {
+  background-color: transparent;
+  border: 0px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#gradmorning {
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 50%), hsl(61, 100%, 50%));
+}
+
 #padcenter {
  padding-right: 10%;
-  padding-left: 10%; 
+ padding-left: 10%; 
 }
 #gradmorning2 {
   height: 100%;
