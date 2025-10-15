@@ -19,6 +19,19 @@ mark {
 	background-color: hsl(0, 100%,  100%);
     color:  hsl(0, 0%, 0%);
 }
+figure {
+  border: none;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: DarkSlateGray;  /* #2F4F4F */
+  color: Ivory;                     /* #FFFFF0 */
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
 .caption {
   background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
   color: Black;                     /* #FFFFF0 */
