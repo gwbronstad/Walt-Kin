@@ -31,12 +31,15 @@ figcaption {
   font-style: italic;
   padding: 2px;
   text-align: center;
+  Margin-left: 20%;
+  margin-right: 20%; 
 }
 .caption {
   background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
   color: Black;                     /* #FFFFF0 */
   font-family: Helvetica, Arial, sans-serif;
   font-style: italic;
+  font-size: 1.5em;
   padding: 2px;
   text-align: center;
   border: 2px solid black; 
