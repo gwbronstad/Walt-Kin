@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="Child Story">
 	<meta name="author" content="Gilbert Bronstad">
-	<meta name="changed" content="20241010">             <!--[{ change date }] -->
+	<meta name="changed" content="20251021">             <!--[{ change date }] -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel =stylesheet type="text/css" href="LindasGift.css">	
 </head>
@@ -14,6 +14,7 @@
 
 #graddayearth {
   height: 60%;
+        z-index: 0;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, hsl(214, 100%, 75%), hsl(140, 100%, 40%));
 </style>
@@ -23,11 +24,18 @@
 <script>  <!-- Date each page with last page update -->
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
-
+<div class="sticky">
+<ul class="pagination">
+  <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
+  <li><a href="LindasGiftfront.html">Front</a></li>
+  <li><a class="active" href="#">Page 0</a></li>
+  <li><a href="LindasGiftPg1.html">&raquo; next page</a></li>
+</ul>
+</div>
 <div>
 
 <figure>
-      <img src="Lindas Gift Pg0.png" alt="Linda finds blue beads." style="height:60%; width=70%"></a>
+      <img src="Lindas Gift Pg0.png" alt="Linda finds blue beads." style="transform: scaleX(1.1);"></a>
 	  <figcaption>Linda searches Lark's nest.</figcaption>
 </figure>
 <p></p>
@@ -36,12 +44,13 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <div>
 &nbsp;
 
-<p class="caption" style="text-align: center; "> &nbsp;<b><u>Linds's Gift</u></b> &nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <p class="caption" style="text-align: center; "> &nbsp;<b><u>Linds's Gift</u></b> &nbsp;&nbsp;&nbsp;&nbsp;
 You can jump to 
 <a href="LindasGiftfront.html">Front</a>&nbsp;
 &nbsp;<&nbsp;<mark>You are on Page 0</mark>&nbsp;>
 <a href="LindasGiftPg1.html">Page 1</a>&nbsp;
-</p>
+</p> -->
+
 </div>
 </body>
 </html>

@@ -34,19 +34,7 @@ figcaption {
   Margin-left: 20%;
   margin-right: 20%; 
 }
-.caption {
-  background-color: whitesmoke; /*#cF9F9F; */  /* #2F4F4F DarkSlateGray*/
-  color: Black;                     /* #FFFFF0 */
-  font-family: Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 1.5em;
-  padding: 2px;
-  text-align: center;
-  border: 2px solid black; 
-  border-radius: 5px;
-  Margin-left: 2em;
-  margin-right: 2em;  
-}
+
 .cursive {
   font-family:cursive;
   font-size: 0.8em;
@@ -134,6 +122,7 @@ img {
 
 #gradmorning {
   height: 100%;
+        z-index: 0;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, hsl(214, 100%, 50%), hsl(61, 100%, 50%));
 }
@@ -144,7 +133,36 @@ img {
 }
 #gradmorning2 {
   height: 100%;
+        z-index: 0;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, hsl(214, 100%, 60%), hsl(61, 100%, 70%));
   
 } 
+div.sticky {
+  position: sticky;
+  top: 0;
+    z-index: 2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+    background-color: hsl(59, 74%, 85%, 0.75);  
+  border: 2px solid gray;
+  color: black;  
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination li a.active {
+  background-color: #4CAF50;
+  color: white;
+  }
