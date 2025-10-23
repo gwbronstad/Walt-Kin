@@ -16,10 +16,14 @@
 
 #gradmorning3 {
   height: 50vh;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 65%), hsl(61, 100%, 65%));
+  background-color: SkyBlue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 65%), hsl(41, 100%, 65%));
 }  
- 
+#gradplough {
+  height: 44vh;
+  background-color: SandyBrown; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(160deg,hsla(108, 10%, 20%, 0.5) 2%,hsla(128, 7%, 4%, 0.5) 3%,hsla(43, 20%, 35%, 0.5) 5%);
+}  
 </style>
 <!--<body style=" background-color: lightblue;"> -->
 <body>
@@ -32,16 +36,17 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <ul class="pagination">
   <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
   <li><a href="LindasGiftfront.html">Front</a></li>
-  <li><a href="LindasGiftPg2.html">prior page &laquo;</a></li>  
+  <li><a href="LindasGiftPg2.html">prior  &laquo;</a></li>  
   <li><a class="active" href="#">Page 3</a></li>
-  <li><a href="LindasGiftPg4.html">&raquo; next page</a></li>
+  <li><a href="LindasGiftPg4.html">&raquo; next </a></li>
 </ul>
 </div>
+<br><br>
 <p id="padcenter">Linda knew how much Father enjoyed Aunt Nell, but she also knew nothing musts stop the work plans for the day. Another crop must be planted on this field before frost. A rain might cause too much delay. The soil must be plowed today.</p>
 <br><br><br>
 </div>
 </div>
-<div style="height: 50vh; background-image: linear-gradient(to right, hsl(0, 20%, 60%), hsl(0, 20%, 40%)" class="contain1">
+<div id="gradplough" style="height: 50vh; )" class="contain1" >
 <div>
 <img src="3horseplow.png" alt="3 horse plow" style="width:33%" >
 </div>
