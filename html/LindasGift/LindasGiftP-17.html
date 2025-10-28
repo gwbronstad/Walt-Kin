@@ -12,22 +12,38 @@
 </head>
 
 <style>
-  #blue-pink-blue {
-  height: 100vh;
-  background-color: SkyBlue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom,
-  hsl(214, 100%, 75%),
-  hsl(8, 50%, 70%),
-  hsl(210, 50%, 50%));
+#bees {
+  background-repeat: repeat;
+  background-image: url("beesInFlight.png");  
 }
+#blue-brass {
+  height: 80vh;
+  background-color: SkyBlue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, hsl(214, 100%, 75%), #C88A65);
+}
+#gradpinkblue {
+  height: 20vh;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, hsl(8, 50%, 70%), hsl(210, 50%, 70%)); 
+}  
+mark {
+    padding: 0.1em;
+    border-radius: 0.2em;
+	font-size: 0.9em;
+    font-weight: normal;
+	outline-style: dotted;
+	outline-width: thin;
+	background-color: hsl(0, 100%,  100%);
+    color:  hsl(0, 0%, 0%);
+} 
 </style>
 <body id="blue-pink-blue"> 
-
+<div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>  <!-- Date each page with last page update -->
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
- 
+
 <div class="sticky">
 <ul class="pagination">
   <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
@@ -38,15 +54,29 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </ul>
 </div>
 
-<div class="newspaper">  
-<p id="padcenter">A little whirl of wind spun across the field. Bits of straw and dry leaves were carried high in the air, spinning around and around. The whirlwind seemed to bounce gently up and down as it sped across the field.</p>
-<p id="padcenter">Just as she turned going north, there it was! A small car was going up toward the house. Few cars came up the road. Linda knew it was Aunt Nell.</p>
-<p id="padcenter">In her mind Linda saw Mother and the others going out to meet her. They would be so happy to see her. She would be smiling and giving each a special hug and kiss.</p>
-<p id="padcenter">Aunt Nell wore such lovely dresses. Wonder what her dress would be like today?</p>
 
-<p id="padcenter">Then she would say, "Where's Linda?"</p>
-<p id="padcenter">Many questions would be asked. Everyone would be gay. Mamie would go ahead with her sewing. There would be lemonade, cookies, and all kinds of fun. She would have a gift for each of them. A gift was not what Linda wanted, she wanted to be there and see her. One of the best  parts of her wonderful secret was spoiled.</p>
-<
-</div>
+<div  id="bees"> 
+<div class="newspaper">  
+
+<p id="padcenter"><mark>Suddenly there was a forward jerk and Linda found herself landing in the soft ground. Small black objects were bouncing off her body and face. The air was dark with flying soft balls. Beck, Peg and Mark were runing across the plowed part of the field dragging the plow after them.</mark></p>
+<br><br>
+<p id="padcenter"><mark>Father was yelling, "Bumble Bees! Watch out, Linda!".</mark></</p>
+<p id="padcenter"><mark>Beck was kicking, Peg was jumping and whirling, and Mark was trying his best to shake them off. All the horses were switching their tails and jerking their heads frantically..</mark></</p><br><br>
+<p id="padcenter"><mark>"The bees are stinging the horses. Are you stung Linda?" Father said..</mark></p>
+
+<p id="padcenter"><mark>"No, Father, I'm not hurt.".</mark></</p>
+<p id="padcenter"><mark>He ran after Linda's horses yelling. "Whoa, Beck. Whoa, Peg! Whoa there!".</mark></</p>
+
+<p id="padcenter"><mark>The air was clearing fast now..</mark></</p>
+<p id="padcenter"><mark>"Where did the bees come from?" Linda asked..</mark></</p><br><br>
+<p id="padcenter"><mark>"They had their nest in the ground. We plowed it up. They didn't like it. Were you stung, Linida?" he asked..</mark></</p>
+<p id="padcenter"><mark>"Not at all." she answered..</mark></</p>
+<p id="padcenter"><mark>"Well, I'm glad the horses didn't tear up their harness. Wouldn't that jar your ancestors the way Mark got in a hurry?" Father laughed. It was a family joke that Mark was slow and lazy. But he was gentle, too.</mark></</p>
+
+
+</div>  <!-- bees -->
+</div> <!-- newspaper -->
+</div>  <!-- end sticky nav bar -->
 </body>
 </html>
+<!-- end page end -->

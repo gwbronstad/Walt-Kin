@@ -13,12 +13,7 @@
 </head>
 <!-- end head part -->
 <style>
-
-#gradmorning3 {
-  height: 100vh;
-  background-color: SkyBlue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 65%), hsl(41, 100%, 65%));
-}  
+  
 #gradplough {
   height: 44vh;
   background-color: SandyBrown; /* For browsers that do not support gradients */
@@ -26,7 +21,8 @@
 }  
 </style>
 <!--<body style=" background-color: lightblue;"> -->
-<body id="gradmorning3" > 
+<body id="gradmorning2" > 
+<div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>  <!-- Date each page with last page update -->
 document.getElementById("LastModDate").innerHTML = document.lastModified;
@@ -48,9 +44,8 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 <p id="padcenter">Another crop must be planted on this field before frost. A rain might cause too much delay. The soil must be plowed today.</p>
 <div id="gradplough" class="containpad picture center"> <img src="3horseplow.png" alt="3 horse plow" style="width:89%" ></div>
-
 </div>
+</div>  <!-- end sticky nav bar -->
 </body>
 
 </html>
-<!-- end page end -->

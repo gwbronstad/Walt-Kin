@@ -79,7 +79,7 @@ img {
     color: white;
 }
 
-
+/*
 .contain1 {
   display: grid;
   gap: 90px 100px;
@@ -143,34 +143,47 @@ img {
   font-size: 30px;
   text-align: center;
 }
-
+*/
 #gradmorning {
-  height: 100%;
+  height: 100vh;
         z-index: 0;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 50%), hsl(61, 100%, 50%));
-}
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, 
+  hsl(214, 100%, 50%), 
+  hsl(61, 100%, 50%),
+  hsl(214, 100%, 50%))
+}   
 
-#padcenter {
- padding-right: 10%;
- padding-left: 10%; 
-}
 #gradmorning2 {
   height: 100%;
         z-index: 0;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 60%), hsl(61, 100%, 70%));
-  
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 60%), 
+  hsl(61, 100%, 70%),
+  hsl(214, 100%, 60%));
 } 
 #blue-pink-blue {
   height: 100vh;
   background-color: SkyBlue; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom,
-  hsl(214, 100%, 75%),
-  hsl(8, 50%, 70%),
+  hsl(210, 50%, 50%),
+  hsl(5, 50%, 90%),
+  hsl(40, 50%, 90%),  
   hsl(210, 50%, 50%));
 }
+#gradhotday {
+  height: 100vh;
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 95%), 
+  hsl(8, 50%, 70%),
+  hsl(214, 100%, 95%)); 
+}
 
+
+#padcenter {
+ padding-right: 10%;
+ padding-left: 10%; 
+}
 
 div.sticky {
   position: sticky;

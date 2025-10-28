@@ -13,13 +13,6 @@
  
 <style>
  
-#gradmorningcol {
-  height: 100vh;
-  background-color: SkyBlue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 90%), hsl(8, 50%, 70%));
-}
-
-
 #gradmud {
   height: 44vh;
   background-color: DarkGoldenRod; /* For browsers that do not support gradients */
@@ -27,13 +20,13 @@
   /*  background-image: linear-gradient(to right,hsla(108, 10%, 20%, 0.5) 43%,hsla(108, 7%, 4%, 0.5) 27%,hsla(43, 20%, 35%, 0.5) 30%);  */
 } 
 </style>
-<body id="gradmorningcol">
-<div>
+<body id="blue-pink-blue">
+<div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>  <!-- Date each page with last page update -->
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
-</div>
+
 <div class="sticky">
 <ul class="pagination">
   <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
@@ -46,14 +39,22 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
  
 <div class="newspaper">
  
-<div class="containpad picture center"><br>(racoon)</div>
+<div class="containpad picture center">
+(racoon)
+</div>
 
 <p id="padcenter">The plows went around the field again and again. Linda did not mind the heat or the heavy lever she must raise up and down at times. Thoughts of Aunt Nell filled her mind. How much fun it was  to be with her and to learn about animals from her. </p>
-<div class="containpad picture center"><br>(fox)</div>
-<div id="gradmud" class="containpad picture center"><br>(tracks of a racoon running)</div>
+<div class="containpad picture center">
+(fox)
+</div>
+
+<div id="gradmud" class="containpad picture center">
+(tracks of a racoon running)
+</div>
+
 <p id="padcenter">She had said to Linda, "You must be able to read the earth and mud to know the kind of animal that was here and what he was doing. See, here is a fox track. And here, the racoon was running." </p>
 <div id="gradmud" class="containpad picture center"><br>(fox track)</div>
 </div>
-
+</div>  <!-- end sticky nav bar -->
 </body>
 </html>

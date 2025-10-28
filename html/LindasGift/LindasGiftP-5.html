@@ -12,12 +12,6 @@
 </head>
  
 <style>
- 
-#gradmorningcol {
-  height: 100vh;
-  background-color: SkyBlue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom, hsl(214, 100%, 90%), hsl(8, 50%, 70%));
-}
 
 #gradplough {
   height: 44vh;
@@ -25,13 +19,13 @@
   background-image: repeating-linear-gradient(160deg,hsla(108, 10%, 20%, 0.5),hsla(128, 7%, 4%, 0.5) 7%,hsla(43, 20%, 35%, 0.5) 10%);
 } 
 </style>
-<body id="gradmorningcol"> 
-<div>
+<body id="blue-pink-blue"> 
+<div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>  <!-- Date each page with last page update -->
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
-</div>
+
 <div class="sticky">
 <ul class="pagination">
   <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
@@ -44,17 +38,26 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
  <div class="newspaper">
  
-<div class="containpad picture center">(Quail in flight 1)</div>
+<div class="containpad picture center">
+(Quail in flight 1)
+</div>
+
 <p id="padcenter">As horses neared a bush quails rushed near them. They whirred noisily awaky while Mark showed his annoyance with a snort. </p>
-<div class="containpad picture center">(Quail in flight 3, all to upper right)</div>
+<div class="containpad picture center">
+(Quail in flight 3, all to upper right)
+</div>
 
 <p id="padcenter">After reaching the field, the horses were quickly hitched to the plow. </p>
 <p id="padcenter">Father said, "I'm glad you're helping me plow today, Linda.  Two plows can break this field much faster than one." </p>
 <p id="padcenter">When the wheat or oat field was plowed after the grain had been cut, he called it breaking the field. </p>
 <p id="padcenter">As Father's plow went first around the field, it took off three slices of the stubbled earth and turned them on their sides. Linda's plow came next and took off two slices, laying them over evenly. She must be careful to keep Peg in the furrow cut by Father's plow to make her s cut properly. </p>
 
-<div id="gradplough" class="containpad picture center"><br>(Peg in furrow)</div>
+<div id="gradplough" class="containpad picture center">
+(Peg in furrow)
 </div>
+
+</div>
+</div>  <!-- end sticky nav bar -->
 </body>
 </html>
 <!-- end page end -->
