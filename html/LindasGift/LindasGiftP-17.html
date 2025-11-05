@@ -14,20 +14,33 @@
 </head>
 
 <style>
+/**/
+#MyBees {
+
+  background-image: url('beesInFlight.png');
+  background-position-x: left;
+  background-position-y: top;
+  background-size: 0px 0px;
+  animation-name: bees-move;
+  animation-delay: 3s;
+  animation-duration: 10s;
+
+}
+
+@keyframes bees-move {
+  15% {background-size:  175px 136px;}
+  30% {background-position-x: center;}
+  30% {background-position-y: center;}
+  30% {background-size: 100px 90px;}
+   5% {background-size: 0px 0px;}  
+}
+
+/**/
 #bees {
   background-repeat: repeat;
   background-image: url("beesInFlight.png"); 
 }
-#blue-brass {
-  height: 80vh;
-  background-color: SkyBlue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, hsl(214, 100%, 75%), #C88A65);
-}
-#gradpinkblue {
-  height: 20vh;
-  background-color: blue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, hsl(8, 50%, 70%), hsl(210, 50%, 70%)); 
-}  
+
 mark {
     padding: 0.1em;
     border-radius: 0.2em;
@@ -59,9 +72,9 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </div>
 
 
-<div  id="bees"> 
+<!-- <div  id="bees">    temp off-->
 <div class="newspaper">  
-
+<div  id="MyBees"> 
 <p id="padcenter"><mark>Suddenly there was a forward jerk and Linda found herself landing in the soft ground. Small black objects were bouncing off her body and face. The air was dark with flying soft balls. Beck, Peg and Mark were runing across the plowed part of the field dragging the plow after them.</mark></p>
 <br><br>
 <p id="padcenter"><mark>Father was yelling, "Bumble Bees! Watch out, Linda!".</mark></</p>
@@ -77,24 +90,24 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <p id="padcenter"><mark>"Not at all." she answered..</mark></</p>
 <p id="padcenter"><mark>"Well, I'm glad the horses didn't tear up their harness."</mark></</p> 
 <p id="padcenter"><mark>"Wouldn't that jar your ancestors the way Mark got in a hurry?" Father laughed. It was a family joke that Mark was slow and lazy. But he was gentle, too.</mark></</p>
-
+</div>  <!-- end MyBees -->
 <div class="picjarancestor">
-<img id="jarancestor-1" src="Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<img id="jar-hue-loc" src="Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
 </div>
 
 <div class="picjarancestor">
-<img id="jarancestor-2" src="Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+<img id="jar-hue-loc-turn" src="Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
 </div>
 <div class="picjarancestor">
-<img id="jarancestor-2" src="Cpx2WCWalton.png" alt="Claibourne Walton." style="width: 25vh">
+<img id="jar-hue-loc-turn" src="Cpx2WCWalton.png" alt="Claibourne Walton." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
 </div>
  
 
 <div class="picjarancestor">
-<img id="jarancestor-1" src="Cpx2WWWalton.png" alt="" style="width: 25vh">
+<img id="jar-hue-loc" src="Cpx2WWWalton.png" alt="" style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">Williamina Wood Walton.</p>
 </div>
 

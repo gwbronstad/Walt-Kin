@@ -1,5 +1,5 @@
 @charset "utf-8";  /*"US-ASCII";*/
-/*  ...css/table.css  */
+/* ANIMATABLE PROPERTIES:  https://www.w3schools.com/cssref/css_animatable.php  */
 
 h1 {
   font-size: 2.5em;
@@ -203,19 +203,13 @@ p::first-letter {
   color: hsl(230, 40%,  40%);
 }
  
-@keyframes hue {
-  from {
-    filter: hue-rotate(0deg) blur(28px);
-  }
-  to {
-    filter: hue-rotate(360deg) blur(28px);
-  }
-}
- 
 figure {
   position: relative;
-  width: clamp(0px, 30%, calc(100% - 550px));
-  height: clamp(0px, 40%, calc(100% - 390px));  
+ /*  width: clamp(0px, 30%, calc(100% - 500px));
+  height: clamp(0px, 40%, calc(100% - 400px)); */
+  
+  width: 40%;
+  height: 50%;  
   background-color: transparent;
   z-index: 1;
 }
@@ -320,7 +314,7 @@ figure figcaption::before {
 }
 
 /* need this */
-
+ 
 @keyframes hue {
   from {
     filter: hue-rotate(0deg) blur(18px);
@@ -335,16 +329,16 @@ figure figcaption p {
   padding: 10px;
 }
 
-#jarancestor-1 {
+#jar-hue-loc {
   position: relative;
-  animation-name: myAnimation-1;
+  animation-name: animate-hue-loc;
   animation-duration: 4s;
-  animation-delay: 5s;
+  animation-delay: 10s;
   animation-iteration-count: 2;
   animation-direction: alternate-reverse;  
 }
 
-@keyframes myAnimation-1 {
+@keyframes animate-hue-loc {
   0%   {background-color:transparent;left:0px;  top:0px;}
   12%  {background-color:red;        left:20px; top:0px;}
   25%  {background-color:orange;     left:20px; top:20px;}
@@ -356,30 +350,49 @@ figure figcaption p {
   100% {background-color:transparent;left:0px;  top:0px;} 
 }
 
-#jarancestor-2 {
+#jar-hue-loc-turn {
   position: relative;
-  animation-name: myAnimation-2;
+  animation-name: animate-hue-loc-turn;
   animation-duration: 4s;
-  animation-delay: 2s;
+  animation-delay: 10s;
   animation-iteration-count: 2;
   animation-direction: alternate-reverse;  
 }
 
-@keyframes myAnimation-2 {
+@keyframes animate-hue-loc-turn {
   0%   {background-color:transparent; left:0px;  top:0px;}
   10%  {background-color:hsla(43, 20%, 55%, 0.5); left:15px; top:0px;}
   20%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;}
   30%  {background-color:hsla(43, 20%, 25%, 0.6); left:15px; top:15px;}
   40%  {background-color:hsla(43, 20%, 15%, 0.7); left:0px;  top:0px;}
   50%  {background-color:hsla(43, 20%, 8%, 0.8); left:15px; top:15px;}
-  60%  {background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
+  60%  {transform: rotate(20deg);background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
   70%  {background-color:hsla(43, 20%, 0%, 0.5); left:15px; top:15px;}
   80%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;} 
   90%  {background-color:hsla(43, 20%, 85%, 0.5); left:0px;  top:15px;}
   100% {background-color:transparent; left:0px;  top:0px;}
 }
 
+#jar-hue-loc-skew {
+  position: relative;
+  animation-name: hue-loc-skew;
+  animation-duration: 4s;
+  animation-delay: 10s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
 
+@keyframes hue-loc-skew {
+  0%   {background-color:transparent;left:0px;  top:0px;}
+  12%  {background-color:red;        left:20px; top:0px;}
+  25%  {transform: skewY(10deg);background-color:orange;     left:20px; top:20px;}
+  38%  {transform: skewY(20deg);background-color:yellow;     left:0px;  top:20px;}
+  50%  {transform: skewY(30deg);background-color:green;       left:0px;  top:0px;}
+  62%  {transform: skewX(20deg);background-color:blue;       left:20px; top:0px;}
+  75%  {transform: skewX(10deg);background-color:indigo;     left:20px; top:20px;}
+  88%  {transform: skewX(5deg);background-color:violet;     left:0px;  top:20px;}
+  100% {background-color:transparent;left:0px;  top:0px;} 
+}
 
 
 
