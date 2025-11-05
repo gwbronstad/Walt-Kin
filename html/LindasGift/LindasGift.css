@@ -19,25 +19,10 @@ mark {
 	background-color: hsl(0, 100%,  100%);
     color:  hsl(0, 0%, 0%);
 }
-figure {
-  border: none;
-  padding: 4px;
-  margin: auto;
-}
-
-figcaption {
-  background-color: DarkSlateGray;  /* #2F4F4F */
-  color: Ivory;                     /* #FFFFF0 */
-  font-style: italic;
-  padding: 2px;
-  text-align: center;
-  Margin-left: 20%;
-  margin-right: 20%; 
-}
 
 .cursive {
   font-family:cursive;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 p {
   font-size: 1.5em;
@@ -59,13 +44,13 @@ img {
 .containpad {
   display: grid;
   gap: 90px 100px;
-  font-size: 1.5em;
-  border: 2px dotted white;
+  font-size: 1.8em;
+  border: 2px dotted Grey;
   border-radius: 1em;
   background-color: transparent;
-  padding: 3em 10em 3em 10em;
+  padding: 10em;
   margin: 3em 1em 3em 1em;
-    color: white;
+    color: Grey
 }
 
 .containpad-nb {
@@ -79,6 +64,16 @@ img {
     color: white;
 }
 
+.picjarancestor {
+  break-inside: avoid;
+  display: grid;
+  gap: 10px 9px;
+  text-align: center; 
+  background-color: transparent;
+  padding: 2em;
+  margin: 1em;
+    color: black;
+}
 /*
 .contain1 {
   display: grid;
@@ -106,37 +101,6 @@ img {
 }
 
 .contain2 > div {
-  background-color: transparent;
-  border: 0px solid black;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.contain3 {
-  display: grid;
-  gap: 90px 100px;
-  grid-template-columns: auto auto auto;
-  background-color: transparent;
-  padding: 10px;
-    color: white;
-}
-
-.contain3 > div {
-  background-color: transparent;
-  border: 0px solid black;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.contain4 {
-  display: grid;
-  gap: 90px 100px;
-  grid-template-columns: auto auto auto auto;
-  background-color: transparent;
-  padding: 10px;
-    color: white;
-}
-.contain4 > div {
   background-color: transparent;
   border: 0px solid black;
   padding: 20px;
@@ -227,7 +191,7 @@ div.sticky {
 }
 .picture {
   break-inside: avoid;
-  padding: 20px;
+ padding: 2em; 
   margin-bottom: 1em;
 }
 h2 {
@@ -238,11 +202,186 @@ p::first-letter {
   font-weight: bold;
   color: hsl(230, 40%,  40%);
 }
-  
-  
-  
-  
-  
-  
-  
+ 
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg) blur(28px);
+  }
+  to {
+    filter: hue-rotate(360deg) blur(28px);
+  }
+}
+ 
+figure {
+  position: relative;
+  width: clamp(0px, 30%, calc(100% - 550px));
+  height: clamp(0px, 40%, calc(100% - 390px));  
+  background-color: transparent;
+  z-index: 1;
+}
+#grad-sun {
+ display: flex;
+  justify-content: flex-start;
+  align-items: center;
+height: 200px;
+width: 100px;
+ padding-right: 10%;
+  border: 3px solid red;
+  margin:0;
+  border-radius: 100%;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #77ff00,
+    #f8dd00,
+    #ffb000,     /* #ffb000, */
+    #ff841d,
+    #ff72b9,
+    #ff81ff,     /* #ff81ff, */
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+ filter: drop-shadow(0px 5px 20px #ff81ff) blur(20px) saturate(1.2); 
+}
+
+#grad-sun0 {
+ display: flex;
+  justify-content: flex-start;
+  align-items: center;
+height: 150px;
+width: 100px;
+ padding-right: 10%;
+  border: 3px solid red;
+  margin:0;
+  border-radius: 100%;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #77ff00,
+    #f8dd00,
+    #ffb000,     /* #ffb000, */
+    #ff841d,
+    #ff72b9,
+    #ff81ff,     /* #ff81ff, */
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+ filter: drop-shadow(0px 5px 20px #ff81ff) blur(20px) saturate(1.2); 
+}
+
+
+figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;  /*space-between;   */
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  z-index: -1;
+}
+/* need this */
+figure figcaption::before {
+  position: absolute;
+  inset: 0;
+  width: 90%;
+  height: 90%;
+  filter: blur(28px);  
+  border: 45px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #77ff00,
+    #f8dd00,
+    #ffb000,
+    #ff841d,
+    #ff72b9,
+    #ff81ff,
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+  z-index: -1;
+  border-image-slice: 20;
+  animation: hue 2s linear infinite;
+  content: "";
+}
+
+/* need this */
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg) blur(18px);
+  }
+  to {
+    filter: hue-rotate(360deg) blur(18px);
+  }
+}
+
+figure figcaption p {
+  position: relative;
+  padding: 10px;
+}
+
+#jarancestor-1 {
+  position: relative;
+  animation-name: myAnimation-1;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes myAnimation-1 {
+  0%   {background-color:transparent;left:0px;  top:0px;}
+  12%  {background-color:red;        left:20px; top:0px;}
+  25%  {background-color:orange;     left:20px; top:20px;}
+  38%  {background-color:yellow;     left:0px;  top:20px;}
+  50% {background-color:green;       left:0px;  top:0px;}
+  62%  {background-color:blue;       left:20px; top:0px;}
+  75%  {background-color:indigo;     left:20px; top:20px;}
+  88%  {background-color:violet;     left:0px;  top:20px;}
+  100% {background-color:transparent;left:0px;  top:0px;} 
+}
+
+#jarancestor-2 {
+  position: relative;
+  animation-name: myAnimation-2;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes myAnimation-2 {
+  0%   {background-color:transparent; left:0px;  top:0px;}
+  10%  {background-color:hsla(43, 20%, 55%, 0.5); left:15px; top:0px;}
+  20%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;}
+  30%  {background-color:hsla(43, 20%, 25%, 0.6); left:15px; top:15px;}
+  40%  {background-color:hsla(43, 20%, 15%, 0.7); left:0px;  top:0px;}
+  50%  {background-color:hsla(43, 20%, 8%, 0.8); left:15px; top:15px;}
+  60%  {background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
+  70%  {background-color:hsla(43, 20%, 0%, 0.5); left:15px; top:15px;}
+  80%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;} 
+  90%  {background-color:hsla(43, 20%, 85%, 0.5); left:0px;  top:15px;}
+  100% {background-color:transparent; left:0px;  top:0px;}
+}
+
+
+
+
+
+
   
