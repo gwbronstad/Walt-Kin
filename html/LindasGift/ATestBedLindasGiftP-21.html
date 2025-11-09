@@ -1,0 +1,113 @@
+<!DOCTYPE html>  <!-- start head part   -->
+<html lang="en">
+<head> 
+	<title>Test Bed Lindas Gift Page 21</title>
+    <link rel="icon" href="0Ico_Louise.jpg">            
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="Child Story">
+	<meta name="author" content="Gilbert Bronstad">
+	<meta name="changed" content="20251021">   <!--[{ change date }] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel =stylesheet type="text/css" href="LindasGift.css">	
+</head>
+<style>
+article {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;  /*space-between;   */
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 2 !important;
+}
+/* need this */
+ 
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg) blur(18px);
+  }
+  to {
+    filter: hue-rotate(360deg) blur(18px);
+  }
+}
+
+#HappyBorder {
+  position: relative;
+  inset: 0;
+  width: 30%;
+  height: 20%;
+  filter: blur(28px);  
+  border: 45px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #77ff00,
+    #f8dd00,
+    #ffb000,
+    #ff841d,
+    #ff72b9,
+    #ff81ff,
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+
+  border-image-slice: 20;
+  animation: hue 2s linear infinite;
+  z-index: -1 !important; 
+  content: "";
+}
+
+</style>
+
+<body id="blue-pink-blue">
+<div> <!-- keeps sticky nav till end of body -->
+<p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
+<script>  <!-- Date each page with last page update -->
+document.getElementById("LastModDate").innerHTML = document.lastModified;
+</script>
+ 
+<div class="sticky">
+<ul class="pagination">
+  <li><a href="https://gwbronstad.github.io/Walt-Kin/html/Walton_Louise_M_Bronstad.html">Author</a></li>
+  <li><a href="LindasGift-front.html">Front</a></li>
+  <li><a href="LindasGiftP-20.html">  &laquo;</a></li>  
+  <li><a class="active" href="#">Page 21</a></li>
+  <li><a href="LindasGiftP-22.html">&raquo;  </a></li>
+</ul>
+</div>
+
+<div class="newspaper">
+<p id="padcenter">Darkness was coming fast now. A light was turned on in the house. Linda was almost asleep when she heard someone near her.</p>
+<p id="padcenter">"Why Linda, Dear! Why didn't you come in?  We didn't  know you were here."</p>
+<p id="padcenter">Was she dreaming? It was Aunt Nell!</p>
+
+<figure style="height: 35vh; width: 80%;">  <!--width: 75%    -->
+<figcaption style="break-inside: avoid">
+<p> Aunt Nell!" Linda's arms went around her neck. "I thought you went home!"</p>
+<p>"Well, surely you would have come in to see me if you had known I was here!" Aunt Nell teased. </p>
+</figcaption></figure>
+<div id="HappyBorder" style="height: 35vh; width: 80%;">
+<article  style="break-inside: avoid">
+<p><mark> Aunt Nell!" Linda's arms went around her neck. "I thought you went home!"</p>
+<p>"Well, surely you would have come in to see me if you had known I was here!" Aunt Nell teased. </mark></p>
+</article>
+</div>
+<p id="padcenter">But wasn't it your car I saw leave?" Linda asked.</p>
+<p id="padcenter">I had to send my car to town, too. That changed my plans. I can stay until tomorrow afternoon."</p>
+
+<p id="padcenter">"Oh Aunt Nell! Wait!" Linda seemed to have a new surge of eagarness. "Wait here just a minute."
+</p>
+
+</div>
+</div>  <!-- end sticky nav bar -->
+</body>
+</html>
+<!-- end page end -->

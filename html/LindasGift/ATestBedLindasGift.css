@@ -203,7 +203,16 @@ p::first-letter {
   color: hsl(230, 40%,  40%);
 }
  
-
+figure {
+  position: relative;
+ /*  width: clamp(0px, 30%, calc(100% - 500px));
+  height: clamp(0px, 40%, calc(100% - 400px)); */
+  
+  width: 40%;
+  height: 50%;  
+  background-color: transparent;
+  z-index: 1;
+}
 #grad-sun {
  display: flex;
   justify-content: flex-start;
@@ -259,16 +268,7 @@ width: 100px;
   );
  filter: drop-shadow(0px 5px 20px #ff81ff) blur(20px) saturate(1.2); 
 }
-figure {
-  position: relative;
- /*  width: clamp(0px, 30%, calc(100% - 500px));
-  height: clamp(0px, 40%, calc(100% - 400px)); */
-  
-  width: 40%;
-  height: 50%;  
-  background-color: transparent;
-  z-index: 1;
-}
+
 
 figure figcaption {
   position: absolute;
@@ -288,7 +288,7 @@ figure figcaption {
 figure figcaption::before {
   position: absolute;
   inset: 0;
-  width: 95%;
+  width: 90%;
   height: 90%;
   filter: blur(28px);  
   border: 45px solid transparent;
@@ -309,7 +309,7 @@ figure figcaption::before {
   );
   z-index: -1;
   border-image-slice: 20;
-  animation: hue 4s linear infinite;
+  animation: hue 2s linear infinite;
   content: "";
 }
 
