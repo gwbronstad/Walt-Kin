@@ -1,0 +1,186 @@
+
+/* https://developer.mozilla.org/en-US/play?uuid=38cbf04e95f5b8cdd4c8edf34b710dabc71e7dc4&state=hZDLjsIwDEV%2FxcqaR2ckNuWx5x%2BySRtPG8hLSWgrEP8%2BbqGFSkisHPnc2Pf6xupkNMvZTqoGSi1i3HPWBuE9Bs4O3ALMUOE68B2RIwgDv1nmO2iVxN2aVJ%2FlTTvKf7Km%2FaZG81KjmanHyhasjJFMr%2FoPt35MIcpzFdzFymXptAs5aFXVqdAX3A7cBYnU3ZDd6LSSIEU4T9gLKZWtctrpu6FjRKiUpQZ5yKhz55bb1fMwj51%2FzqZlVFccVJPGPy2R81TnjxNNkPK%2Fw%2F4gE6NNczYOpbynPi7VVKNBeg7p2P0f&srcPrefix=%2Fen-US%2Fdocs%2FLearn_web_development%2FCore%2FStyling_basics%2FValues_and_units%2F */
+
+/* intended for import into css sheets with @import rule */
+
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: hsl(180, 40%, 10%);
+/*  color: #29627e;  */
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+
+.MistyRose  {      /* FFE4E1	255, 228, 225	6, 100, 94 */ 
+   background-color: hsl(6, 100%, 96%);
+   color: hsl(6, 40%, 10%);
+}
+                  /* Hex code RGB code	      HSL code     */ 
+.SeaShell   {     /* FFF5EE	  255, 245, 238	  25, 100, 97  */  
+   background-color: hsl(25, 100%, 96%);
+   color: hsl(25, 40%, 10%);
+}
+
+.Beige  {          /* F5F5DC	245, 245, 220	60, 56, 91 */ 
+   background-color: hsl(60, 56%, 90%);
+   color: hsl(60, 40%, 10%);
+}
+
+.HoneyDew {        /* F0FFF0	240, 255, 240	120, 100, 97 */ 
+   background-color: hsl(120, 100%, 97%);
+   color: hsl(120, 40%, 10%);
+}
+
+.Azure    {       /* F0FFFF	240, 255, 255	180, 100, 97 */ 
+   background-color: hsl(180, 100%, 97%);
+   color: hsl(180, 40%, 10%);
+}
+ 
+.LavenderBlush {   /* FFF0F5	255, 240, 245	340, 100, 97 */ 
+   background-color: hsl(340, 100%, 97%);
+   color: hsl(340, 40%, 10%);
+}
+
+div-level-0   {  /* custom element  */
+    display: block;
+}
+
+div-grid-item {  /* custom element  */
+    display: block;
+	padding-inline-start: 2px;
+    padding: 1em; 
+  border-style: solid;
+  border-color: blue yellow white yellow;
+  border-width: 8px 0px 8px 0px;
+  border-radius: 12px 7px 0px 0px;  
+}
+.newspaper {
+  column-count: 3;
+  column-width: 20em;
+  column-gap: 1.5em;
+  column-rule: 1px solid lightblue;
+  background-color:  transparent; 
+  /*  hsl(240, 100%,  96%);  */
+  word-break: break-word;
+  padding: 1em;
+   orphans: 4;
+   widows: 6;
+}
+
+/*Always insert a region-break before <ul> elements in a region:   */
+.region div-grid-item {
+    break-before: region;
+  }
+}
+
+/* did not work in Firefox
+div-newspaper {
+  column-count: 3;
+  column-width: 20em;
+  column-gap: 1.5em;
+  column-rule: 1px solid lightblue;
+  background-color:  transparent; 
+  /*  hsl(240, 100%,  96%);  *^/
+  word-break: break-word;
+  padding: 1em;
+   orphans: 4;
+   widows: 6;
+}
+  */
+.right {
+	text-align: right;
+}
+.rMistyRose  {      /* FFE4E1	255, 228, 225	6, 100, 94 */ 
+   background-color: hsl(6, 100%, 86%);
+   color: hsl(6, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+                  /* Hex code RGB code	      HSL code     */ 
+.rSeaShell   {     /* FFF5EE	  255, 245, 238	  25, 100, 97  */  
+   background-color: hsl(25, 100%, 86%);
+   color: hsl(25, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+
+.rBeige  {          /* F5F5DC	245, 245, 220	60, 56, 91 */ 
+   background-color: hsl(60, 56%, 80%);
+   color: hsl(60, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+
+.rHoneyDew {        /* F0FFF0	240, 255, 240	120, 100, 97 */ 
+   background-color: hsl(120, 100%, 87%);
+   color: hsl(120, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+
+.rAzure    {       /* F0FFFF	240, 255, 255	180, 100, 97 */ 
+   background-color: hsl(180, 100%, 87%);
+   color: hsl(180, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+ 
+.rLavenderBlush {   /* FFF0F5	255, 240, 245	340, 100, 97 */ 
+   background-color: hsl(340, 100%, 87%);
+   color: hsl(340, 40%, 10%);
+   padding: 40px 40px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+}
+
+div-sticky {
+  position: sticky;
+  top: 0;
+    z-index: 2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+    background-color: hsl(59, 74%, 85%, 0.75);  
+  border: 2px solid gray;
+  color: black;  
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination li a.link {
+  background-color: hsl(59, 74%, 85%, 0.75);
+  color: white;
+  }
+.pagination li a:hover:not(.active) {
+  background-color: lightgray;
+}
+/*  .pagination li a.active {
+  background-color: green;
+  color: white;  */
+  }
+  .pagination li a.visited {
+  background-color: pimk;
+  color: white;
+  }  

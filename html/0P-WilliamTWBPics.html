@@ -7,17 +7,18 @@
 	<meta name="description" content="Letters">
 	<meta name="author" content="Gilbert Bronstad">
 	<meta name="changed" content="20250228">                     <!--[{ change date }] -->
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--	<link rel =stylesheet type="text/css" href="../css/w3css.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel =stylesheet type="text/css" href="../css/aside.css">
 	<link rel =stylesheet type="text/css" href="../css/Pat-sLife.css">
+    <link rel =stylesheet type="text/css" href="../css/PatLetr.css">	
     <link rel =stylesheet type="text/css" href="../css/txtbox.css">
-    <link rel =stylesheet type="text/css" href="../css/PatLetr.css">
     <link rel =stylesheet type="text/css" href="../css/Walt-KinPics.css">
 
 </head>
 <body>
  
-<p class="w3-cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
+<p class="lastupdt-cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
 <script>
 document.getElementById("LastModDate").innerHTML = document.lastModified;
 </script>
@@ -31,6 +32,19 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
   <a href="../index.html"> Family List</a>
 </h3>
 </header>
+<div-level-0>
+
+<div-sticky>
+<ul class="pagination">
+  <li><a href="#">top&nbsp; </a> </li>
+  <li><a href="#fig-5">adolescent&nbsp; </a> </li>
+  <li><a href="#fig-9">Family&nbsp; </a> </li>
+
+  <li><a href="#bottom">end&nbsp; </a> </li>
+</ul>
+</div-sticky> 
+
+
 <div class="wkwrap">
 <div class="grid-pic">  <!-- Fig 1 -->
 <article><h2>1892</h2>
@@ -72,7 +86,8 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </figure><br>
 <p>A studious look with glasses</p>
 </article></div>
-<div class="grid-pic">  <!-- Fig 5 -->
+
+<div  id="fig-5" class="grid-pic">  <!-- Fig 05 -->
 <article>
 <figure>
 	   <a href="../pic/WTW/18970615-WilliamTwymanWaltonAndFriendPS.jpg" target="_top">
@@ -114,9 +129,8 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </figure><br>
 <p>Draw a card left to right across picture; faces first encountered are: William Twyman Walton, Louise Myrtle Walton, Frederick Cook Walton, Aubrey Irene Walton, William Embrey Walton, Ethel Irene (Embrey)(Price) Walton, Ina Jo Walton and Annie Joy Walton. <br>Little <a href="0P-LouiseBPics.html" target="_blank">Frederick</a>, at his father's knee, died in a <a href="Walton_William_T.html#FredDeath" target="_blank">farming accident</a> before age 6, May 5, 1915.</p>
 </article>
-</div>
+</div><div id="fig-9"  class="grid-pic">  <!-- Fig 09 -->
 
-<div class="grid-pic">  <!-- Fig 9 -->
 <article><h2>~1917</h2>
 <figure>
 	   <a href="../pic/WTW/19160724-WTWalton Family.jpg" target="_top">
@@ -158,8 +172,8 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </figure><br>
 <p>This is after World War II.</p>
 </article></div>
+<div  id="fig-13" class="grid-pic">  <!-- Fig 13 -->
 
-<div class="grid-pic">  <!-- Fig 13 -->
 <article><h2>25<sup>th</sup> of November, 1950</h2>
 <figure>
 	   <a href="../pic/WTW/19520515-NanEmbreyEdwinEthylWIll.jpg" target="_top">
@@ -219,9 +233,11 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 	
 </div>
 </div>
-<footer>
+</div-level-0>
+<footer id="bottom">
+
 <h3>
-  <a href="#">Top of Page</a>
+
    <a href="Walton_William_T.html">William Twyman Walton, main page</a> &nbsp;&#9999;&nbsp; 
   <a href="../index.html"> Family List</a>
 </footer>

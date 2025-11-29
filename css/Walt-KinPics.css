@@ -4,11 +4,26 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+.lastupdt-cursive {
+	font-family:cursive
+}
+
+li::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: hsl(230, 40%,  40%);
+}
+p::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: hsl(230, 40%,  40%);
 }
 
   mark {
@@ -22,7 +37,7 @@ h2 {
 }
 
 p {
-  font-size: 0.875em;
+  font-size: 1em;
 }
 
 .wkwrap {
@@ -520,10 +535,29 @@ sup.footnote {
    border: 1px solid #000;
    Border-radius: 4px;
 } */
+
 img.mlr {
     margin-left: 12px;
     margin-right: 12px;
 }	
+
+img.mlr57px {
+	display: inline;
+	width: 57px;
+	height: 57px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+img.mlr114px {
+	display: inline;
+	width: 114px;
+	height: 114px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
 img.nborder {
     border--style: hidden;
 }

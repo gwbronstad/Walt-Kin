@@ -1,6 +1,8 @@
 @charset "utf-8";  /*"US-ASCII";*/
 /* ANIMATABLE PROPERTIES:  https://www.w3schools.com/cssref/css_animatable.php  */
 
+
+
 h1 {
   font-size: 2.5em;
   text-align: center;
@@ -173,10 +175,22 @@ div.sticky {
   border-radius: 5px;
 }
 
-.pagination li a.active {
-  background-color: #4CAF50;
+.pagination li a.link {
+  background-color: hsl(59, 74%, 85%, 0.75);
   color: white;
   }
+.pagination li a:hover:not(.active) {
+  background-color: lightgray;
+}
+/*  .pagination li a.active {
+  background-color: green;
+  color: white;  */
+  }
+  .pagination li a.visited {
+  background-color: pimk;
+  color: white;
+  }  
+  
   .newspaper {
   column-count: 3;
   column-width: 20em;

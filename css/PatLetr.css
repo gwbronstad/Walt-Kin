@@ -48,8 +48,8 @@ figure {
   border-radius: 5px;
 }
 .grid-context {
-  border: 9px solid rgb(080,066,066+);
-  padding: 8px;
+  border: 3px solid rgb(080,066,066);
+  /* padding: 8px; */
   border-radius: 10px;
     background-color: hsl(0, 100%, 93%);
   /*background-color: rgb(240,210,210); ackground-color: #ffd8a8;  */

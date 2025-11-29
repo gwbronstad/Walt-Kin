@@ -17,8 +17,46 @@
 #gradplough {
   height: 44vh;
   background-color: SandyBrown; /* For browsers that do not support gradients */
-  background-image: repeating-linear-gradient(160deg,hsla(108, 10%, 20%, 0.5) 2%,hsla(128, 7%, 4%, 0.5) 3%,hsla(43, 20%, 35%, 0.5) 5%);
-}  
+  background-image: repeating-linear-gradient(165deg,
+  hsla(108, 10%, 20%, 0.5) 3%,
+  hsla(128, 7%, 4%, 0.5) 4%,
+  hsla(43, 20%, 35%, 0.5) 6%);
+} 
+
+#div1 {
+  position: relative;
+  margin: auto;
+  height: 150px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+  perspective: 125px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {perspective-origin: right 80%;}
+}
+
+#div2 {
+  break-inside: avoid;
+  height: 60vh;;
+  width: 80%;
+  padding: 10px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 15px;
+    perspective: 125px;
+	perspective-origin: right 80%;
+	  background-color: SandyBrown; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(160deg,
+  hsla(108, 10%, 20%, 0.5) 2%,
+  hsla(128, 7%, 4%, 0.5) 3%,
+  hsla(43, 20%, 35%, 0.5) 5%);
+/*  background-color: coral;  */
+  transform: rotateX(45deg);
+    z-index: -1;
+} 
 </style>
 <!--<body style=" background-color: lightblue;"> -->
 <body id="gradmorning2" > 
@@ -43,9 +81,18 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <p id="padcenter">Linda knew how much Father enjoyed Aunt Nell, but she also knew nothing must stop the work plans for the day. </p>
 
 <p id="padcenter">Another crop must be planted on this field before frost. A rain might cause too much delay. The soil must be plowed today.</p>
-<div id="gradplough" class="containpad picture center"> <img src="3horseplow.png" alt="3 horse plow" style="width:89%" ></div>
+
+<div id="gradplough" class="containpad picture center"> <img src="3horseplow.png" alt="3 horse plow" style="width:89%" >
 </div>
+<!-- </div>
+<div id="div1">DIV1   
+  <div id="div2">
+  <img src="3horseplow.png" alt="3 horse plow" style="width:89%;  z-index: 1;">
+</div>-->
+<!-- </div>  -->
+
 </div>  <!-- end sticky nav bar -->
+</div>
 </body>
 
 </html>

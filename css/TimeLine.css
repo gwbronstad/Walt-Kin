@@ -135,20 +135,15 @@
     }
 
 
-
-
-
-
-
-
+/*
 .CurlBrketlt {border: solid #000;
     border-width: 5px 1px 1px 0px;
-    padding: 0.125em 0.125em 0.125em 2em;   /*  top,   right,  bottom,   left */
-	margin: 0 3em 0.5em 0em;        /*  top,   right,  bottom,   left */
-    border-radius: 35% 1em 1em 35%; /* top lt, top rt; bottom r, bottom l  */
+    padding: 0.125em 0.125em 0.125em 2em;   /*  top,   right,  bottom,   left *~/
+	margin: 0 3em 0.5em 0em;        /*  top,   right,  bottom,   left *~/
+    border-radius: 35% 1em 1em 35%; /* top lt, top rt; bottom r, bottom l  *~/
 
 }
-/*
+
 .Ptlt {border: solid #000;
     border-width: 5px 1px 1px 0px;
     padding: 0.125em 0.125em 0.125em 2em;   /*  top,   right,  bottom,   left *-/
