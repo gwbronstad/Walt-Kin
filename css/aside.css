@@ -163,7 +163,7 @@ div-sticky {
   display: block;
   padding: 8px 12px;
   text-decoration: none;
-    background-color: hsl(59, 74%, 85%, 0.75);  
+    background-color: hsl(59, 74%, 85%);  /*, 0.75  removed alpha channel to help Safari performance */
   border: 2px solid gray;
   color: black;  
   margin: 0 4px;
