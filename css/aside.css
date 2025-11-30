@@ -172,14 +172,14 @@ div-sticky {
   padding: 8px 12px;
   text-decoration: none;
   background-color: hsl(59, 74%, 85%);  /*, 0.75  removed alpha channel to help Safari performance */
-  border: 2px solid black;
+  border: 2px solid green;
   color: black;  
   margin: 0 4px;
   border-radius: 5px;
 }
 
 .pagination li a.link {
-  background-color: hsl(59, 74%, 85%, 0.75);
+  background-color: hsl(59, 74%, 85%);  /*, 0.75  removed alpha channel to help Safari performance */
   color: white;
   }
 .pagination li a:hover:not(.active) {
