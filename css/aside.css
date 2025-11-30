@@ -144,6 +144,14 @@ div-newspaper {
    	text-align: right;
 	font-size: 1.5em;
 }
+/*  is custom name the problem?  */
+.sticky-menu {
+  position: sticky;
+  position: -webkit-sticky;  
+  top: 0; /* Threshold: Sticks when top edge hits viewport top */
+  z-index: 100; /* Ensure it stays above other content */
+}
+
 
 div-sticky {
   position: sticky;	
