@@ -52,6 +52,15 @@ div-level-0   {  /* custom element  */
     display: block;
 }
 
+.grid-item-aside {  /* custom element  */
+    display: block;
+	padding-inline-start: 2px;
+    padding: 1em; 
+  border-style: solid;
+  border-color: blue yellow white yellow;
+  border-width: 8px 0px 8px 0px;
+  border-radius: 15px 15px 0px 0px;  
+}
 div-grid-item {  /* custom element  */
     display: block;
 	padding-inline-start: 2px;
@@ -94,13 +103,14 @@ div-newspaper {
    widows: 6;
 }
   */
+
 .right {
 	text-align: right;
 }
 .rMistyRose  {      /* FFE4E1	255, 228, 225	6, 100, 94 */ 
    background-color: hsl(6, 100%, 86%);
    color: hsl(6, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -108,7 +118,7 @@ div-newspaper {
 .rSeaShell   {     /* FFF5EE	  255, 245, 238	  25, 100, 97  */  
    background-color: hsl(25, 100%, 86%);
    color: hsl(25, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -116,7 +126,7 @@ div-newspaper {
 .rBeige  {          /* F5F5DC	245, 245, 220	60, 56, 91 */ 
    background-color: hsl(60, 56%, 80%);
    color: hsl(60, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -124,7 +134,7 @@ div-newspaper {
 .rHoneyDew {        /* F0FFF0	240, 255, 240	120, 100, 97 */ 
    background-color: hsl(120, 100%, 87%);
    color: hsl(120, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -132,7 +142,7 @@ div-newspaper {
 .rAzure    {       /* F0FFFF	240, 255, 255	180, 100, 97 */ 
    background-color: hsl(180, 100%, 87%);
    color: hsl(180, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -140,7 +150,7 @@ div-newspaper {
 .rLavenderBlush {   /* FFF0F5	255, 240, 245	340, 100, 97 */ 
    background-color: hsl(340, 100%, 87%);
    color: hsl(340, 40%, 10%);
-   padding: 40px 40px 0px 0px;
+   padding: 50px 50px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 }
@@ -148,6 +158,7 @@ div-newspaper {
 .sticky-menu {
   position: sticky;
   position: -webkit-sticky;  
+  display: flex;
   top: 0; /* Threshold: Sticks when top edge hits viewport top */
   z-index: 100; /* Ensure it stays above other content */
 }
@@ -162,7 +173,7 @@ div-sticky {
 
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   list-style: none;
   padding: 0px;
 }

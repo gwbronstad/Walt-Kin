@@ -26,7 +26,12 @@ td {
   border: 1px solid rgba(160, 160, 160, .2);
   padding: 8px 10px;
 }
-
+ 
+.vert-th  (
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	}
+	
 td:last-of-type {
   text-align: center;
 }
@@ -45,6 +50,7 @@ tfoot td {
 .lf {
   text-align: left;
 }
+
 @media all and (max-width: 500px){
   table.fronttable th{
     display: none;

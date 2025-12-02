@@ -89,9 +89,10 @@ p {
  /*   gap: 20px 10px;
 	background-color: rgb(230, 230, 255);
     padding: 10px;  */
+}
   @media all and (min-width: 400px){
     grid-template-columns: 1fr;
-  }
+  }  /* '}' ADDED 2025-11-30  may have made problem !!  */
   @media all and (min-width: 1000px){
     grid-template-columns: 1fr 1fr;  
   }
