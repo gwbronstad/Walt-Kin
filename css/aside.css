@@ -52,7 +52,7 @@ div-level-0   {  /* custom element  */
     display: block;
 }
 
-.grid-item-aside {  /* custom element  */
+.grid-item-aside {  /* Safari replacement for custom element  */
     display: block;
 	padding-inline-start: 2px;
     padding: 1em; 
