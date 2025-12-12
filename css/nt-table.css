@@ -22,10 +22,17 @@ tfoot {
 }
 
 th {
-	writing-mode: vertical-lr;
+/*	writing-mode: vertical-lr;  */
+	writing-mode: sideways-lr;
+/*	-webkit-writing-mode: vertical-lr;  */
+	-webkit-writing-mode: sideways-lr;
+	text-orientation: upright;	
 	-webkit-text-orientation: upright;
-	text-orientation: upright;
-	background-color: rgba(240, 240, 240, .4); /* hsla(115, 100%, 86%, 0.4); */
+	background-color: rgba(240, 200, 200, .4); 
+	/* writing-mode: vertical-lr;
+	text-orientation: upright;	
+	-webkit-text-orientation: upright;
+	background-color: rgba(240, 240, 240, .4);  hsla(115, 100%, 86%, 0.4); */
 }
 
 td {
