@@ -1,0 +1,71 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/*  ...css/table.css  */
+
+table {
+  background-color: rgb(204, 255, 255); /*indigo;	 */
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: top;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgba(228, 240, 245, .4);
+}
+
+th {
+	writing-mode: vertical-lr;
+	-webkit-text-orientation: upright;
+	text-orientation: upright;
+	background-color: rgba(240, 240, 240, .4); /* hsla(115, 100%, 86%, 0.4); */
+}
+
+td {
+  border: 1px solid rgba(160, 160, 160, .2);
+  padding: 8px 10px;
+}
+ 
+th.vert  (
+	writing-mode: vertical-lr;
+	-webkit-text-orientation: upright;
+	text-orientation: upright;
+	}
+	
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgba(237, 238, 242, 1);
+}
+
+tfoot th {
+  text-align: center;
+}
+
+tfoot td {
+  font-weight: bold; 
+}
+.lf {
+  text-align: left;
+}
+  /* the following are for the double cousin explanation  */
+.lb 
+ {
+ background-color: #D6EEEE;
+ text-indent: 0em;
+}
+.pink 
+ {
+ background-color: pink;
+ text-indent: 0em;
+}
+  

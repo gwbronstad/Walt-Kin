@@ -27,8 +27,9 @@ td {
   padding: 8px 10px;
 }
  
-.vert-th  (
+th.vert  (
 	writing-mode: vertical-lr;
+	-webkit-text-orientation: upright;
 	text-orientation: upright;
 	}
 	
@@ -50,7 +51,7 @@ tfoot td {
 .lf {
   text-align: left;
 }
-
+/* fronttable appears not to be used in Waltkin.html  */
 @media all and (max-width: 500px){
   table.fronttable th{
     display: none;
@@ -81,7 +82,7 @@ tfoot td {
   table.fronttable tr > td:nth-child(6n+0)::before {
     content: "DIED: ";
   }
-
+/* genidtable appears not to be used in Waltkin.html  */
   table.genidtable th{
     display: none;
   }
