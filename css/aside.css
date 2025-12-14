@@ -61,6 +61,7 @@ div-level-0   {  /* custom element  */
   border-width: 8px 0px 8px 0px;
   border-radius: 15px 15px 0px 0px;  
 }
+/* https://matthewjamestaylor.com/div-custom-elements */
 div-grid-item {  /* custom element  */
     display: block;
 	padding-inline-start: 2px;
