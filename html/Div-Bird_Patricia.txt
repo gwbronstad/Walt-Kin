@@ -1,0 +1,77 @@
+Divisions-PatsLife
+
+<!--  01 7 13 19-->
+</div-grid-item>
+<div-grid-item class="MistyRose"> <!-- use g, m, r -->
+<p class="rMistyRose" id="Ed01">1899</p>
+
+<!--  02 8 14 ii-->
+</div-grid-item>
+<div-grid-item class="SeaShell"> <!-- use b, g, m, r -->
+<p class="rSeaShell" id="Ea02">1920</p>
+
+<!--  03 9 15 ii-->
+</div-grid-item>
+<div-grid-item class="Beige"> <!-- use b, g, m, r, y -->
+<p class="rBeige" id="My03">1930</p>
+
+<!--  04 10 16 i-->
+</div-grid-item>
+<div-grid-item class="HoneyDew"> <!-- -- use b, g, m, y -->
+<p class="rHoneyDew" id="Ev04">1940</p>
+
+<!--  05 11 17 i -->
+ </div-grid-item>
+<div-grid-item class="Azure"> <!-- use b, g, m, y -->
+<h3 class="rAzure" id="Je05">A & B</h3>
+ 
+<!--  06 12 18 i-->
+ </div-grid-item>
+<div-grid-item class="LavenderBlush"> <!-- -- use b, g, r -->
+<p class="rLavenderBlush" id="Al06">FC& D</p>
+ 
+ 
+ <ul class="pagination">
+  <li><a href="#">top&nbsp; </a> </li>
+  <li><a href="#Ed01">Eddie 1&nbsp;   </a>,&nbsp;</li>
+  <li><a href="#Ea02">Earl 2&nbsp;    </a>/&nbsp;</li>  
+  <li><a href="#My03">Myrtle 3&nbsp;  </a>/&nbsp;</li>
+  <li><a href="#Ev04">Evelyn 4&nbsp;  </a>/&nbsp;</li>
+  <li><a href="#Je05">J.A. 5&nbsp;    </a>/&nbsp;</li>
+  <li><a href="#Al06">Albert 6&nbsp;  </a>/&nbsp;</li>
+  <li><a href="#D007">Donald 7&nbsp;  </a>/&nbsp;</li>
+  <li><a href="#Ma08">Margaret 8&nbsp;</a></li> 
+</ul>  
+<ul class="pagination"> 
+
+  <li><a href="#Iv09">IvaLee 9&nbsp;  </a></li> 
+  <li><a href="#Ca10">Carlton 10&nbsp; </a></li> 
+  <li><a href="#Bu11">Buddy 11&nbsp;   </a></li> 
+  <li><a href="#Fr12">Frances 12&nbsp; </a></li> 
+  <li><a href="#Ma13">Mary 13&nbsp;    </a></li> 
+  <li><a href="#Da14">David 14&nbsp;   </a></li>
+  <li><a href="#Pa15">Patricia 15&nbsp;</a></li>
+  <li><a href="#Be16">Betty 16&nbsp;   </a></li>
+  <li><a href="#bottom">end&nbsp; </a> </li>
+</ul>
+ 
+ <div class="sticky-menu" style=" display: flex;">
+<ul class="pagination">
+  <li><a href="#">top&nbsp; </a> </li>
+  <li><a href="#1941-1959">1941&nbsp;   </a>&nbsp;</li>
+  <li><a href="#1960-1985">1960&nbsp;   </a>&nbsp;</li>
+  <li><a href="#1986-2003">1986&nbsp;  </a>&nbsp;</li>
+  <li><a href="#2004-2023">2004&nbsp;    </a>&nbsp;</li>
+  <li><a href="#Pats-Obit">Obit&nbsp;  </a>&nbsp;</li>
+  <li><a href="#bottom">end&nbsp;  </a>&nbsp;</li>
+
+</ul>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

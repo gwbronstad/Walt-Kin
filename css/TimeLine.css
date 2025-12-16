@@ -32,8 +32,18 @@
     border-style: dashed;
     /* transition: all 0.3s ease; */
 }	
-	
-	
+.grid-domino-WBrickhouse {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	color: LightGray;
+/*	text-shadow: 2px 2px 4px white;  */
+    border-image-source: url(brick-house.png);	
+    border-image-slice:  19%;
+    border-image-repeat: stretch;    
+    border-width: 44px 20px 5px 20px; /*2.5rem; */
+    /*width: 15rem; */
+    border-color: grey;
+    border-style: dashed;
+}	
 	
 .grid-domino-Brickhouse2a {
   margin: 0.5em 7em 1em 7em;
