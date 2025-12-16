@@ -3,33 +3,48 @@ Divisions-PatsLife
 <!--  01 7 13 19-->
 </div-grid-item>
 <div-grid-item class="MistyRose"> <!-- use g, m, r -->
-<p class="rMistyRose" id="Ed01">1899</p>
+class="rMistyRose" id="          Ed01">1899</p>
+class="rMistyRose padding50" id="
+ padding50" id="
 
 <!--  02 8 14 ii-->
 </div-grid-item>
 <div-grid-item class="SeaShell"> <!-- use b, g, m, r -->
-<p class="rSeaShell" id="Ea02">1920</p>
+class="rSeaShell" id="           Ea02">1920</p>
+class="rSeaShell padding50" id="
 
 <!--  03 9 15 ii-->
 </div-grid-item>
 <div-grid-item class="Beige"> <!-- use b, g, m, r, y -->
-<p class="rBeige" id="My03">1930</p>
+class="rBeige" id="              My03">1930</p>
+class="rBeige padding50" id="
 
 <!--  04 10 16 i-->
 </div-grid-item>
 <div-grid-item class="HoneyDew"> <!-- -- use b, g, m, y -->
-<p class="rHoneyDew" id="Ev04">1940</p>
+class="rHoneyDew" id="           Ev04">1940</p>
+class="rHoneyDew padding50" id="
 
 <!--  05 11 17 i -->
  </div-grid-item>
 <div-grid-item class="Azure"> <!-- use b, g, m, y -->
-<h3 class="rAzure" id="Je05">A & B</h3>
+class="rAzure" id="              Je05">A & B</h3>
+class="rAzure padding50" id="
+ 
  
 <!--  06 12 18 i-->
  </div-grid-item>
 <div-grid-item class="LavenderBlush"> <!-- -- use b, g, r -->
-<p class="rLavenderBlush" id="Al06">FC& D</p>
- 
+class="rLavenderBlush" id="       Al06">FC& D</p>
+class="rLavenderBlush padding50" id=" 
+
+padding50
+pad50
+
+padding100
+pad100
+
+
  
  <ul class="pagination">
   <li><a href="#">top&nbsp; </a> </li>

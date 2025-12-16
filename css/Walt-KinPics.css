@@ -29,7 +29,7 @@ p::first-letter {
   mark {
     padding: 0.2em;
     border-radius: 0.2em;
-    font-weight: bold;
+    font-weight: inherit;  /*  bold;   */
 	outline-style: dotted;
 	outline-width: thin;
 	background-color: hsl(0, 100%,  100%);
