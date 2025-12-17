@@ -177,7 +177,7 @@ div-newspaper {
 }
 /* for single row sticky menu */
 .pad100  {
-	   padding: 100px 100px 0px 0px;
+	   padding: 100px 10px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 	font-weight: 800;
@@ -185,7 +185,7 @@ div-newspaper {
 /* for Double row sticky menu */
 
 .pad200  {
-	   padding: 160px 160px 0px 0px;
+	   padding: 160px 10px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 	font-weight: 800;
