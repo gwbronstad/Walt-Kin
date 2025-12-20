@@ -176,13 +176,21 @@ div-newspaper {
 	font-weight: 800;
 }
 /* for single row sticky menu */
+.pad80  {
+	   padding: 80px 10px 0px 0px;
+   	text-align: right;
+	font-size: 1.5em;
+	font-weight: 800;
+}
+/* for 2 row sticky menu */
+
 .pad100  {
 	   padding: 100px 10px 0px 0px;
    	text-align: right;
 	font-size: 1.5em;
 	font-weight: 800;
 }
-/* for Double row sticky menu */
+/* for 3 row sticky menu */
 
 .pad200  {
 	   padding: 180px 10px 0px 0px;
