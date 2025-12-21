@@ -149,7 +149,10 @@
   font-size: 14px;
   /* cursor: pointer;   */
     }
-
+.MinGrdMrgin {
+  margin-right: 150px;
+  margin-left: 80px;      /*  top,   right,  bottom,   left */
+}
 
 /*
 .CurlBrketlt {border: solid #000;

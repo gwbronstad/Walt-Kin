@@ -100,18 +100,17 @@
   color: rgb(048,048,048);
     }
 	.grid-domino {
-/**/	  display: flex;	
-          align-items: left;
+/**/	display: flex;	
+        align-items: left;
      /*     justify-content: center;	   */	
         border: 1px solid #000;
-       
         border-radius: 10px;
 		font-size: 1em;
 		cursor: pointer;
 		margin-top: 0.7em;
-        margin-right: 2em;
+        margin-right: 1em;
         margin-bottom: 0.7em;
-        margin-left: 2em;
+        margin-left: 1em;
 
   /*background-color: #ffd8a8;  */
   /*padding: 1em; */
