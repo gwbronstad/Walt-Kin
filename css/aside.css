@@ -228,7 +228,7 @@ div-sticky {
   padding: 2px 6px;   /* make buttons closer  4px 6px; 2025-12-17 */
   text-decoration: none;
   background-color: hsla(59, 74%, 85%, 0.80);  /*, 0.75  removed alpha channel to help Safari performance */
-  border: 2px solid green;
+  border: 3px solid green;
   color: black;  
   margin: 0 4px;
   border-radius: 5px;
