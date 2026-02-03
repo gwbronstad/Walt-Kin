@@ -519,12 +519,22 @@ img.mlr {
     margin-right: 12px;
 }	
 
+img.mlr40px {
+	display: inline;
+	width: 40px;
+	height: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+float:left;
+}
+
 img.mlr57px {
 	display: inline;
 	width: 57px;
 	height: 57px;
     margin-left: 12px;
     margin-right: 12px;
+float:left;
 }
 
 img.mlr114px {
