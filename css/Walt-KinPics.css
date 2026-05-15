@@ -304,7 +304,7 @@ BLOCKQUOTE {
   background-color: #F2FFF2;  
   font-family: Sans-serif ;      
   width:98%;
-  border:1px solid hsl(0, 100%, 0%);
+  border:0px solid hsl(0, 100%, 0%);
   margin:3px;
   font-style: italic; 
   text-align: left;
@@ -318,43 +318,43 @@ BLOCKQUOTE {
 
 blockquote.Cy1 { /* 1. Complements Red-1  */
   background-color: hsl(342, 100%, 96%);  
-  border: 2px dotted hsl(180, 100%, 50%);
+  /* border: 2px dotted hsl(180, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cy2 { /* 2. Complements Red-2  */
     background-color: hsl(18, 100%, 96%);  
-  border: 2px dotted hsl(180, 100%, 50%);
+  /*   border: 2px dotted hsl(180, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cg1 { /*  3. Complements Yellow-1 */
   background-color: hsl(54, 100%, 96%);  
-  border: 2px dotted hsl(252, 100%, 50%);
+  /*   border: 2px dotted hsl(252, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cg2 {/* 4. Complements Yellow-2 */
   background-color: hsl(90, 100%, 96%);  
-  border: 2px dotted hsl(252, 100%, 50%);
+  /*   border: 2px dotted hsl(252, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cr1 {/*  5. Complements Green-1 */
   background-color: hsl(126, 100%, 96%);  
-  border: 2px dotted hsl(324, 100%, 50%);
+  /*   border: 2px dotted hsl(324, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cr2 {/* 6.  Complements Green-2*/
   background-color: hsl(162, 100%, 96%);  
-  border: 2px dotted hsl(324, 100%, 50%);
+  /*   border: 2px dotted hsl(324, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cm1 {/* 7. Complements Blue-1 */
   background-color: hsl(198, 100%, 96%);  
-  border: 2px dotted hsl(36, 100%, 50%);
+  /*   border: 2px dotted hsl(36, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cm2 {/*  8. Complements Blue-2*/
   background-color: hsl(234, 100%, 96%);  
-  border: 3px dotted hsl(36, 100%, 50%);
+   /*  border: 3px dotted hsl(36, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cb1 {/*  9. Complements Mauve-1 */
   background-color: hsl(270, 100%, 96%);  
-  border: 3px dotted hsl(108, 100%, 50%);
+  /*   border: 3px dotted hsl(108, 100%, 50%);  2026-05-13 */
 }
 blockquote.Cb2 {/* 10. Complements Mauve-2  */
   background-color: hsl(306, 100%, 96%);  
-  border: 3px dotted hsl(108, 100%, 50%);
+  /*  border: 3px dotted hsl(108, 100%, 50%);  2026-05-13 */;
 }
 
 blockquote.wiki {
