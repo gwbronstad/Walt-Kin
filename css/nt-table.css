@@ -28,7 +28,7 @@ th {
 	-webkit-writing-mode: sideways-lr;
 	text-orientation: upright;	
 	-webkit-text-orientation: upright;
-	background-color: rgba(240, 200, 200, .4); 
+	/* background-color: rgba(240, 200, 200, .4); */
 	/* writing-mode: vertical-lr;
 	text-orientation: upright;	
 	-webkit-text-orientation: upright;
