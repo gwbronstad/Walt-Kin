@@ -53,7 +53,7 @@ tfoot td {
 }
 /* fronttable appears not to be used in Waltkin.html  */
 @media all and (max-width: 500px){
-  table.fronttable th{
+/*  table.fronttable th{
     display: none;
   }
   table.fronttable tr{
@@ -80,10 +80,10 @@ tfoot td {
     content: "PLACE: ";
   }
   table.fronttable tr > td:nth-child(6n+0)::before {
-    content: "DIED: ";
+    content: "DIED: ";  2026-05-16 fix Safari table problem */
   }
 /* genidtable appears not to be used in Waltkin.html  */
-  table.genidtable th{
+/*  table.genidtable th{
     display: none;
   }
   table.genidtable tr{
@@ -111,9 +111,9 @@ tfoot td {
   }
   table.genidtable tr > td:nth-child(6n+0)::before {
     content: "LOCATION: ";
-  }
+  }    2026-05-16 fix Safari table problem */
 
-  table.census8table th{
+ /*  table.census8table th{
     display: none;
   }
   table.census8table tr{
@@ -148,9 +148,9 @@ tfoot td {
   }
   table.census8table tr > td:nth-child(8n+0)::before {
     content: "RELATION: ";
-  }
+  }    2026-05-16 fix Safari table problem */
   
-    table.census7 th{
+ /*   table.census7 th{
     display: none;
   }
    table.census7 tr{
@@ -181,7 +181,7 @@ tfoot td {
   }
   table.census7 tr > td:nth-child(7n+0)::before {
     content: "RELATION: ";
-  }
+  }     2026-05-16 fix Safari table problem */
   
   
 } 
