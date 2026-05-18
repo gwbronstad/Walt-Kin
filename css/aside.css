@@ -90,20 +90,6 @@ div-grid-item {  /* custom element  */
   }
 }
 
-/* did not work in Firefox
-div-newspaper {
-  column-count: 3;
-  column-width: 20em;
-  column-gap: 1.5em;
-  column-rule: 1px solid lightblue;
-  background-color:  transparent; 
-  /*  hsl(240, 100%,  96%);  *^/
-  word-break: break-word;
-  padding: 1em;
-   orphans: 4;
-   widows: 6;
-}
-  */
 
 .right {
 	text-align: right;

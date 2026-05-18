@@ -21,31 +21,27 @@ tfoot {
   background-color: rgba(228, 240, 245, .4);
 }
 
-/*  remove webkit sideways text  2026-05-18
 th {
-/*	writing-mode: vertical-lr;  
+/*	writing-mode: vertical-lr;  */
 	writing-mode: sideways-lr;
-/*	-webkit-writing-mode: vertical-lr;  
+/*	-webkit-writing-mode: vertical-lr;  */
 	-webkit-writing-mode: sideways-lr;
 	text-orientation: upright;	
 	-webkit-text-orientation: upright;
 
 }
-   remove webkit sideways text*/
 
 td {
   border: 1px solid rgba(160, 160, 160, .2);
   padding: 8px 10px;
 }
  
- /*  remove webkit sideways text 2026-05-18
 th.vert  (
 	writing-mode: vertical-lr;
 	-webkit-text-orientation: upright;
 	text-orientation: upright;
 	}
-  remove webkit sideways text */
-  
+	
 td:last-of-type {
   text-align: center;
 }
