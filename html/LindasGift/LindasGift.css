@@ -286,7 +286,7 @@ figure {
 
 figure figcaption {
   position: absolute;
-  width: 100%;
+  width: 100%;   /* 100%; */
   height: 100%;
   inset: 0;
   display: flex;
@@ -302,10 +302,10 @@ figure figcaption {
 figure figcaption::before {
   position: absolute;
   inset: 0;
-  width: 95%;
-  height: 90%;
-  filter: blur(28px);  
-  border: 45px solid transparent;
+  width: 77%;  /*  95%; */
+  height: 72%;  /* 90%; */
+  filter: blur(28px);
+  border: 60px solid transparent;
   border-image: linear-gradient(
     135deg,
     #77ff00,
@@ -322,8 +322,8 @@ figure figcaption::before {
     #4dff00
   );
   z-index: -1;
-  border-image-slice: 20;
-  animation: hue 4s linear infinite;
+  border-image-slice: 25;
+  animation: hue 3s linear infinite;
   content: "";
 }
 
