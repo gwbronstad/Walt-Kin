@@ -195,7 +195,7 @@ div.sticky {
   column-count: 3;
   column-width: 20em;
   column-gap: 1em;
-  column-rule: 1px solid lightblue;
+  column-rule: 3px solid lightblue;
   background-color:  transparent; 
   /*  hsl(240, 100%,  98%);  */
   word-break: break-word;
