@@ -343,55 +343,12 @@ figure figcaption p {
   padding: 10px;
 }
 
-#jar-hue-loc {
-  position: relative;
-  animation-name: animate-hue-loc;
-  animation-duration: 4s;
-  animation-delay: 10s;
-  animation-iteration-count: 2;
-  animation-direction: alternate-reverse;  
-}
-
-@keyframes animate-hue-loc {
-  0%   {background-color:transparent;left:0px;  top:0px;}
-  12%  {background-color:red;        left:20px; top:0px;}
-  25%  {background-color:orange;     left:20px; top:20px;}
-  38%  {background-color:yellow;     left:0px;  top:20px;}
-  50% {background-color:green;       left:0px;  top:0px;}
-  62%  {background-color:blue;       left:20px; top:0px;}
-  75%  {background-color:indigo;     left:20px; top:20px;}
-  88%  {background-color:violet;     left:0px;  top:20px;}
-  100% {background-color:transparent;left:0px;  top:0px;} 
-}
-
-#jar-hue-loc-turn {
-  position: relative;
-  animation-name: animate-hue-loc-turn;
-  animation-duration: 4s;
-  animation-delay: 10s;
-  animation-iteration-count: 2;
-  animation-direction: alternate-reverse;  
-}
-
-@keyframes animate-hue-loc-turn {
-  0%   {background-color:transparent; left:0px;  top:0px;}
-  10%  {background-color:hsla(43, 20%, 55%, 0.5); left:15px; top:0px;}
-  20%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;}
-  30%  {background-color:hsla(43, 20%, 25%, 0.6); left:15px; top:15px;}
-  40%  {background-color:hsla(43, 20%, 15%, 0.7); left:0px;  top:0px;}
-  50%  {background-color:hsla(43, 20%, 8%, 0.8); left:15px; top:15px;}
-  60%  {transform: rotate(20deg);background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
-  70%  {background-color:hsla(43, 20%, 0%, 0.5); left:15px; top:15px;}
-  80%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;} 
-  90%  {background-color:hsla(43, 20%, 85%, 0.5); left:0px;  top:15px;}
-  100% {background-color:transparent; left:0px;  top:0px;}
-}
 
 #jar-hue-loc-skew {
   position: relative;
   animation-name: hue-loc-skew;
   animation-duration: 4s;
-  animation-delay: 10s;
+  animation-delay: 1s;  /* 10s; */
   animation-iteration-count: 2;
   animation-direction: alternate-reverse;  
 }
@@ -407,8 +364,68 @@ figure figcaption p {
   88%  {transform: skewX(5deg);background-color:violet;     left:0px;  top:20px;}
   100% {background-color:transparent;left:0px;  top:0px;} 
 }
+ 
 
+#jar-embreys {
+  position: relative;
+  animation-name: animate-embreys;
+  animation-duration: 4s;
+  animation-delay:  1s;  /* 10s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
 
+@keyframes animate-embreys {
+  0%   {background-color:transparent;left:0px;  top:0px;}
+  12%  {background-color:red;        left:20px; top:0px;}
+  25%  {background-color:orange;     left:20px; top:20px;}
+  38%  {background-color:yellow;     left:0px;  top:20px;}
+  50% {background-color:green;       left:0px;  top:0px;}
+  62%  {background-color:blue;       left:20px; top:0px;}
+  75%  {background-color:indigo;     left:20px; top:20px;}
+  88%  {background-color:violet;     left:0px;  top:20px;}
+  100% {background-color:transparent;left:0px;  top:0px;} 
+}
 
+#jar-Waltons {
+  position: relative;
+  animation-name: animate-Waltons;
+  animation-duration: 4s;
+  animation-delay:  1s;  /* 10s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes animate-Waltons {
+  0%   {background-color:transparent; left:0px;  top:0px;}
+  10%  {background-color:hsla(43, 20%, 55%, 0.5); left:15px; top:0px;}
+  20%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;}
+  30%  {background-color:hsla(43, 20%, 25%, 0.6); left:15px; top:15px;}
+  40%  {background-color:hsla(43, 20%, 15%, 0.7); left:0px;  top:0px;}
+  50%  {background-color:hsla(43, 20%, 8%, 0.8); left:15px; top:15px;}
+  60%  {transform: rotate(20deg);background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
+  70%  {background-color:hsla(43, 20%, 0%, 0.5); left:15px; top:15px;}
+  80%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;} 
+  90%  {background-color:hsla(43, 20%, 85%, 0.5); left:0px;  top:15px;}
+  100% {background-color:transparent; left:0px;  top:0px;}
+}
+
+/*  Git Co-Pilot  */
+/* Animation with NO delay for the restart class */
+#jar-embreys.restart-embrey-animation {
+  animation-delay: 0s !important;
+}
+
+/* #jar-embreys.restart-Walton-animation, */
+#jar-Waltons.restart-Walton-animation {
+  animation-delay: 0s !important;
+  /*  needed ?  * /
+   position: relative;
+  animation-name: animate-Waltons;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse; 
+    / *  needed ?  */
+}
 
   
