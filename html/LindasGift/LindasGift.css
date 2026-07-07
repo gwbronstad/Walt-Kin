@@ -364,7 +364,37 @@ figure figcaption p {
   88%  {transform: skewX(5deg);background-color:violet;     left:0px;  top:20px;}
   100% {background-color:transparent;left:0px;  top:0px;} 
 }
- 
+/* GitHub AI  */ 
+
+/* Base styles for animated elements */
+.jar-embrey-animated {
+  position: relative;
+  animation-name: animate-embreys;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+.jar-walton-animated {
+  position: relative;
+  animation-name: animate-Waltons;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+/* Remove delay when restarting */
+.jar-embrey-animated.restart {
+  animation-delay: 0s !important;
+}
+
+.jar-walton-animated.restart {
+  animation-delay: 0s !important;
+}
+
+/* GitHub AI  */ 
 
 #jar-embreys {
   position: relative;
@@ -419,13 +449,7 @@ figure figcaption p {
 /* #jar-embreys.restart-Walton-animation, */
 #jar-Waltons.restart-Walton-animation {
   animation-delay: 0s !important;
-  /*  needed ?  * /
-   position: relative;
-  animation-name: animate-Waltons;
-  animation-duration: 4s;
-  animation-iteration-count: 2;
-  animation-direction: alternate-reverse; 
-    / *  needed ?  */
+
 }
 
   

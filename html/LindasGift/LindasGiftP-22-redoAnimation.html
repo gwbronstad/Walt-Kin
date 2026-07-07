@@ -20,7 +20,7 @@
 	font-style: italic;
 }
 
-.jar {
+.jarbutton {
   background-color: blue;
   border: none;
   color: white;
@@ -56,7 +56,7 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <div class="newspaper">
 
 <!-- Per GitHub Copilot trial 001 -->
-<button id="restart-embrey-animation" class="jar">Jar Embrey Ancestors</button>
+<button class="jarbutton restart-embrey-animation">Jar Embrey Ancestors</button>
 <!-- Per GitHub Copilot trial 001 -->
 
 <p id="padcenter">She ran quickly into the house. The others questioned each other with silent glances. When she came into the dining room from her room, they gathered around her. In her hands she held her precious box. Quickly she pushed it into Aunt Nell's hands.</p>
@@ -80,7 +80,7 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 
 <div class="picjarancestor" style="transform: rotate(0.03turn);">
-<img id="jar-embreys" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<img class="jar-embrey-animated" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
 </div>
 
@@ -88,23 +88,27 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 <p id="padcenter">"Now wouldn't that jar your ancestors?" Father said.</p>
 
+
 <div class="picjarancestor" style="transform: rotate(0.97turn);">
-<img id="jar-embreys" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+<img class="jar-embrey-animated" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Josephine Cameron Embrey</p>
 </div>
 
 
 <!-- Per GitHub Copilot trial 001 -->
-<button id="restart-Walton-animation" class="jar">Jar Walton Ancestors</button>
+<button  class="restart-Walton-animation jarbutton">Jar Walton Ancestors</button>
 <!-- Per GitHub Copilot trial 001 -->
 
 <div class="picjarancestor" style="transform: rotate(0.05turn)";>
-<img id="jar-Waltons" src="Pic/Cpx2WCWalton.png" alt="Claibourne Walton." style="width: 25vh">
+<img class="jar-walton-animated" src="Pic/Cpx2WCWalton.png" alt="William Claibourne Walton." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
 </div>
  
 <div class="picjarancestor" style="transform: rotate(0.97turn);">
-<img id="jar-Waltons" src="Pic/Cpx2WWWalton.png" alt="" style="width: 25vh">
+<img class="jar-walton-animated" src="Pic/Cpx2WWWalton.png" alt="Williamina Wood Walton." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Williamina Wood Walton.</p>
 </div>
 
@@ -117,34 +121,22 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </div>  <!-- end sticky nav bar -->
 <script>
 document.getElementById('restart-embrey-animation').addEventListener('click', function() {
-  // Get the Walton animated elements
-  const elements = document.querySelectorAll('#jar-embreys');
+  const elements = document.querySelectorAll('.jar-embrey-animated');
   
   elements.forEach(element => {
-    // Remove the class to stop the animation
-    element.classList.remove('restart-embrey-animation');
-    
-    // Trigger a reflow to restart the animation
-    void element.offsetWidth;
-    
-    // Add the class back to start the animation with no delay
-    element.classList.add('restart-embrey-animation');
+    element.classList.remove('restart');
+    void element.offsetWidth; // Trigger reflow
+    element.classList.add('restart');
   });
-})
+});
 
 document.getElementById('restart-Walton-animation').addEventListener('click', function() {
-  // Get the animated elements
-  const elements = document.querySelectorAll('#jar-Waltons');
+  const elements = document.querySelectorAll('.jar-walton-animated');
   
   elements.forEach(element => {
-    // Remove the class to stop the animation
-    element.classList.remove('restart-Walton-animation');
-    
-    // Trigger a reflow to restart the animation
-    void element.offsetWidth;
-    
-    // Add the class back to start the animation with no delay
-    element.classList.add('restart-Walton-animation');
+    element.classList.remove('restart');
+    void element.offsetWidth; // Trigger reflow
+    element.classList.add('restart');
   });
 });
 
