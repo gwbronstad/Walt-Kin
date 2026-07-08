@@ -11,7 +11,7 @@
 	<meta name="changed" content="20260705">             <!--[{ change date }] -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel =stylesheet type="text/css" href="LindasGift.css">
-
+ <link rel =stylesheet type="text/css" href="LindasGiftAnimate.css">
 </head>
 
 <body id="gradmorning">
@@ -28,7 +28,7 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
   <li><a href="LindasGiftP-0.html">  &laquo;</a></li>  
   <li><a class="active" href="#">Page 1</a></li>
   <li><a href="LindasGiftP-2.html">&raquo;  </a></li>
-  <li><a href="LindasGiftP-22-redoAnimation.html">redoAnime </a></li>  
+  <!--<li><a href="LindasGiftP-22-redoAnimation.html">redoAnime </a></li>  -->
 </ul>
 </div>
 <div class="newspaper">
@@ -60,19 +60,74 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 <p id="padcenter">"He said, 'Aren't you up yet?”</p>
 
-<div class="picjarancestor">  <!-- Cpx2WCWalton  -->
+<!--<div class="picjarancestor">  <!-- Cpx2WCWalton  -^->
 <img id="jar-Waltons" src="Pic/KatesWCWalton.png" alt="Claibourne Walton." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
+</div> -->
+<div class="picjarancestor" style="transform: rotate(0.05turn)";>
+<img class="jar-walton-animated" src="Pic/KatesWCWalton.png" alt="William Claibourne Walton." style="width: 25vh">
+
+<p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
 </div>
-
 <p id="padcenter">Father, with a pretense of surprise said, "Now, wouldn't that just jar your ancestors?”</p>
+<button  class="restart-Walton-animation jarbutton">Click button to<br>Jar Walton Ancestor</button>&nbsp;&nbsp;<button class="jarbutton restart-embrey-animation">Click button to<br>Jar Embrey Ancestor</button>
 
-<div class="picjarancestor">
-<img id="jar-hue-loc-skew" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<div class="picjarancestor" style="transform: rotate(0.03turn);">
+<img class="jar-embrey-animated" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
 </div>
 
+<!--<div class="picjarancestor">
+<img id="jar-hue-loc-skew" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
+</div>-->
+
 </div>
 </div>  <!-- end sticky nav bar -->
+
+<script>
+
+document.querySelector('.restart-embrey-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-embrey-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-embrey-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-embrey-animated', 'restart');
+    
+    // Remove restart class after animation completes (8.4s = 4s duration × 2 + timing)
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+document.querySelector('.restart-Walton-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-walton-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-walton-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-walton-animated', 'restart');
+    
+    // Remove restart class after animation completes
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+</script>
+
 </body>
 </html>

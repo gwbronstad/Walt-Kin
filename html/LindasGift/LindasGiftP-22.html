@@ -1,14 +1,15 @@
 <!DOCTYPE html>  <!-- start head part   -->
 <html lang="en">
 <head> 
-	<title>Lindas Gift Page 22</title>
+	<title>Lindas Gift +Animation-P22</title>
     <link rel="icon" href="0Ico_Louise.jpg">            
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="Child Story">
 	<meta name="author" content="Gilbert Bronstad">
-	<meta name="changed" content="20251021">   <!--[{ change date }] -->
+	<meta name="changed" content="20260705">   <!--[{ change date }] -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel =stylesheet type="text/css" href="LindasGift.css">	
+<link rel =stylesheet type="text/css" href="LindasGiftAnimate.css">
 </head>
 
 <style>
@@ -19,7 +20,11 @@
 	font-family:cursive;
 	font-style: italic;
 }
+
 </style>
+<!-- Per GitHub Copilot trial 001 -->
+
+
 <body id="blue-pink-blue">
 <div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
@@ -38,6 +43,9 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 </div>
 
 <div class="newspaper">
+
+
+
 <p id="padcenter">She ran quickly into the house. The others questioned each other with silent glances. When she came into the dining room from her room, they gathered around her. In her hands she held her precious box. Quickly she pushed it into Aunt Nell's hands.</p>
 
 <div class="picture">
@@ -57,28 +65,37 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <p id="padcenter">Linda didn't wait to be asked "I found it in the hackberry tree, and on the ground I found&mdash;Look&mdash;many of the other beads that were lost from the string. See, they're in the box!"</p>
 <p id="padcenter">Aunt Nell said no more. She just took Linda into her arms.</p>
 
+
 <div class="picjarancestor" style="transform: rotate(0.03turn);">
-<img id="jar-hue-loc" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<img class="jar-embrey-animated" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
 <p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
 </div>
-<!--<div style="transform: rotate(0.05turn);">!
- <img src="CpxJMEmbrey.png" alt="jarred ancestor" style="width:25%;">
-    <img src="CpxJCEmbry.png" alt="jarred ancestor" style="width:25%;">
-</div> -->
+
 <p id="padcenter">"Now wouldn't that jar your ancestors?" Father said.</p>
+<!-- Per GitHub Copilot trial 001 -->
+<button class="jarbutton restart-embrey-animation">Click button to<br>Jar Embrey Ancestors</button>
+<!-- Per GitHub Copilot trial 001 -->
 
 <div class="picjarancestor" style="transform: rotate(0.97turn);">
-<img id="jar-hue-loc-turn" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+<img class="jar-embrey-animated" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Josephine Cameron Embrey</p>
 </div>
 
+
+
+
 <div class="picjarancestor" style="transform: rotate(0.05turn)";>
-<img id="jar-hue-loc-turn" src="Pic/Cpx2WCWalton.png" alt="Claibourne Walton." style="width: 25vh">
+<img class="jar-walton-animated" src="Pic/Cpx2WCWalton.png" alt="William Claibourne Walton." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
 </div>
- 
+ <!-- Per GitHub Copilot trial 001 -->
+<button  class="restart-Walton-animation jarbutton">Click button to<br>Jar Walton Ancestors</button>
+<!-- Per GitHub Copilot trial 001 -->
 <div class="picjarancestor" style="transform: rotate(0.97turn);">
-<img id="jar-hue-loc" src="Pic/Cpx2WWWalton.png" alt="" style="width: 25vh">
+<img class="jar-walton-animated" src="Pic/Cpx2WWWalton.png" alt="Williamina Wood Walton." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Williamina Wood Walton.</p>
 </div>
 
@@ -89,5 +106,48 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <p class="right-addr">&mdash;Louise Bronstad<!--4710 E Loraine<br>Fort Worth, TX--><br>circa 1980.</p>
 </div>
 </div>  <!-- end sticky nav bar -->
+<script>
+
+document.querySelector('.restart-embrey-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-embrey-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-embrey-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-embrey-animated', 'restart');
+    
+    // Remove restart class after animation completes (8.4s = 4s duration × 2 + timing)
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+document.querySelector('.restart-Walton-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-walton-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-walton-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-walton-animated', 'restart');
+    
+    // Remove restart class after animation completes
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+</script>
 </body>
 </html>

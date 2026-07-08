@@ -6,13 +6,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="Child Story">
 	<meta name="author" content="Gilbert Bronstad">
-	<meta name="changed" content="20251021">   <!--[{ change date }] -->
+	<meta name="changed" content="20260707">   <!--[{ change date }] -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel =stylesheet type="text/css" href="LindasGift.css">	
-
+<link rel =stylesheet type="text/css" href="LindasGiftAnimate.css">
 
 </head>
-
+<!--
 <style>
 /**/
 #MyBees {
@@ -53,7 +53,7 @@ mark {
 } 
 
 
-</style>
+</style> -->
 <body id="blue-pink-blue"> 
 <div> <!-- keeps sticky nav till end of body -->
 <p class="cursive"> &emsp;This page was last modified <span id="LastModDate"></span> EST.</p>
@@ -74,7 +74,7 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 
 <!-- <div  id="bees">    temp off-->
 <div class="newspaper">  
-<div  id="MyBees"> 
+<div  class="flying-bee-animated"> 
 <p id="padcenter"><mark>Suddenly there was a forward jerk and Linda found herself landing in the soft ground. Small black objects were bouncing off her body and face. The air was dark with flying soft balls. Beck, Peg and Mark were running across the plowed part of the field dragging the plow after them.</mark></p>
 <br><br>
 <p id="padcenter"><mark>Father was yelling, "Bumble Bees! Watch out, Linda!".</mark></</p>
@@ -85,35 +85,113 @@ document.getElementById("LastModDate").innerHTML = document.lastModified;
 <p id="padcenter"><mark>He ran after Linda's horses yelling. "Whoa, Beck. Whoa, Peg! Whoa there!".</mark></</p>
 
 <p id="padcenter"><mark>The air was clearing fast now..</mark></</p>
+ <button  class="restart-bee-animation jarbutton">Click button to<br>Bring Back Bees</button> <!---->
 <p id="padcenter"><mark>"Where did the bees come from?" Linda asked..</mark></</p><br><br>
 <p id="padcenter"><mark>"They had their nest in the ground. We plowed it up. They didn't like it. Were you stung, Linida?" he asked..</mark></</p>
 <p id="padcenter"><mark>"Not at all." she answered..</mark></</p>
 <p id="padcenter"><mark>"Well, I'm glad the horses didn't tear up their harness."</mark></</p> 
 <p id="padcenter"><mark>"Wouldn't that jar your ancestors the way Mark got in a hurry?" Father laughed. It was a family joke that Mark was slow and lazy. But he was gentle, too.</mark></</p>
-</div>  <!-- end MyBees -->
-<div class="picjarancestor">  <!-- no go -->
-<img id="jar-embreys" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
-<p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
-</div>
 
-<div class="picjarancestor">
-<img id="jar-embreys" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+
+
+<div class="picjarancestor" style="transform: rotate(0.03turn);">
+<img class="jar-embrey-animated" src="Pic/Cpx2MEmbrey.png" alt="James Monroe Embrey." style="width: 25vh">
+<p class="cursive" style="font-size: 0.5em;">James Monroe Embrey</p>
+</div> 
+<!-- Per GitHub Copilot trial 001 -->
+<button class="jarbutton restart-embrey-animation">Click button to<br>Jar Embrey Ancestors</button>
+
+
+<div class="picjarancestor" style="transform: rotate(0.97turn);">
+<img class="jar-embrey-animated" src="Pic/Cpx2JCEmbrey.png" alt="Josephine Cameron Embrey." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Josephine Cameron Embrey</p>
 </div>
-<div class="picjarancestor">
-<img id="jar-Waltons" src="Pic/Cpx2WCWalton.png" alt="Claibourne Walton." style="width: 25vh">
-<p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
-</div>
- 
 
-<div class="picjarancestor">   <!-- no go -->
-<img id="jar-Waltons" src="Pic/Cpx2WWWalton.png" alt="Wilhelmina Wood Walton" style="width: 25vh">
+<div class="picjarancestor" style="transform: rotate(0.05turn)";>
+<img class="jar-walton-animated" src="Pic/Cpx2WCWalton.png" alt="William Claibourne Walton." style="width: 25vh">
+
+<p class="cursive" style="font-size: 0.5em;">William Claibourne Walton</p>
+</div> 
+
+ <!-- Per GitHub Copilot trial 001 -->
+<button  class="restart-Walton-animation jarbutton">Click button to<br>Jar Walton Ancestors</button>
+
+<div class="picjarancestor" style="transform: rotate(0.97turn);">
+<img class="jar-walton-animated" src="Pic/Cpx2WWWalton.png" alt="Williamina Wood Walton." style="width: 25vh">
+
 <p class="cursive" style="font-size: 0.5em;">Williamina Wood Walton.</p>
 </div>
+</div>  <!-- end MyBees -->
 
 </div>  <!-- bees -->
 </div> <!-- newspaper -->
 </div>  <!-- end sticky nav bar -->
+<script>
+
+document.querySelector('.restart-embrey-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-embrey-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-embrey-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-embrey-animated', 'restart');
+    
+    // Remove restart class after animation completes (8.4s = 4s duration × 2 + timing)
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+document.querySelector('.restart-Walton-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.jar-walton-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('jar-walton-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('jar-walton-animated', 'restart');
+    
+    // Remove restart class after animation completes
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+
+
+document.querySelector('.restart-bee-animation').addEventListener('click', function() {
+  const elements = document.querySelectorAll('.flying-bee-animated');
+  
+  elements.forEach(element => {
+    // Remove animation class completely
+    element.classList.remove('flying-bee-animated');
+    
+    // Trigger reflow
+    void element.offsetWidth;
+    
+    // Re-add the animation class
+    element.classList.add('flying-bee-animated', 'restart');
+    
+    // Remove restart class after animation completes
+    setTimeout(() => {
+      element.classList.remove('restart');
+    }, 8400);
+  });
+});
+</script>
+
+
 </body>
 </html>
 <!-- end page end -->

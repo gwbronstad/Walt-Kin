@@ -1,0 +1,211 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/* ANIMATABLE PROPERTIES:  https://www.w3schools.com/cssref/css_animatable.php  */
+
+
+
+
+
+
+figure {
+  position: relative;
+ /*  width: clamp(0px, 30%, calc(100% - 500px));
+  height: clamp(0px, 40%, calc(100% - 400px)); */
+  
+  width: 40%;
+  height: 50%;  
+  background-color: transparent;
+  z-index: 1;
+}
+
+figure figcaption {
+  position: absolute;
+  width: 100%;   /* 100%; */
+  height: 100%;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;  /*space-between;   */
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  z-index: -1;
+}
+/* need this */
+figure figcaption::before {
+  position: absolute;
+  inset: 0;
+  width: 77%;  /*  95%; */
+  height: 72%;  /* 90%; */
+  filter: blur(28px);
+  border: 60px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #77ff00,
+    #f8dd00,
+    #ffb000,
+    #ff841d,
+    #ff72b9,
+    #ff81ff,
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+  z-index: -1;
+  border-image-slice: 25;
+  animation: hue 3s linear infinite;
+  content: "";
+}
+
+/* need this */
+ 
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg) blur(18px);
+  }
+  to {
+    filter: hue-rotate(360deg) blur(18px);
+  }
+}
+
+figure figcaption p {
+  position: relative;
+  padding: 10px;
+}
+
+
+.jarbutton {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#jar-hue-loc-skew {
+  position: relative;
+  animation-name: hue-loc-skew;
+  animation-duration: 4s;
+  animation-delay: 9s;  /* 10s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes hue-loc-skew {
+  0%   {background-color:transparent;left:0px;  top:0px;}
+  12%  {background-color:red;        left:20px; top:0px;}
+  25%  {transform: skewY(10deg);background-color:orange;     left:20px; top:20px;}
+  38%  {transform: skewY(20deg);background-color:yellow;     left:0px;  top:20px;}
+  50%  {transform: skewY(30deg);background-color:green;       left:0px;  top:0px;}
+  62%  {transform: skewX(20deg);background-color:blue;       left:20px; top:0px;}
+  75%  {transform: skewX(10deg);background-color:indigo;     left:20px; top:20px;}
+  88%  {transform: skewX(5deg);background-color:violet;     left:0px;  top:20px;}
+  100% {background-color:transparent;left:0px;  top:0px;} 
+}
+/* GitHub AI  */ 
+.jar-embrey-animated {
+  position: relative;
+  animation-name: animate-embreys;
+  animation-duration: 4s;
+  animation-delay: 9s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+.jar-walton-animated {
+  position: relative;
+  animation-name: animate-Waltons;
+  animation-duration: 4s;
+  animation-delay: 9s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+/* Remove delay when restarting */
+.jar-embrey-animated.restart {
+  animation-delay: 0s !important;
+  animation-play-state: running !important;
+}
+
+.jar-walton-animated.restart {
+  animation-delay: 0s !important;
+  animation-play-state: running !important;
+}
+
+.flying-bee-animated.restart {
+  animation-delay: 0s !important;
+  animation-play-state: running !important;
+}
+@keyframes animate-embreys {
+  0%   {background-color:transparent;left:0px;  top:0px;}
+  12%  {background-color:red;        left:20px; top:0px;}
+  25%  {background-color:orange;     left:20px; top:20px;}
+  38%  {background-color:yellow;     left:0px;  top:20px;}
+  50%  {background-color:green;      left:0px;  top:0px;}
+  62%  {background-color:blue;       left:20px; top:0px;}
+  75%  {background-color:indigo;     left:20px; top:20px;}
+  88%  {background-color:violet;     left:0px;  top:20px;}
+  100% {background-color:transparent;left:0px;  top:0px;} 
+}
+
+@keyframes animate-Waltons {
+  0%   {background-color:transparent;             left:0px;  top:0px;}
+  10%  {background-color:hsla(43, 20%, 55%, 0.5); left:15px; top:0px;}
+  20%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;}
+  30%  {background-color:hsla(43, 20%, 25%, 0.6); left:15px; top:15px;}
+  40%  {background-color:hsla(43, 20%, 15%, 0.7); left:0px;  top:0px;}
+  50%  {background-color:hsla(43, 20%, 8%, 0.8);  left:15px; top:15px;}
+  60%  {transform: rotate(20deg);background-color:hsla(43, 20%, 2%, 0.5); left:0px;  top:0px;}
+  70%  {background-color:hsla(43, 20%, 0%, 0.5);  left:15px; top:15px;}
+  80%  {background-color:hsla(43, 20%, 45%, 0.5); left:0px;  top:0px;} 
+  90%  {background-color:hsla(43, 20%, 85%, 0.5); left:0px;  top:15px;}
+  100% {background-color:transparent;             left:0px;  top:0px;}
+}
+
+/**/
+.flying-bee-animated {
+
+  background-image: url('Pic/P17-beesInFlight.png');
+    animation-name: bees-move;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: 0px 0px;
+  animation-delay: 2s;
+  animation-duration: 10s;
+
+}
+
+@keyframes bees-move {
+  15% {background-size:  175px 136px;}
+  30% {background-position-x: center;}
+  30% {background-position-y: center;}
+  33% {background-size: 100px 90px;}
+   2% {background-size: 0px 0px;}  
+}
+
+/**/
+.bees {
+  background-repeat: repeat;
+  background-image: url("Pic/P17-beesInFlight.png"); 
+} 
+
+mark {
+    padding: 0.1em;
+    border-radius: 0.2em;
+	font-size: 0.9em;
+    font-weight: normal;
+	outline-style: dotted;
+	outline-width: thin;
+	background-color: hsl(0, 100%,  100%);
+    color:  hsl(0, 0%, 0%);
+} 
+
+
+  
