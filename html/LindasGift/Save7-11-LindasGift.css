@@ -1,0 +1,254 @@
+@charset "utf-8";  /*"US-ASCII";*/
+/* ANIMATABLE PROPERTIES:  https://www.w3schools.com/cssref/css_animatable.php  */
+
+
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+mark {
+    padding: 0.2em;
+    border-radius: 0.2em;
+    font-weight: bold;
+	outline-style: dotted;
+	outline-width: thin;
+	background-color: hsl(0, 100%,  100%);
+    color:  hsl(0, 0%, 0%);
+}
+
+.cursive {
+  font-family:cursive;
+  font-size: 0.9em;
+}
+p {
+  font-size: 1.5em;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /*height: 200px;  */
+  border: 0px solid green;
+  margin:auto;
+}
+.containpad {
+  display: grid;
+  gap: 90px 100px;
+  font-size: 1.8em;
+  border: 2px dotted Grey;
+  border-radius: 1em;
+  background-color: transparent;
+  padding: 10em;
+  margin: 3em 1em 3em 1em;
+    color: Grey
+}
+
+.containpad-nb {
+  display: grid;
+  gap: 90px 100px;
+  font-size: 1.5em;
+
+  background-color: transparent;
+  padding: 3em 10em 3em 10em;
+  margin: 3em 1em 3em 1em;
+    color: white;
+}
+
+.picjarancestor {
+  break-inside: avoid;
+  display: grid;
+  gap: 10px 9px;
+  text-align: center; 
+  background-color: transparent;
+  padding: 2em;
+  margin: 1em;
+    color: black;
+}
+
+#gradmorning {
+  height: 100vh;
+        z-index: 0;
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, 
+  hsl(214, 100%, 50%), 
+  hsl(61, 100%, 50%),
+  hsl(214, 100%, 50%))
+}   
+
+#gradmorning2 {
+  height: 100%;
+        z-index: 0;
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 60%), 
+  hsl(61, 100%, 70%),
+  hsl(214, 100%, 60%));
+} 
+#blue-pink-blue {
+  height: 100vh;
+  background-color: SkyBlue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom,
+  hsl(210, 50%, 50%),
+  hsl(5, 50%, 90%),
+  hsl(40, 50%, 90%),  
+  hsl(210, 50%, 50%));
+}
+#gradhotday {
+  height: 100vh;
+  background-color: LemonChiffon; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, hsl(214, 100%, 95%), 
+  hsl(8, 50%, 70%),
+  hsl(214, 100%, 95%)); 
+}
+
+/*  Change to clas
+#padcenter {
+ padding-right: 10%;
+ padding-left: 10%; 
+}
+*/
+
+.padcenter {
+ padding-top:    50px;	
+ padding-right: 10%;
+ padding-bottom: 50px; 
+ padding-left:  10%; 
+}
+
+
+div.sticky {
+  position: sticky;
+  top: 0;
+    z-index: 2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+    background-color: hsl(59, 74%, 85%, 0.75);  
+  border: 2px solid gray;
+  color: black;  
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+.pagination li a.link {
+  background-color: hsl(59, 74%, 85%, 0.75);
+  color: white;
+  }
+.pagination li a:hover:not(.active) {
+  background-color: lightgray;
+}
+/*  .pagination li a.active {
+  background-color: green;
+  color: white;  */
+  }
+  .pagination li a.visited {
+  background-color: pimk;
+  color: white;
+  }  
+  
+  .newspaper {
+  column-count: 3;
+  column-width: 20em;
+  column-gap: 1em;
+  column-rule: 3px solid lightblue;
+  background-color:  transparent; 
+  /*  hsl(240, 100%,  98%);  */
+  word-break: break-word;
+  padding: 1em;
+   orphans: 3;
+   widows: 2;
+}
+.picture {
+  break-inside: avoid;
+ padding: 2em; 
+  margin-bottom: 1em;
+}
+h2 {
+  column-span: all;
+}
+p::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+  color: hsl(230, 40%,  40%);
+}
+ 
+
+#grad-sun {
+ display: flex;
+  justify-content: flex-start;
+  align-items: center;
+height: 200px;
+width: 100px;
+ padding-right: 10%;
+  border: 3px solid red;
+  margin:0;
+  border-radius: 100%;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #77ff00,
+    #f8dd00,
+    #ffb000,     /* #ffb000, */
+    #ff841d,
+    #ff72b9,
+    #ff81ff,     /* #ff81ff, */
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+ filter: drop-shadow(0px 5px 20px #ff81ff) blur(20px) saturate(1.2); 
+}
+
+#grad-sun0 {
+ display: flex;
+  justify-content: flex-start;
+  align-items: center;
+height: 150px;
+width: 100px;
+ padding-right: 10%;
+  border: 3px solid red;
+  margin:0;
+  border-radius: 100%;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #77ff00,
+    #f8dd00,
+    #ffb000,     /* #ffb000, */
+    #ff841d,
+    #ff72b9,
+    #ff81ff,     /* #ff81ff, */
+    #fd9eff,
+    #93c2ff,
+    #00e7ff,
+    #00ffff,
+    #00ffc3,
+    #4dff00
+  );
+ filter: drop-shadow(0px 5px 20px #ff81ff) blur(20px) saturate(1.2); 
+}
+
+
+

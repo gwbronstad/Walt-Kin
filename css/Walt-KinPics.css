@@ -157,6 +157,15 @@ p {
 figure {
   align-items: center;
   justify-content: center;
+  background-color: transparent; 
+  border: 0px #00aaaa solid;
+  padding: 0px;
+  margin-top: 1em;
+}
+
+figure-old {
+  align-items: center;
+  justify-content: center;
   background-color: transparent;  /*whitesmoke; */ /*#dFdFdF; */
   border: 2px #00aaaa solid;
   padding: 2px;
