@@ -308,13 +308,15 @@ caption {
 }  */
 
 BLOCKQUOTE { 
+     margin-top: 1em;  /*2026-07-24  */
   margin-left: 1px;  
+     margin-bottom: 1em;  /*2026-07-24  */
   margin-right: 1px;
   background-color: #F2FFF2;  
   font-family: Sans-serif ;      
   width:98%;
   border:0px solid hsl(0, 100%, 0%);
-  margin:3px;
+/*  margin:3px;  */
   font-style: italic; 
   text-align: left;
   border-radius:10px;
