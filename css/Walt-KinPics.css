@@ -369,7 +369,7 @@ blockquote.Cb2 {/* 10. Complements Mauve-2  */
 }
 
 blockquote.wiki {
-  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque 
+  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque; 
   /* background-color: white !important; */
   border: 2px dotted black;
 }
