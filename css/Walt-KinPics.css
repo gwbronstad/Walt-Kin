@@ -591,3 +591,31 @@ p::first-letter {
   font-weight: bold;
   color: hsl(230, 40%,  40%);
 }
+  /* 'details' added 2026-09-05 for the numdrous letters */
+details > summary {
+  font-size: 108%;
+  font-weight: bold;
+  padding: 4px;
+  width: 90%;  /* 2026-09-05  */
+  height: auto;
+  min-height: 3em;
+  background-color: Azure;
+  border:  2px dotted blue;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > blockquote {
+  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque; 
+  border: 2px dotted blue;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #ff00bb;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
