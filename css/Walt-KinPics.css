@@ -599,9 +599,14 @@ details > summary {
   width: 90%;  /* 2026-09-05  */
   height: auto;
   min-height: 3em;
-  background-color: Azure;
-  border:  2px dotted blue;
-  box-shadow: 1px 1px 2px #bbbbbb;
+  background-color: Beige;  /*Azure;  */
+      border-top: 2px solid LightCoral;
+      border-right: 2px solid blue;
+      border-bottom: 2px dotted blue;
+      border-left: 2px solid LightCoral;
+border-radius: 15px;	  
+     /* border:  2px  red;   blue;  */
+  box-shadow: 2px 2px 4px CornflowerBlue;  /*#bbbbbb;  */
   cursor: pointer;
 }
 
