@@ -52,6 +52,10 @@ figcaption {
   text-align: center;
   margin-bottom: 1em;
 }
+summary:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
 /* not yet utilized, postponed decision to display some text */
 .panel, .flip {
   background-color: gray;
@@ -1404,7 +1408,8 @@ Dear Walton,<br>
 <p>Pat had a pretty bad case of sinus, but better now.</p>
 
 <p>I am mailing you a clipping from the paper iwhich should apply to you.</p>
-<article style="background: rgba(0, 120, 0, 0.3)">
+<article style="background: rgba(0, 120, 0, 0.3); font-family: Georgia;" 
+>
  <p>Army Will Soften Treatment of Officer Candidates </p>
 
 <p>FT. BENNING, Ga. (AP)— Word popped out unofficially Thursday that the Army is going to soften its treatment of officer candidates. </p>
@@ -1773,8 +1778,6 @@ Dear Wally,</p>
 </blockquote>
 </details>
 <br>
-
-
 <details id="P1967-0121">
 <summary><img class="mlr40px" src="../pic/Pinky/Pat-pinky.png" alt="picture Pat Bronstad"> wrote  January 21, 1967 of Clyde preparing her car, eating with sister Mary, defending herself, from her nephew and then me.</summary>
 <blockquote class="wiki cursive">
@@ -1815,7 +1818,7 @@ Dear Wally,</p>
 <summary><img class="mlr40px" src="../pic/Pinky/Pat-pinky.png" alt="picture Pat Bronstad"> wrote January 23, 1967 of upcoming final exams, Clyde doing more work on '59 Chevy, Bette cooking, laBotz's address.</summary>
 <blockquote class="wiki cursive">
 <p class="right">4710 E Loraine&nbsp;<br>Fort Worth, TX</p>
-<p><Dear Wally,</p>
+<p>Dear Wally,</p>
 <p>I’m frantically preparing for finals. Please, no punishment for not making all A’s. I know I didn’t try too hard. Was bored and lonely; I hope to do better this summer.</p>
 <p>
 I received your letter, but the picture to which you alluded were not enclosed. I hope you didn’t lose them. I’ve been studying all day – will probably continue most of the night. My luck – Bette finished hers today – with three probable A’s and two B’s (which will turn into A’s with her luck) or more likely intelligence my history test covers (as I’ve told you from 1848 to present and he covered only through World War I in his lectures. Betty’s history final included the last six lectures that’s all – she chose one question out of six I have 75 questions +2 essays.</p>
@@ -1902,22 +1905,7 @@ But taking all into consideration, we did make pretty good time. We left Fort Wo
 <hr class="yr">
 <p>Pat had left Clyde and Louis's house in Fort Worth. She drove the '59 "batwing" Chevrolet Clyde bought her from <a href="Walton_Annie_Joy_Walton.html" target="_blank">Hudson Walton</a>. The car had been Diane and Will Blankenship's, Hudson's daughter and son-in-law. Hudson didn't like to see his daughter in an humble 6-cylinder car. Pat was accompanied by her Mother Clara on a somewhat frightening drive. During intense rain coming through Louisiana, the windshield wipers failed. She managed to get them fixed and drove on to her Sister Polly's home in Alexandria. Pat stayed with <a href="Bird_Patricia_M_Bronstad.html#Ev04" target="_blank">Kirk, Polly Kinney and Terry</a> until I graduated OCS.</p>
 <br>
-<details id="P1967-0127">
-<summary><img class="mlr40px" src="../pic/Pinky/Pat-pinky.png" alt="picture Pat Bronstad"> wrote January 27, 1967 about a very taxing drive, need for repair, and coming to much needed rest.</summary>
-<blockquote class="wiki cursive">
-<p class="right">4710 E Loraine&nbsp;<br>Fort Worth, TX</p>
-<p>Dear Wally,</p>
-<p>Somehow, we made it this far tonight (Jackson Mississippi). It wasn’t a very pleasant trip. First, as I almost knew I would. I got lost in Dallas. Drove around for an hour, asking directions, which when followed never ended in success. Mama nearly got out of the car twice – and I don’t think I would have objected. But after that, all went well until Shreveport, Louisiana. Mama‘s eyes are better than mine so she is a good sign, watcher for. But after leaving this Shreveport city, rain followed us the rest of the day – tornado warnings, hail warnings, warnings to stay inside all of which added attention up on tension. And in all that rain, I had those bloody windshield wipers that worked OK at first, then, as we progressed, worked less and less often. I pulled off the road twice – then got well in Louisiana where there was no shoulder at all. So I started stopping at garages – and finally in one city found a mechanic who wasn’t busy – said I needed a new motor for the wiper – which he didn’t have. I had to drive 18 more miles, still pouring down rain, to a Chevrolet house and Tallulah, Louisiana. It cost me $37! But at least I feel safe about getting on the road. Of course it had quit raining by the time the motor was installed – we waited an hour and 1/2.</p>
-<p>
-But taking all into consideration, we did make pretty good time. We left Fort Worth at 5:30 and stopped here at 6 PM – and I think it’s about 450 miles.</p>
-<p>Now, after taking a nice hot bath, I feel much better. I hope you won’t be worried about us – everything is fine – now.</p>
-<p>I hope so much that I have a letter from you when I get to Polly’s. I miss you very much – you should be here with me – we have two double beds, which would be fun to romp with you in. I love you.</p>
-<p>Pat.</p>
 
-
-</blockquote>
-</details>
-<br>
 <details id="P1967-0418">
 <summary><img class="mlr40px" src="../pic/Pinky/Pat-pinky.png" alt="picture Pat Bronstad"> wrote April 18, 1967 about avoiding the Army's Armor branch, adjusting to work. </summary>
 <blockquote class="wiki cursive">
@@ -2756,7 +2744,7 @@ Walt <br>
 <p>
 <br>
 <!-- -->
-<details id="T19721223">
+<details id="T1972-1223">
 <summary><img class="mlr40px" src="../pic/Pinky/ThomasMitchell-pinky.png" alt="picture Thomas Mitchell">writes Walt, December 23, 1972 about travel via Chicago to Minneapolis, concerns for us, disenchantment with U S, current address.</summary>
 <blockquote class="wiki cursive">
 <p class="right"> Atlanta, GA&nbsp;</p>
@@ -3617,6 +3605,20 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+
+// JavaScript: Highlight <summary> after first click
+// javascript
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all <summary> elements on the page
+    const summaries = document.querySelectorAll("details > summary");
+
+    summaries.forEach(summary => {
+        summary.addEventListener("click", () => {
+            // Once clicked, set background to Wheat permanently
+            summary.style.backgroundColor = "Wheat";
+        });
+    });
+});
  </script>
 </body>
 </html>

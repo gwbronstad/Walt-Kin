@@ -599,19 +599,19 @@ details > summary {
   width: 90%;  /* 2026-09-05  */
   height: auto;
   min-height: 3em;
-  background-color: Beige;  /*Azure;  */
+  background-color: hsl(120, 100%, 92%);  /* a yellow green Azure;  */
       border-top: 2px solid LightCoral;
-      border-right: 2px solid blue;
-      border-bottom: 2px dotted blue;
-      border-left: 2px solid LightCoral;
-border-radius: 15px;	  
+      border-right: 2px solid hsl(120, 100%, 60%);  /* blue; */
+      border-bottom: 2px dotted hsl(120, 100%, 60%);  /* blue; */
+      border-left: 2px solid LightCoral; 
+  border-radius: 15px;	  
      /* border:  2px  red;   blue;  */
-  box-shadow: 2px 2px 4px CornflowerBlue;  /*#bbbbbb;  */
+  box-shadow: 4px 4px 8px   hsl(120, 100%, 40%);  /*CornflowerBlue;  */
   cursor: pointer;
 }
 
 details > blockquote {
-  background-image: linear-gradient(Azure, Beige, Bisque);	Azure, Beige, Bisque; 
+  background-image: linear-gradient(Azure, Beige, Bisque);	
   border: 2px dotted blue;
   padding: 4px;
   margin: 0;
@@ -624,3 +624,10 @@ details > p {
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
+  /* 'details  > summary:hover' added 2026-09-08 for the numdrous letters; visited goes before hover and active */
+
+details > summary:hover {
+  background-color: hsl(120, 100%, 40%); /* a darker green GreenYellow; */
+  font-size: 18px;
+}  /* working, don't remove -  keep me */
+/
