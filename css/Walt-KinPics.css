@@ -561,7 +561,7 @@ img.nborder {
     border--style: hidden;
 }
 .cursive {
-	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive;
+	font-family: "Brush Script MT", Scribble, "Lucida Handwriting",  Cursive;
 }
 .cursivelarger {
 	font-family: Scribble, "Lucida Handwriting", "Brush Script MT", Cursive;
