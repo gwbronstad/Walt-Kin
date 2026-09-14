@@ -595,7 +595,9 @@ p::first-letter {
 details > summary {
   font-size: 108%;
   font-weight: bold;
-  padding: 4px;
+   margin-top: 12px;  /*2026+-09-14   */
+   margin-bottom: 12px;
+   padding: 4px;
   width: 90%;  /* 2026-09-05  */
   height: auto;
   min-height: 3em;
