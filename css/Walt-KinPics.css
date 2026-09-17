@@ -595,10 +595,12 @@ p::first-letter {
 details > summary {
   font-size: 108%;
   font-weight: bold;
-   margin-top: 12px;  /*2026+-09-14   */
-   margin-bottom: 12px;
+   margin-top: 12px;     /*2026+-09-14   */
+   margin-right: 3%;     /*2026+-09-17   */
+   margin-bottom: 12px;  /*2026+-09-14   */
+   margin-left: 3%;      /*2026+-09-17   */
    padding: 4px;
-  width: 90%;  /* 2026-09-05  */
+  /*width: 90%;   2026-09-05  */
   height: auto;
   min-height: 3em;
   background-color: hsl(120, 100%, 92%);  /* a yellow green Azure;  */
