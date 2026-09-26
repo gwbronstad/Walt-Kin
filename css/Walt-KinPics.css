@@ -632,6 +632,7 @@ details > p {
 
 details > summary:hover {
   background-color: hsl(120, 100%, 40%); /* a darker green GreenYellow; */
-  font-size: 18px;
+  /*color: hsl(360, 100%, 90%);   2026-09-24; bigger font makes summary jump, try color */
+  /*font-size: 18px;  */
 }  /* working, don't remove -  keep me */
 /
