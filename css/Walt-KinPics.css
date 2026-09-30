@@ -593,16 +593,16 @@ p::first-letter {
 }
   /* 'details' added 2026-09-05 for the numdrous letters */
 details > summary {
-  font-size: 108%;
-  font-weight: bold;
-   margin-top: 12px;     /*2026+-09-14   */
+  font-size: 95%;
+/*font-weight: bold;  */
+   margin-top: 10px;     /*2026+-09-14   */
    margin-right: 3%;     /*2026+-09-17   */
-   margin-bottom: 12px;  /*2026+-09-14   */
+   margin-bottom: 10px;  /*2026+-09-14   */
    margin-left: 3%;      /*2026+-09-17   */
    padding: 4px;
   /*width: 90%;   2026-09-05  */
   height: auto;
-  min-height: 3em;
+  min-height: 40px;
   background-color: hsl(120, 100%, 92%);  /* a yellow green Azure;  */
       border-top: 2px solid LightCoral;
       border-right: 2px solid hsl(120, 100%, 60%);  /* blue; */
