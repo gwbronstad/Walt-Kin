@@ -193,7 +193,12 @@ div-grid-item {  /* custom element  */
 	font-weight: 800;
 }
 /* for 4+ row sticky menu */
-
+.padnot  {
+	   padding: 10px 10px 10px 10px;
+   	text-align: leftt;
+	font-size: 1em;
+	font-weight: 200;
+}
 
 div-sticky {
   position: sticky;	
