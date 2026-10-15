@@ -631,8 +631,20 @@ details > p {
   /* 'details  > summary:hover' added 2026-09-08 for the numdrous letters; visited goes before hover and active */
 
 details > summary:hover {
-  background-color: hsl(120, 100%, 40%); /* a darker green GreenYellow; */
-  /*color: hsl(360, 100%, 90%);   2026-09-24; bigger font makes summary jump, try color */
-  /*font-size: 18px;  */
-}  /* working, don't remove -  keep me */
-/
+  background-color: hsl(120, 100%, 40%); 
+}  
+
+blockquote.context {
+  background-image: linear-gradient(to bottom, hsl(214, 90%, 85%), 
+  hsl(61, 90%, 80%),
+  hsl(214, 90%, 85%));
+  border: 2px dotted blue;
+}
+span.context {
+background: hsl(61, 90%, 80%);
+}
+/*
+summary:hover {
+  background-color: yellow;
+  font-size: 18px;
+}                  to end  */
