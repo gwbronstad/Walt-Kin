@@ -632,7 +632,50 @@ details > p {
 
 details > summary:hover {
   background-color: hsl(120, 100%, 40%); 
-}  
+}
+
+details > summary.bob {
+		background-color: #DDDDDD;  /*  WHITE;  */
+      border-top: 4px solid hsl(359, 67%, 49%);
+      border-left: 4px solid hsl(359, 67%, 49%); 
+  box-shadow: 4px 4px 6px hsl(359, 67%, 49%);  /*  TWC red  */
+}
+
+details > summary.louise {
+		background-color: #DDDDDD;  /*  WHITE;  */
+      border-top: 4px solid hsl(148, 100%, 36%);
+      border-left: 4px solid hsl(148, 100%, 36%); 
+  box-shadow: 4px 4px 6pxhsl(148, 100%, 36%);  /*  N~TU Mean green  */
+}
+details > summary.mike {
+		background-color: hsl(200, 5%, 66%);  /*  ~TCU gray  */
+      border-top: 4px solid hsl(273, 66%, 29%);
+      border-left: 4px solid hsl(273, 66%, 29%); 
+  box-shadow: 4px 4px 6px hsl(273, 66%, 29%);  /* ~ TCU purple  */
+}
+details > summary.pat {
+		background-color: hsl(31, 100%, 70%);  /*  ~UTEP Orange  */
+      border-top: 4px solid hsl(215, 89%, 24%);
+      border-left: 4px solid hsl(215, 89%, 24%); 
+  box-shadow: 4px 4px 6px hsl(215, 89%, 24%);  /* ~ UTEP blue  */
+}
+
+details > summary.tom {
+	background-color: white; 
+      border-top: 4px solid gray;
+      border-left: 4px solid gray; 
+  box-shadow: 4px 4px 6px #00539B;  /*  Duke Royal Blue  */
+}
+
+details > summary.walt {
+		background-color: hsl(48, 100%, 81%);  /* ~U M maize;  */
+      border-top: 4px solid hsl(209, 100%, 35%);
+      border-left: 4px solid hsl(209, 100%, 35%); 
+  box-shadow: 4px 4px 6px hsl(209, 100%, 35%);  /*  ~UM blue  */
+}
+
+
+
 
 blockquote.context {
   background-image: linear-gradient(to bottom, hsl(214, 90%, 85%), 
