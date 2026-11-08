@@ -4876,6 +4876,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// fix disorder from details expansion
+//scroll summary into view after every toggle:
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('details').forEach(details => {
+
+        const summary = details.querySelector('summary');
+        if (!summary) return;
+
+        details.addEventListener('toggle', () => {
+
+            summary.scrollIntoView({
+                block: 'start',
+                inline: 'nearest',
+                behavior: 'instant'
+				
+            });
+            window.scrollBy(0, -70);  //2026-11-08, fix sticky menu effect
+        });
+
+    });
+
+});
+ 
  </script>
 </body>
 </html>

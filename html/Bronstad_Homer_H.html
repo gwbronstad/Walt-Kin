@@ -1128,12 +1128,11 @@ Lynmouth Ave.<br>	Wellington, New Zealand<br>
 
 </article> 
 
-<h4 id="W19930830">Letter from Walt Bronstad to Travis Bronstad, August 30, 1993</h4>
-<blockquote class="wiki">
-923 Denton<br>
-Denton, TX  76201<br>
-	 <p class="right">2501 Side Cove<br>Austin, TX 78704-4533<br>(512) 441 4998</p>
-<br> 
+<details id="W1993-0830">
+<summary class="walt"><img class="mlr40px" src="../pic/Pinky/Walt-pinky.png" alt="picture Walt Bronstad"> wrote Aug. 30, 1993 of Bette nixing Germany, Embrey Sophia's challenge, Bob, Homer, Pat, Matt, Kate and Kris, and insurance.</summary>
+<blockquote class="wiki cursive">
+<p class="right">2501 Side Cove<br>Austin, TX 78704</p>
+923 Denton<br>Denton, TX  76201<br><br>
 Dear Aunt Travis,
 <br>
 <br>&nbsp;<br>
@@ -1188,7 +1187,7 @@ Love
 Wally 
 
  </blockquote>
-<br>
+</details>
 
 
 <article><h2>1996</h2>
@@ -1284,6 +1283,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// fix disorder from details expansion
+//scroll summary into view after every toggle:
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('details').forEach(details => {
+
+        const summary = details.querySelector('summary');
+        if (!summary) return;
+
+        details.addEventListener('toggle', () => {
+
+            summary.scrollIntoView({
+                block: 'start',
+                inline: 'nearest',
+                behavior: 'instant'
+				
+            });
+            window.scrollBy(0, -70);  //2026-11-08, fix sticky menu effect
+        });
+
+    });
+
+});
+
 
  </script>
 </body>

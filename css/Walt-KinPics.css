@@ -631,7 +631,7 @@ details > p {
   /* 'details  > summary:hover' added 2026-09-08 for the numdrous letters; visited goes before hover and active */
 
 details > summary:hover {
-  background-color: hsl(120, 100%, 40%); 
+  background-color: hsl(120, 100%, 40%);  /* 2026-11-08 house hover issue  */
 }
 
 details > summary.bob {
@@ -643,18 +643,21 @@ details > summary.bob {
 /*   2026-11-03  */
 details > summary.bob:hover {
 	   /* background-color: hsla(0, 100%, 100%, 0.2);  WHITE;  */
-	  background-color: hsl(120, 80%,80%);  /* a yellow green Azure;  */
+	  background-color: hsl(120, 80%,80%);   /* a yellow green Azure;  */
+	   /* 2026-11-08 house hover issue  */
 }
 details > summary.louise {
 	  background-color: hsla(0, 0%, 90%, 0.8); /*  WHITE;  */
       border-top: 4px solid hsl(148, 100%, 36%);
       border-left: 4px solid hsl(148, 100%, 36%); 
   box-shadow: 4px 4px 6pxhsl(148, 100%, 36%);  /*  N~TU Mean green  */
+
 }
 /*   2026-11-03  */
 details > summary.louise:hover {
   /*  background-color:  hsla(0, 0%, 90%, 0.2);  WHITE;  */	
   background-color: hsl(120, 80%,80%);  /* a yellow green Azure;  */
+  /* 2026-11-08 house hover issue  */
 }
 details > summary.mike {
 	  background-color: hsl(200, 5%, 66%);  /*  ~TCU gray  */
@@ -664,7 +667,8 @@ details > summary.mike {
 }
 /*   2026-11-03  */
 details > summary.mike:hover {
-  background-color:  hsl(200, 5%, 86%);  /*  ~TCU gray  */
+  background-color:  hsl(200, 5%, 86%);   /*  ~TCU gray  */
+   /* 2026-11-08 house hover issue  */
 }
 details > summary.pat {
 		background-color: hsl(31, 100%, 70%);  /*  ~UTEP Orange  */
@@ -674,7 +678,8 @@ details > summary.pat {
 }
 /*   2026-11-03  */
 details > summary.pat:hover {
-  background-color: hsl(31, 100%, 60%);  /*  ~UTEP Orange  */
+  background-color: hsl(31, 100%, 60%);   /*  ~UTEP Orange  */
+   /* 2026-11-08 house hover issue  */
 }
 
 details > summary.tom {
@@ -685,7 +690,8 @@ details > summary.tom {
 }
 /*   2026-11-03  */
 details > summary.tom:hover {
-  background-color: hsla(0, 100%, 100%. 0.2);  /*  WHITE;  */
+  background-color: hsla(0, 100%, 100%. 0.2);   /*  WHITE;  */
+   /* 2026-11-08 house hover issue  */
 }
 details > summary.walt {
 		background-color: hsl(48, 100%, 81%);  /* ~U M maize;  */
@@ -695,7 +701,8 @@ details > summary.walt {
 }
 /*   2026-11-03  */
 details > summary.walt:hover {
-  background-color: hsl(48, 100%, 50%); 
+  background-color: hsl(48, 100%, 50%);  
+   /* 2026-11-08 house hover issue  */
 }
 
 

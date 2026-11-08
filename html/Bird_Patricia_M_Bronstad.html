@@ -4216,6 +4216,7 @@ Julie‘s and Mike’s.
 </blockquote>
 <blockquote class="context"><img class="mlr40px" src="../pic/Pinky/Walt-pinky.png" alt="picture Walt Bronstad"><strong>Letter's Context</strong>
  <p class="right">2026-10-29</p>
+<p>In El Paso, after Pat graduated UTEP, she wasnted a sewing machine. In past, she had spent time sewing this or that emblem on my Army fatigues. All of her family sewed, so I expect she thought a sewing machine  one of the electric tools for women as assuredly as a man might want a skill saw. But Pat's portable Singer sewing machine saw little use; Pat was a woman who would much rather read a book than make a dress. </p>
 <p>Many things were useless. The tiny sailboat inherited from Jim and Linda. I took it out not more than twice. My motorcycle died months ago; I sold it for salvage parts. The trailer used to carry motorcycle and goods from El Paso to Ann Arbor had too little capacity for our grown household.</p>
 <p> I planned to rent a U-Haul truck and tow the Plymouth Valiant behind it. The car cabin could become a greenhouse for our houseplants. On the trip from Michigan to Texas, passers-by gave us big smiles and thumbs up, probably mistaking the False Aralia in the trailing Valiant for Marijuana.
 </p>
@@ -6828,7 +6829,34 @@ document.addEventListener("DOMContentLoaded", () => {
             summary.style.backgroundColor = "Wheat";
         });
     });
+})
+
+// fix disorder from details expansion
+//scroll summary into view after every toggle:
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('details').forEach(details => {
+
+        const summary = details.querySelector('summary');
+        if (!summary) return;
+
+        details.addEventListener('toggle', () => {
+
+            summary.scrollIntoView({
+                block: 'start',
+                inline: 'nearest',
+                behavior: 'instant'
+				
+            });
+ window.scrollBy(0, -70);  //2026-11-08, fix sticky menu effect
+        });
+
+    });
+
 });
+
+
+
 // --- CONFIGURE YOUR TARGET DATE HERE ---
   // Format: new Date(year, monthIndex, day, hour, minute, second)
   // monthIndex is 0-based: 0 = January, 11 = December
