@@ -82,6 +82,7 @@ div-grid-item {  /* custom element  */
   padding: 1em;
    orphans: 4;
    widows: 6;
+   /* position: relative;    2026-11-08 house hover issue  */
 }
 
 /*Always insert a region-break before <ul> elements in a region:   */
