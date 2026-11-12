@@ -150,6 +150,9 @@ div-grid-item {  /* custom element  */
 }
 /*  is custom name the problem?  */
 .sticky-menu {
+	
+	 /*width: 600px;   2026-11-12  free mouse in col 2 & 3 */
+	 max-width:670px;
   position: sticky;
   position: -webkit-sticky;  
   display: flex;
