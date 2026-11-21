@@ -18,6 +18,15 @@ aside > p {
   margin: 0.5rem;
 }
 
+.double-underline {
+border-bottom: 4px double;
+}
+
+.content{
+    padding:20px;
+}
+
+
 .MistyRose  {      /* FFE4E1	255, 228, 225	6, 100, 94 */ 
    background-color: hsl(6, 100%, 96%);
    color: hsl(6, 40%, 10%);
@@ -244,3 +253,23 @@ div-sticky {
   background-color: pimk;
   color: white;
   }  
+  
+  /* to link to LETTERS IN letter folder */
+.open-letter {
+   font-size: 95%;
+   margin-top: 10px;     /*   */
+   margin-right: 3%;     /*   */
+   margin-bottom: 10px;  /*   */
+   margin-left: 3%;      
+    border-top: 2px solid  #556B2F;
+    border-right: 2px solid #556B2F;    /* Yale green */
+    border-bottom: 2px dotted #556B2F;  /* Yale green */
+    border-left: 2px solid LightCoral; 
+    box-shadow: 4px 4px 8px   #556B2F;  /* Yale Green  */	
+    background-color: #FddC5c;  /* yale yellow;  */	
+    border-radius: 9px;	   
+   padding: 4px;
+   height: auto;
+   min-height: 40px;
+  cursor: pointer;
+ }
