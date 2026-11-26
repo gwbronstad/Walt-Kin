@@ -17,7 +17,7 @@ aside {
 aside > p {
   margin: 0.5rem;
 }
-
+  
 .double-underline {
 border-bottom: 4px double;
 }
